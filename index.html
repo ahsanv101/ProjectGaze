@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Project Title</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/view.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- New fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Teko:wght@400;500&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Variables CSS Files. Uncomment your preferred color scheme -->
+  <link href="assets/css/light-variables.css" rel="stylesheet" id="cssmode">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="overlay-navigation">
+    <nav role="navigation">
+      <ul>
+        <li><a href="#about" data-content="Find out more about our project">About</a></li>
+        <li><a href="#project" data-content="Curious?">Project</a></li>
+        <li><a href="#data" data-content="I got game">Data</a></li>
+        <li><a href="#viz" data-content="Only the finest">Viz</a></li>
+        <li><a href="#further" data-content="Don't hesitate">further</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="open-overlay">
+    <span class="bar-top"></span>
+    <span class="bar-middle"></span>
+    <span class="bar-bottom"></span>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero-fullscreen" class="hero-fullscreen d-flex align-items-center zoom header-zoom" style="padding: 0;">
+    <!-- You cannot scale down the whole section because then other sections will go on top and it will look like a hot mess-->
+    <div class="hero-fullscreen-layer align-items-center zoom">
+      <!-- removed d-flex to make eye full page in background -->
+      <!-- <div class="scaleDown"> -->
+      <div class="container d-flex flex-column align-items-center position-relative header-text">
+        <!-- Removed data-aos="zoom-out" to allow for the gsap animation to work even for the text -->
+        <h2 class="hero-fullscreen-text">NAME PROJECT</h2>
+        <p class="hero-fullscreen-text">Subtitle</p>
+        <div id="target"><img src="assets/img/color-palette.jpg"></div>
+      </div>
+      <div class="image image-2">
+        <img id="eye-img" src="assets/img/eye-drawing-2006.svg">
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+    <!-- Lateral sidebar -->
+    <div class="icons-sidebar flex-column">
+      <a href="#about" onclick="changeIcon1()" style="filter:invert(1);"><img id="icon1"
+          src="assets/img/eye-nav/eye1.svg" style="color:var(--color-default);"></a>
+      <a href="#project" onclick="changeIcon2()" style="filter:invert(1);"><img id="icon2"
+          src="assets/img/eye-nav/eye2.svg"></a>
+      <a href="#data" onclick="changeIcon3()" style="filter:invert(1);"><img id="icon3"
+          src="assets/img/eye-nav/eye3.svg"></a>
+      <a href="#viz" onclick="changeIcon4()" style="filter:invert(1);"><img id="icon4"
+          src="assets/img/eye-nav/eye4.svg"></a>
+      <a href="#further" style="filter:invert(1);"><img src="assets/img/eye-nav/eye5.svg"></a>
+    </div>
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <!-- <h2>The Project</h2> -->
+          <div class="row">
+            <p>In a world ordered by <span class="underlined-red underlined-red--offset">sexual imbalance</span>,
+              pleasure in looking has been split between
+              <b><i>active/male</i></b> and <b><i>passive/female</i></b>.
+            </p>
+          </div>
+          <br>
+          <div class="row">
+            <p>There are three different looks associated with cinema: that of <b><i>the camera</i></b>
+              as it records the pro-filmic event, that of <b><i>the audience</i></b> as it watches the final product,
+              and that of <b><i>the characters</i></b> at each other within the screen illusion.</p>
+          </div>
+
+
+        </div>
+
+        <div id="categories" class="categories">
+
+          <div class="container">
+
+            <div class="row gy-4">
+
+              <div class="col-xl-4 col-md-7 d-flex" data-aos="zoom-out">
+                <div class="service-item position-relative">
+                  <div class="icon"><i class="bi bi-people icon"></i></div>
+                  <h4><a class="stretched-link">Audience</a></h4>
+                  <p>Short description of what is the "male viewer": Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-xl-4 col-md-7 d-flex" data-aos="zoom-out" data-aos-delay="200">
+                <div class="service-item position-relative">
+                  <div class="icon"><i class="bi bi-person icon"></i></div>
+                  <h4><a class="stretched-link">Characters</a></h4>
+                  <p>Short description of what is the "male in the scene": Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+              <div class="col-xl-4 col-md-7 d-flex" data-aos="zoom-out" data-aos-delay="400">
+                <div class="service-item position-relative">
+                  <div class="icon"><i class="bi bi-camera-reels icon"></i></div>
+                  <h4><a class="stretched-link">Camera</a></h4>
+                  <p>Short description of what is the "male behind the camera": Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div><!-- End Service Item -->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <a class="film-strip-wrap">
+      <img src="assets/img/film-strip.jpg" id="film-strip" alt="">
+    </a>
+
+    <!-- ======= Project Section ======= -->
+    <section id="project" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header row">
+          <!-- <h2>The Project</h2> -->
+          <div class="col-md-8" style="float: right;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt
+              ut <span class="underlined-teal underlined-teal--offset">labore et
+                dolore</span> magna aliqua.
+            </p>
+            <br>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat
+              nulla pariatur.</p>
+          </div>
+          <div class="col-md-4">
+            <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3500">
+                  <img src="assets/img/gaze-carousel/1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3500">
+                  <img src="assets/img/gaze-carousel/2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3500">
+                  <img src="assets/img/gaze-carousel/3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3500">
+                  <img src="assets/img/gaze-carousel/4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3500">
+                  <img src="assets/img/gaze-carousel/5.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3500">
+                  <img src="assets/img/gaze-carousel/6.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3500">
+                  <img src="assets/img/gaze-carousel/7.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3500">
+                  <img src="assets/img/gaze-carousel/8.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3500">
+                  <img src="assets/img/gaze-carousel/9.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Project Section -->
+
+    <h2 class="research-q" data-aos="fade-up">What is our research question? Do we have more than one research q?</h2>
+
+    <!-- ======= Data Section ======= -->
+    <section id="data" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header"> <!-- Removed row class from this div, which is not containing 2 p-->
+          <!-- <h2>The Data</h2> -->
+          <!-- Removed class col-md-9 and float:right; from following div, left only the inner p (which is now on its own)-->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <span
+              class="underlined-green underlined-green--offset">ullamco laboris</span> ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat
+            nulla pariatur.</p>
+          <div id="clients" class="container clients" data-aos="zoom-out">
+            <div class="clients-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="assets/img/clients/boxofficemojo.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/clients/imdblogo.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/imsdb.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/scriptslug.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/simplyscripts.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="swiper-slide"><img src="assets/img/clients/thenumbers.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/top_logo_scr.png" class="img-fluid" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. <span class="underlined-green underlined-green--offset">Duis aute irure dolor</span>
+            in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+        </div>
+        <div class='letter-board'>
+          <h2></h2>
+          <a href='#'>
+            <h2>More frequent genre</h2>
+            <h1>Action</h1>
+            <h1># of movies: 325</h1>
+          </a>
+          <h1></h1>
+          <a href='#'>
+            <h2>Name stats</h2>
+            <h1>Result stats</h1>
+            <h1># of stats result</h1>
+          </a>
+          <h1></h1>
+          <a href='#'>
+            <h2>Name stats</h2>
+            <h1>Result stats</h1>
+            <h1># of stats result</h1>
+          </a>
+          <h1></h1>
+        </div>
+
+      </div>
+    </section><!-- End Data Section -->
+
+    <!-- ======= Viz Section ======= -->
+    <section id="viz" class="about">
+      <div class="letter">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header row">
+            <h2 class="title">Visualizations</h2>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. <span class="underlined-yellow underlined-yellow--offset">Duis aute irure</span>
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.<br>
+              Male looks down at Female, who is standing at his elbow.</p>
+            <h2>Female</h2>
+            <p class="line"> What are you going to do with it</p>
+            <h2>Male</h2>
+            <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine or a
+              tractor.</p>
+            <h2>Female</h2>
+            <p class="line">&nbsp; &nbsp;(quiet)<br>Couldn't we just let it go? It's not hurting anyone</p>
+            <p class="desc">Cooper looks down at his son. Good kid.</p>
+            <h2>Male</h2>
+            <p class="line">We need all the help we can get.</p>
+          </div>
+
+          <div class="container" data-aos="fade-up">
+
+            <ul class="nav nav-tabs row gy-4 d-flex justify-content-center">
+
+              <li class="nav-item col-6 col-md-4">
+                <a class="nav-link active show paper red-note" data-bs-toggle="tab" data-bs-target="#tab-1">
+                  <!-- <div class="paper red-note"> -->
+                  <div class="tape-section"></div>
+                  <p>Audience</p>
+                  <div class="tape-section"></div>
+                  <!-- </div> -->
+                </a>
+              </li><!-- End Tab 1 Nav -->
+
+              <li class="nav-item col-6 col-md-4">
+                <a class="nav-link paper red-note" data-bs-toggle="tab" data-bs-target="#tab-2">
+                  <!-- <div class="paper red-note"> -->
+                  <div class="tape-section"></div>
+                  <p>Character</p>
+                  <div class="tape-section"></div>
+                  <!-- </div> -->
+                </a>
+              </li><!-- End Tab 2 Nav -->
+
+              <li class="nav-item col-6 col-md-4">
+                <a class="nav-link paper red-note" data-bs-toggle="tab" data-bs-target="#tab-3">
+                  <!-- <div class="paper red-note"> -->
+                  <div class="tape-section"></div>
+                  <p>Camera</p>
+                  <div class="tape-section"></div>
+                  <!-- </div> -->
+                </a>
+              </li><!-- End Tab 3 Nav -->
+
+            </ul>
+
+            <div class="tab-content">
+
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row gy-4">
+                  <div class="order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="section-header row">
+                      <h2 class="title">Audience</h2>
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit
+                        anim id est laborum.<br>
+                        Male looks down at Female, who is standing at his elbow.</p>
+                      <h2>Female</h2>
+                      <p class="line"> What are you going to do with it</p>
+                      <h2>Male</h2>
+                      <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine or
+                        a tractor.</p>
+                      <h2>Female</h2>
+                      <p class="line">&nbsp; &nbsp;(quiet)<br>Couldn't we just let it go? It's not hurting anyone</p>
+                      <p class="desc">Cooper looks down at his son. Good kid.</p>
+                      <h2>Male</h2>
+                      <p class="line">We need all the help we can get.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div><!-- End Tab Content 1 -->
+
+              <div class="tab-pane" id="tab-2">
+                <div class="row gy-4">
+                  <div class="order-2 order-lg-1">
+
+                    <div class="section-header row">
+                      <h2 class="title">Characters</h2>
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit
+                        anim id est laborum.<br>
+                        Male looks down at Female, who is standing at his elbow.</p>
+                      <h2>Female</h2>
+                      <p class="line"> What are you going to do with it</p>
+                      <h2>Male</h2>
+                      <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine or
+                        a tractor.</p>
+                      <h2>Female</h2>
+                      <p class="line">&nbsp; &nbsp;(quiet)<br>Couldn't we just let it go? It's not hurting anyone</p>
+                      <p class="desc">Cooper looks down at his son. Good kid.</p>
+                      <h2>Male</h2>
+                      <p class="line">We need all the help we can get.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div><!-- End Tab Content 2 -->
+
+              <div class="tab-pane" id="tab-3">
+                <div class="row gy-4">
+                  <div class="order-2 order-lg-1">
+
+                    <div class="section-header row">
+                      <h2 class="title">Camera</h2>
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit
+                        anim id est laborum.<br>
+                        Male looks down at Female, who is standing at his elbow.</p>
+                      <h2>Female</h2>
+                      <p class="line"> What are you going to do with it</p>
+                      <h2>Male</h2>
+                      <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine or
+                        a tractor.</p>
+                      <h2>Female</h2>
+                      <p class="line">&nbsp; &nbsp;(quiet)<br>Couldn't we just let it go? It's not hurting anyone</p>
+                      <p class="desc">Cooper looks down at his son. Good kid.</p>
+                      <h2>Male</h2>
+                      <p class="line">We need all the help we can get.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div><!-- End Tab Content 3 -->
+
+            </div>
+
+          </div>
+
+          <div id="further" class="section-header row" data-aos="fade-up">
+            <h2 class="title">Further Research</h2>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. <span class="underlined-yellow underlined-yellow--offset">Duis aute irure
+                dolor</span> in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</p>
+          </div>
+
+          <!-- Video and definition -->
+          <div class="tape top-tape"></div>
+          <div class="container-fluid onfocus" data-aos="fade-up">
+
+            <div class="row g-0">
+              <div class="col-lg-6 video-play position-relative">
+                <a href="https://www.youtube.com/watch?v=d2npOOhhyH8" class="glightbox play-btn"></a>
+              </div>
+              <div class="col-lg-6">
+                <div class="content d-flex flex-column justify-content-center h-100">
+                  <h3>Female Gaze definition</h3>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                      aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat
+                      nulla
+                      pariatur.</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tape bottom-tape"></div>
+
+
+          <div class="section-header row" data-aos="fade-up" style="padding:0;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="person-picture">
+              <div class="container-picture">
+                <div class="container-picture-inner">
+                  <img class="circle-picture" src="assets/img/circle-people/vvvortex1.svg" />
+                  <img class="img img2" src="assets/img/circle-people/celinesciamma.png" />
+                </div>
+              </div>
+              <div class="name">Céline Sciamma</div>
+            </div>
+            <div class="person-picture">
+              <div class="container-picture">
+                <div class="container-picture-inner">
+                  <img class="circle-picture" src="assets/img/circle-people/vvvortex2.svg" />
+                  <img class="img img3" src="assets/img/circle-people/phoebe.png" />
+                </div>
+              </div>
+              <div class="name">Phoebe Waller-Bridge</div>
+            </div>
+            <div class="person-picture">
+              <div class="container-picture">
+                <div class="container-picture-inner">
+                  <img class="circle-picture" src="assets/img/circle-people/vvvortex3.svg" />
+                  <img class="img img4" src="assets/img/circle-people/gretagerwig.png" />
+                </div>
+              </div>
+              <div class="name">Greta Gerwig</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Viz Section -->
+    
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Team</h2>
+          <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas
+            asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-xl-3 col-md-5 d-flex" data-aos="zoom-in" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img poster">
+                <img src="assets/img/team/team-1.png" class="img-fluid" alt="">
+              </div>
+              <div class="social flex-column team-1">
+                <a href="mailto:orsolamaria.borrini@studio.unibo.it"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/orsola-maria-borrini-362142253/" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-5 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img poster">
+                <img src="assets/img/team/team-2.png" class="img-fluid" alt="">
+              </div>
+              <div class="social flex-column team-2">
+                <a href="mailto:chloi.papadopoulou@studio.unibo.it" style="background-color:var(--color-palette-teal-light)"><i
+                    class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/chloe-papadopoulou/" target="_blank"
+                  style="background-color:var(--color-palette-teal-light)"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-5 d-flex" data-aos="zoom-in" data-aos-delay="600">
+            <div class="team-member">
+              <div class="member-img poster">
+                <img src="assets/img/team/team-3.png" class="img-fluid" alt="">
+              </div>
+              <div class="social flex-column team-3">
+                <a href="mailto:@studio.unibo.it" style="background-color: var(--color-palette-green-light)"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/ahsansyedv101/" target="_blank"
+                  style="background-color: var(--color-palette-green-light)"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-5 d-flex" data-aos="zoom-in" data-aos-delay="600">
+            <div class="team-member">
+              <div class="member-img poster">
+                <img src="assets/img/team/team-4.png" class="img-fluid" alt="">
+              </div>
+              <div class="social flex-column team-4">
+                <a href="mailto:@studio.unibo.it" style="background-color: var(--color-palette-yellow-light)"><i class="bi bi-envelope"></i></a>
+                <a href="" target="_blank" style="background-color: var(--color-palette-yellow-light)"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>CREDITS</h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Images and icons</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Web template</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Softwares</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>HeroBiz</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <label class="dayNight">
+    <input type="checkbox">
+    <div></div>
+  </label>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+  <script src="assets/js/menu-script.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
