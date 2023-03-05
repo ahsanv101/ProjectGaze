@@ -6,20 +6,17 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Project Title</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- <meta content="" name="description">
+  <meta content="" name="keywords"> -->
 
   <!-- Favicons -->
   <link href="assets/img/view.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/view.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- New fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Teko:wght@400;500&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@300;400;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Teko:wght@400;500&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,7 +34,7 @@
 </head>
 
 <body>
-
+  <!-- Menu -->
   <div class="overlay-navigation">
     <nav role="navigation">
       <ul>
@@ -49,14 +46,14 @@
       </ul>
     </nav>
   </div>
-
+  <!-- Hamburger Menu -->
   <div class="open-overlay">
     <span class="bar-top"></span>
     <span class="bar-middle"></span>
     <span class="bar-bottom"></span>
   </div>
 
-  <!-- Hero Section -->
+  <!-- ======= Hero Section ======= -->
   <section id="hero-fullscreen" class="hero-fullscreen d-flex align-items-center zoom header-zoom" style="padding: 0;">
     <!-- You cannot scale down the whole section because then other sections will go on top and it will look like a hot mess-->
     <div class="hero-fullscreen-layer align-items-center zoom">
@@ -75,7 +72,7 @@
   </section><!-- End Hero Section -->
 
   <main id="main">
-    <!-- Lateral sidebar -->
+    <!-- Eyes sidebar -->
     <div class="icons-sidebar flex-column">
       <a href="#about" onclick="changeIcon1()" style="filter:invert(1);"><img id="icon1"
           src="assets/img/eye-nav/eye1.svg" style="color:var(--color-default);"></a>
@@ -151,6 +148,7 @@
       </div>
     </section><!-- End About Section -->
 
+    <!-- Moving film-strip -->
     <a class="film-strip-wrap">
       <img src="assets/img/film-strip.jpg" id="film-strip" alt="">
     </a>
@@ -628,49 +626,47 @@
 
     <div class="footer-content">
       <div class="container">
-        <div class="row">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>CREDITS</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-            </div>
-          </div>
+        <div class="row justify-content-center">
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Images and icons</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-bar-right"></i>Eye icons created by <a href="https://www.flaticon.com/free-icons/eye" title="eye icons">torskaya - Flaticon</a></li>
+              <li><i class="bi bi-chevron-bar-right"></i>Eye SVG image in hero section from  <a href="https://www.onlygfx.com/eye-drawing-png-transparent-svg-vector/">OnlyGFX.com</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-2 col-md-6 footer-links">
             <h4>Web template</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bi bi-chevron-bar-right"></i>This website is built on the HTML5 template <a href="https://bootstrapmade.com/herobiz-bootstrap-business-template/">"HeroBiz"</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a> and released under MIT</li>
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Softwares</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Source data</h4>
+            <ul>
+              <li><i class="bi bi-chevron-bar-right"></i>From ScriptsBlabla, licensed with thislicense</li>
+              <li><i class="bi bi-chevron-bar-right"></i>From IMDB, licensed with thislicense</li>
+              <li><i class="bi bi-chevron-bar-right"></i>From AnotherWebsite, licensed with thislicense</li>
+            </ul>
+          </div>
 
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Published data</h4>
+            <ul>
+              <li><i class="bi bi-chevron-bar-right"></i>Creative Commons Attribution OUR NEW PUBLISHING LICENSE</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Softwares</h4>
+            <ul>
+              <li><i class="bi bi-chevron-bar-right"></i>Leaflet: Copyright (c) 2010-2011, CloudMade <a href="">(BSD 2-Clause "Simplified" License)</a></li>
+              <li><i class="bi bi-chevron-bar-right"></i>Plotly.js: Copyright (c) 2021 Plotly, Inc - All rights reserved <a href="">(MIT License)</a></li>
+              <li><i class="bi bi-chevron-bar-right"></i>amCharts: <a href="#">linkware license</a></li>
+            </ul>
           </div>
 
         </div>
@@ -683,7 +679,7 @@
 
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <div class="copyright">
-            &copy; Copyright <strong><span>HeroBiz</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>ProjectName</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->
@@ -695,11 +691,7 @@
         </div>
 
         <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/ahsanv101/ProjectGaze" target="_blank"><i class="bi bi-github"></i></a>
         </div>
 
       </div>
@@ -707,7 +699,10 @@
 
   </footer><!-- End Footer -->
 
+  <!-- Scroll-top button -->
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Dark/light mode switch -->
   <label class="dayNight">
     <input type="checkbox">
     <div></div>
@@ -729,7 +724,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
   <script src="assets/js/menu-script.js"></script>
   <script src="assets/js/main.js"></script>
-
 
 </body>
 
