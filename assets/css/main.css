@@ -2336,6 +2336,8 @@ footer {
   padding-top: 4px;
   font-size: 13px;
   color: var(--color-white);
+  text-align: left;
+  max-width: 80%;
 }
 
 .footer .footer-legal .credits a {
