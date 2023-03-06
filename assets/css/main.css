@@ -2061,6 +2061,10 @@ section .image img {
   display: flex;
 }
 
+.vhs-tape:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
