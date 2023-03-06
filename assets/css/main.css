@@ -2341,6 +2341,10 @@ footer {
 }
 
 .footer .footer-legal .credits a {
+  color: var(--color-white);
+}
+
+.footer .footer-legal .credits a:hover {
   color: var(--color-primary-light);
 }
 

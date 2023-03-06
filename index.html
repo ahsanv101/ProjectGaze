@@ -40,11 +40,11 @@
   <div class="overlay-navigation">
     <nav role="navigation">
       <ul>
-        <li><a href="#about" data-content="Find out more about our project">About</a></li>
-        <li><a href="#project" data-content="Curious?">Project</a></li>
-        <li><a href="#data" data-content="I got game">Data</a></li>
-        <li><a href="#viz" data-content="Only the finest">Viz</a></li>
-        <li><a href="#further" data-content="Don't hesitate">further</a></li>
+        <li><a href="#about" onclick="changeIcon(1)">About</a></li>
+        <li><a href="#project" onclick="changeIcon(2)">Project</a></li>
+        <li><a href="#data" onclick="changeIcon(3)">Data</a></li>
+        <li><a href="#viz" onclick="changeIcon(4)">Viz</a></li>
+        <li><a href="#further" onclick="changeIcon(5)">further</a></li>
       </ul>
     </nav>
   </div>
@@ -76,15 +76,15 @@
   <main id="main">
     <!-- Eyes sidebar -->
     <div class="icons-sidebar flex-column">
-      <a href="#about" onclick="changeIcon1()" style="filter:invert(1);"><img id="icon1"
+      <a href="#about" onclick="changeIcon(1)" style="filter:invert(1);"><img id="icon1"
           src="assets/img/eye-nav/eye1.svg" style="color:var(--color-default);"></a>
-      <a href="#project" onclick="changeIcon2()" style="filter:invert(1);"><img id="icon2"
+      <a href="#project" onclick="changeIcon(2)" style="filter:invert(1);"><img id="icon2"
           src="assets/img/eye-nav/eye2.svg"></a>
-      <a href="#data" onclick="changeIcon3()" style="filter:invert(1);"><img id="icon3"
+      <a href="#data" onclick="changeIcon(3)" style="filter:invert(1);"><img id="icon3"
           src="assets/img/eye-nav/eye3.svg"></a>
-      <a href="#viz" onclick="changeIcon4()" style="filter:invert(1);"><img id="icon4"
+      <a href="#viz" onclick="changeIcon(4)" style="filter:invert(1);"><img id="icon4"
           src="assets/img/eye-nav/eye4.svg"></a>
-      <a href="#further" style="filter:invert(1);"><img src="assets/img/eye-nav/eye5.svg"></a>
+      <a href="#further" onclick="changeIcon(5)" style="filter:invert(1);"><img src="assets/img/eye-nav/eye5.svg"></a>
     </div>
 
     <!-- ======= About Section ======= -->
@@ -685,8 +685,8 @@
     </div>
 
     <div class="footer-legal text-center">
-      <div
-        class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center" style="
+      padding: 0 50px 0 50px;">
 
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <div class="copyright">

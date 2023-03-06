@@ -336,17 +336,26 @@ timelineHeader
 $(window).bind('scroll', function () {
   element = document.getElementsByClassName('icons-sidebar')[0]
   if ($(window).scrollTop() >= $('#hero-fullscreen').offset().top + 500) {
-    /* document.getElementsByClassName('icons-sidebar')[0].style.visibility='visible'; */
     element.classList.add('show-sidebar');
   }
   if ($(window).scrollTop() < $('#hero-fullscreen').offset().top + 500) {
-    /* document.getElementsByClassName('icons-sidebar')[0].style.visibility='hidden'; */
     element.classList.remove('show-sidebar');
     element.classList.add('hide-sidebar');
   }
 });
 
-// document.getElementsByClassName('icons-sidebar')[0].style.visibility='hidden'
+/* --- Detect section of website and change sidebar accordingly --- */
+var animate = true;
+
+function changeIcon(n) {
+  animate=false;
+  if(n==1) changeIcon1();
+  if(n==2) changeIcon2();
+  if(n==3) changeIcon3();
+  if(n==4) changeIcon4();
+  if(n==5) changeIcon5();
+  setTimeout(()=>{animate=true;},500);
+}
 
 function changeIcon1() {
   var img1 = document.getElementById('icon1');
@@ -428,7 +437,67 @@ function changeIcon4() {
   }
 }
 
-/* --- Highlight animation --- --> CHECK */
+function changeIcon5() {
+  var img1 = document.getElementById('icon1');
+  var img2 = document.getElementById('icon2');
+  var img3 = document.getElementById('icon3');
+  var img4 = document.getElementById('icon4');
+
+  if (img1.getAttribute('src') == 'assets/img/eye-nav/eye1-active.svg') {
+    $('#icon1').attr('src', 'assets/img/eye-nav/eye1.svg')
+  }
+  if (img2.getAttribute('src') == 'assets/img/eye-nav/eye2-active.svg') {
+    $('#icon2').attr('src', 'assets/img/eye-nav/eye2.svg')
+  }
+  if (img3.getAttribute('src') == 'assets/img/eye-nav/eye3-active.svg') {
+    $('#icon3').attr('src', 'assets/img/eye-nav/eye3.svg')
+  }
+  if (img4.getAttribute('src') == 'assets/img/eye-nav/eye4-active.svg') {
+    $('#icon4').attr('src', 'assets/img/eye-nav/eye4.svg')
+  }
+}
+
+const targets = document.querySelectorAll("#about, #project, #data, #viz, #further");
+
+function callback(entries) {
+  entries.map((entry) => {
+    if (entry.isIntersecting == false || animate == false){
+      return
+    }
+    console.log(entry)
+    console.log("this is " + entry.target.id);
+
+    if (entry.target.id == 'about'){
+      changeIcon1();
+    }
+    if (entry.target.id == 'project'){
+      changeIcon2();
+    }
+    if (entry.target.id == 'data'){
+      changeIcon3();
+    }
+    if (entry.target.id == 'viz'){
+      changeIcon4();
+    }
+    if (entry.target.id == 'further'){
+      changeIcon5();
+    }
+  });
+}
+
+targets.forEach((target) => {
+  if (target.id == 'data') {
+    new IntersectionObserver(callback,{'threshold':0.3}).observe(target);
+  }
+  else if (target.id == 'viz') {
+    new IntersectionObserver(callback,{'threshold':0.1}).observe(target);
+  }
+  else {
+    new IntersectionObserver(callback,{'threshold':0.7}).observe(target);
+  }
+});
+
+/* --- Highlight animation --- */
 
 $(window).scroll(function () {
   reveal(300);
@@ -486,7 +555,6 @@ function revealBG_gray(delay) {
     }
   }
 }
-
 
 
 /**
