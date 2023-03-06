@@ -1,36 +1,39 @@
-,imdbid,Title,Decade,Genre,Director,year,rating,dubious
-0,40806.0,The Snake Pit,40s,Drama,Anatole Litvak,1948.0,3.0,0.0
-1,45793.0,From Here To Eternity,50s,War,Fred Zinneman,1953.0,3.0,0.0
-2,47673.0,White Christmas,50s,Musical,Michael Kurtiz,1954.0,3.0,0.0
-3,43949.0,Quo Vadis?,50s,Historical,"Mervyn LeRoy, Anthony Mann",1951.0,3.0,1.0
-4,51459.0,Cat on a Hot Tin Roof,50s,Drama,Richard Brooks,1958.0,3.0,0.0
-5,53291.0,Some like it hot,50s,Comedy,Billy Wilder,1959.0,3.0,0.0
-6,59742.0,The Sound of Music,60s,Musical,Robert Wise,1965.0,3.0,0.0
-7,58331.0,Mary Poppins,60s,Fantasy,Robert Stevenson,1964.0,3.0,0.0
-8,56937.0,Cleopatra,60s,Historical,Joseph L. Mankiewicz,1963.0,3.0,0.0
-9,55614.0,West Side Story,60s,Musical,"Jerome Robbins, Robert Wise",1961.0,3.0,0.0
-10,3581652.0,West Side Story,60s,Musical,"Jerome Robbins, Robert Wise",2021.0,3.0,0.0
-11,54215.0,Psycho,60s,Thriller,Alfred Hitchcock,1960.0,3.0,0.0
-12,73195.0,JAWS,70s,Horror,Steven Spielberg,1975.0,3.0,0.0
-13,70047.0,The Exorcist,70s,Horror,William Friedkin,1973.0,3.0,0.0
-14,77631.0,Grease,70s,Musical,Randal Kleiser,1978.0,3.0,0.0
-15,83866.0,E.T. the Extra-Terrestrial,80s,SCI-FI,Steven Spielberg,1982.0,3.0,1.0
-16,1289401.0,Ghostbusters,80s,Fantasy,Ivan Reitman,2016.0,3.0,0.0
-17,81573.0,Superman II,80s,Action,Richard Lester,1980.0,3.0,1.0
-18,120915.0,Star Wars: Episode I - The Phantom Menace,90s,SCI-FI,George Lucas,1999.0,3.0,0.0
-19,116629.0,Independence Day,90s,SCI-FI,Roland Emmerich,1996.0,3.0,0.0
-20,99653.0,Ghost,90s,Romance,Jerry Zucker,1990.0,3.0,0.0
-21,103064.0,Terminator 2: Judgment Day,90s,Action,James Cameron,1991.0,3.0,1.0
-22,468569.0,The Dark Knight,2000s,Action,Christopher Nolan,2008.0,3.0,1.0
-23,418279.0,Transformers,2000s,Action,Michael Bay,2007.0,3.0,0.0
-24,325980.0,Pirates of the Caribbean: The Curse of the Black Pearl,2000s,Action,Gore Verbinski,2003.0,3.0,0.0
-25,241527.0,Harry Potter and the Sorcerers Stone,2000s,Fantasy,Chris Columbus,2001.0,3.0,0.0
-26,4154796.0,Avengers: Endgame,2010s,Action,"Anthony Russo, Joe Russo",2019.0,3.0,0.0
-27,1825683.0,Black Panther,2010s,Action,Ryan Coogler,2018.0,3.0,0.0
-28,2488496.0,Star Wars: The Force Awakens,2010s,SCI-FI,George Lucas,2015.0,3.0,0.0
-29,118661.0,The Avengers,2010s,Action,Joss Whedon,1998.0,3.0,0.0
-30,2527336.0,Star Wars: Episode VIII - The Last Jedi,2010s,SCI-FI,George Lucas,2017.0,3.0,0.0
-31,499549.0,Avatar,2010s,SCI-FI,James Cameron,2009.0,3.0,0.0
-32,770828.0,Man of Steel,2010s,Action,Zack Snyder,2013.0,3.0,0.0
-33,3748528.0,Rogue One: A Star Wars Story,2010s,SCI-FI,Gareth Edwards,2016.0,3.0,0.0
-34,1201607.0,Harry Potter and the Deathly Hallows: Part 2,2010s,Fantasy,David Yates,2011.0,3.0,1.0
+,imdbid,Title,Decade,Genre,Director,year,bechdel_rating,dubious
+0,31381.0,Gone with the Wind,40s,Drama,Victor Fleming,1939.0,3.0,
+1,40806.0,The Snake Pit,40s,Drama,Anatole Litvak,1948.0,3.0,0.0
+2,45793.0,From Here To Eternity,50s,War,Fred Zinneman,1953.0,3.0,0.0
+3,47673.0,White Christmas,50s,Musical,Michael Kurtiz,1954.0,3.0,0.0
+4,43949.0,Quo Vadis?,50s,Historical,"Mervyn LeRoy, Anthony Mann",1951.0,3.0,1.0
+5,51459.0,Cat on a Hot Tin Roof,50s,Drama,Richard Brooks,1958.0,3.0,0.0
+6,53291.0,Some like it hot,50s,Comedy,Billy Wilder,1959.0,3.0,0.0
+7,42192.0,All About Eve,50s,Drama,Joseph L. Mankiewicz,1950.0,3.0,
+8,59742.0,The Sound of Music,60s,Musical,Robert Wise,1965.0,3.0,0.0
+9,58331.0,Mary Poppins,60s,Fantasy,Robert Stevenson,1964.0,3.0,0.0
+10,56937.0,Cleopatra,60s,Historical,Joseph L. Mankiewicz,1963.0,3.0,0.0
+11,55614.0,West Side Story,60s,Musical,"Jerome Robbins, Robert Wise",1961.0,3.0,0.0
+12,54215.0,Psycho,60s,Thriller,Alfred Hitchcock,1960.0,3.0,0.0
+13,73195.0,JAWS,70s,Horror,Steven Spielberg,1975.0,3.0,0.0
+14,70047.0,The Exorcist,70s,Horror,William Friedkin,1973.0,3.0,0.0
+15,77631.0,Grease,70s,Musical,Randal Kleiser,1978.0,3.0,0.0
+16,83866.0,E.T. the Extra-Terrestrial,80s,SCI-FI,Steven Spielberg,1982.0,3.0,1.0
+17,1289401.0,Ghostbusters,80s,Fantasy,Ivan Reitman,2016.0,3.0,0.0
+18,81573.0,Superman II,80s,Action,Richard Lester,1980.0,3.0,1.0
+19,120338.0,Titanic,90s,Drama,James Cameron,1997.0,3.0,
+20,120915.0,Star Wars: Episode I - The Phantom Menace,90s,SCI-FI,George Lucas,1999.0,3.0,0.0
+21,107290.0,Jurassic Park,90s,SCI-FI,Steven Spielberg,1993.0,3.0,
+22,116629.0,Independence Day,90s,SCI-FI,Roland Emmerich,1996.0,3.0,0.0
+23,99653.0,Ghost,90s,Romance,Jerry Zucker,1990.0,3.0,0.0
+24,103064.0,Terminator 2: Judgment Day,90s,Action,James Cameron,1991.0,3.0,1.0
+25,468569.0,The Dark Knight,2000s,Action,Christopher Nolan,2008.0,3.0,1.0
+26,417741.0,Harry Potter and the Half Blood Prince ,2000s,Fantasy,David Yates,2009.0,3.0,
+27,418279.0,Transformers,2000s,Action,Michael Bay,2007.0,3.0,0.0
+28,325980.0,Pirates of the Caribbean: The Curse of the Black Pearl,2000s,Action,Gore Verbinski,2003.0,3.0,0.0
+29,241527.0,Harry Potter and the Sorcerers Stone,2000s,Fantasy,Chris Columbus,2001.0,3.0,0.0
+30,4154796.0,Avengers: Endgame,2010s,Action,"Anthony Russo, Joe Russo",2019.0,3.0,0.0
+31,1825683.0,Black Panther,2010s,Action,Ryan Coogler,2018.0,3.0,0.0
+32,2488496.0,Star Wars: The Force Awakens,2010s,SCI-FI,George Lucas,2015.0,3.0,0.0
+33,2527336.0,Star Wars: Episode VIII - The Last Jedi,2010s,SCI-FI,George Lucas,2017.0,3.0,0.0
+34,499549.0,Avatar,2010s,SCI-FI,James Cameron,2009.0,3.0,0.0
+35,770828.0,Man of Steel,2010s,Action,Zack Snyder,2013.0,3.0,0.0
+36,3748528.0,Rogue One: A Star Wars Story,2010s,SCI-FI,Gareth Edwards,2016.0,3.0,0.0
+37,1201607.0,Harry Potter and the Deathly Hallows: Part 2,2010s,Fantasy,David Yates,2011.0,3.0,1.0
