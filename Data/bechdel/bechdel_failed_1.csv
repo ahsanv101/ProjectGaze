@@ -1,0 +1,20 @@
+,imdbid,Title,Decade,Genre,Director,year,rating,dubious
+0,34583.0,Casablanca,40s,Drama,Michael Curtiz,1942.0,1.0,0.0
+1,50212.0,The Bridge on the River Kwai,50s,War,David Lean,1957.0,1.0,0.0
+2,64115.0,Butch Cassidy and the Sundance Kid,60s,Action,George Roy Hill,1969.0,1.0,0.0
+3,24991.0,Cleopatra,60s,Historical,Joseph L. Mankiewicz,1934.0,1.0,0.0
+4,76759.0,Star Wars: Episode IV - A New Hope,70s,SCI-FI,George Lucas,1977.0,1.0,0.0
+5,71230.0,Blazing Saddles,70s,Western,Mel Brooks,1974.0,1.0,0.0
+6,75148.0,Rocky,70s,Action,John G. Avildsen,1976.0,1.0,0.0
+7,66011.0,Love Story,70s,Romance,Arthur Hiller,1970.0,1.0,0.0
+8,78346.0,Superman,70s,Action,Mario Puzo,1978.0,1.0,0.0
+9,96895.0,Batman,80s,Action,Tim Burton,1989.0,1.0,0.0
+10,86190.0,Star Wars: Episode VI - Return of the Jedi,80s,SCI-FI,George Lucas,1983.0,1.0,0.0
+11,92644.0,Beverly Hills Cop II,80s,Action,Tony Scott,1987.0,1.0,0.0
+12,109830.0,Forrest Gump,90s,Drama,Robert Zemeckis,1994.0,1.0,0.0
+13,112462.0,Batman Forever,90s,Action,Joel Schumacher,1995.0,1.0,0.0
+14,145487.0,Spiderman,2000s,Action,Sam Raimi,2002.0,1.0,0.0
+15,121766.0,Star Wars: Episode III - Revenge of the Sith,2000s,SCI-FI,George Lucas,2005.0,1.0,1.0
+16,316654.0,Spider-Man 2,2000s,Action,Sam Raimi,2004.0,1.0,0.0
+17,848228.0,The Avengers,2010s,Action,Joss Whedon,2012.0,1.0,0.0
+18,1877832.0,X-Men: Days of Future Past,2010s,Action,Bryan Singer,2014.0,1.0,0.0

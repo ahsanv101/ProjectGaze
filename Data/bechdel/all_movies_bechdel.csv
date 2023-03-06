@@ -1,0 +1,67 @@
+,imdbid,Title,Decade,Genre,Director,year,rating,dubious
+0,38969.0,Song of the South,40s,Animation,"Wilfred Jackson, Harve Foster",1946.0,2.0,0.0
+1,34583.0,Casablanca,40s,Drama,Michael Curtiz,1942.0,1.0,0.0
+2,40806.0,The Snake Pit,40s,Drama,Anatole Litvak,1948.0,3.0,0.0
+3,49833.0,The Ten Commandments,50s,Historical,Cecile B.DeMille,1956.0,2.0,0.0
+4,45793.0,From Here To Eternity,50s,War,Fred Zinneman,1953.0,3.0,0.0
+5,44672.0,The Greatest Show on Earth,50s,Musical,Cecile B.DeMille,1952.0,2.0,0.0
+6,50212.0,The Bridge on the River Kwai,50s,War,David Lean,1957.0,1.0,0.0
+7,47673.0,White Christmas,50s,Musical,Michael Kurtiz,1954.0,3.0,0.0
+8,43949.0,Quo Vadis?,50s,Historical,"Mervyn LeRoy, Anthony Mann",1951.0,3.0,1.0
+9,51459.0,Cat on a Hot Tin Roof,50s,Drama,Richard Brooks,1958.0,3.0,0.0
+10,53291.0,Some like it hot,50s,Comedy,Billy Wilder,1959.0,3.0,0.0
+11,59742.0,The Sound of Music,60s,Musical,Robert Wise,1965.0,3.0,0.0
+12,61722.0,The Graduate,60s,Romance,Michael Nichols,1967.0,2.0,0.0
+13,64115.0,Butch Cassidy and the Sundance Kid,60s,Action,George Roy Hill,1969.0,1.0,0.0
+14,58331.0,Mary Poppins,60s,Fantasy,Robert Stevenson,1964.0,3.0,0.0
+15,2101.0,Cleopatra,60s,Historical,Joseph L. Mankiewicz,1912.0,2.0,0.0
+16,24991.0,Cleopatra,60s,Historical,Joseph L. Mankiewicz,1934.0,1.0,0.0
+17,56937.0,Cleopatra,60s,Historical,Joseph L. Mankiewicz,1963.0,3.0,0.0
+18,62622.0,2001: A Space Odyssey,60s,SCI-FI,Stanley Kubrick,1968.0,0.0,0.0
+19,55614.0,West Side Story,60s,Musical,"Jerome Robbins, Robert Wise",1961.0,3.0,0.0
+20,3581652.0,West Side Story,60s,Musical,"Jerome Robbins, Robert Wise",2021.0,3.0,0.0
+21,54215.0,Psycho,60s,Thriller,Alfred Hitchcock,1960.0,3.0,0.0
+22,56172.0,Lawrence of Arabia,60s,Action,David Lean,1962.0,0.0,0.0
+23,73195.0,JAWS,70s,Horror,Steven Spielberg,1975.0,3.0,0.0
+24,76759.0,Star Wars: Episode IV - A New Hope,70s,SCI-FI,George Lucas,1977.0,1.0,0.0
+25,70047.0,The Exorcist,70s,Horror,William Friedkin,1973.0,3.0,0.0
+26,77631.0,Grease,70s,Musical,Randal Kleiser,1978.0,3.0,0.0
+27,68646.0,The Godfather,70s,Crime,Francis Ford Coppola,1972.0,2.0,0.0
+28,71230.0,Blazing Saddles,70s,Western,Mel Brooks,1974.0,1.0,0.0
+29,75148.0,Rocky,70s,Action,John G. Avildsen,1976.0,1.0,0.0
+30,66011.0,Love Story,70s,Romance,Arthur Hiller,1970.0,1.0,0.0
+31,78346.0,Superman,70s,Action,Mario Puzo,1978.0,1.0,0.0
+32,80684.0,Star Wars: Episode V - The Empire Strikes Back,80s,SCI-FI,George Lucas,1980.0,0.0,0.0
+33,83866.0,E.T. the Extra-Terrestrial,80s,SCI-FI,Steven Spielberg,1982.0,3.0,1.0
+34,96895.0,Batman,80s,Action,Tim Burton,1989.0,1.0,0.0
+35,86190.0,Star Wars: Episode VI - Return of the Jedi,80s,SCI-FI,George Lucas,1983.0,1.0,0.0
+36,1289401.0,Ghostbusters,80s,Fantasy,Ivan Reitman,2016.0,3.0,0.0
+37,92099.0,Top Gun,80s,Action,Tony Scott,1986.0,2.0,0.0
+38,92644.0,Beverly Hills Cop II,80s,Action,Tony Scott,1987.0,1.0,0.0
+39,81573.0,Superman II,80s,Action,Richard Lester,1980.0,3.0,1.0
+40,120915.0,Star Wars: Episode I - The Phantom Menace,90s,SCI-FI,George Lucas,1999.0,3.0,0.0
+41,116629.0,Independence Day,90s,SCI-FI,Roland Emmerich,1996.0,3.0,0.0
+42,109830.0,Forrest Gump,90s,Drama,Robert Zemeckis,1994.0,1.0,0.0
+43,99653.0,Ghost,90s,Romance,Jerry Zucker,1990.0,3.0,0.0
+44,103064.0,Terminator 2: Judgment Day,90s,Action,James Cameron,1991.0,3.0,1.0
+45,103776.0,Batman Returns,90s,Action,Tim Burton,1992.0,0.0,0.0
+46,112462.0,Batman Forever,90s,Action,Joel Schumacher,1995.0,1.0,0.0
+47,468569.0,The Dark Knight,2000s,Action,Christopher Nolan,2008.0,3.0,1.0
+48,145487.0,Spiderman,2000s,Action,Sam Raimi,2002.0,1.0,0.0
+49,121766.0,Star Wars: Episode III - Revenge of the Sith,2000s,SCI-FI,George Lucas,2005.0,1.0,1.0
+50,316654.0,Spider-Man 2,2000s,Action,Sam Raimi,2004.0,1.0,0.0
+51,418279.0,Transformers,2000s,Action,Michael Bay,2007.0,3.0,0.0
+52,325980.0,Pirates of the Caribbean: The Curse of the Black Pearl,2000s,Action,Gore Verbinski,2003.0,3.0,0.0
+53,241527.0,Harry Potter and the Sorcerers Stone,2000s,Fantasy,Chris Columbus,2001.0,3.0,0.0
+54,120755.0,Mission Impossible II,2000s,Action,John Woo,2000.0,0.0,0.0
+55,4154796.0,Avengers: Endgame,2010s,Action,"Anthony Russo, Joe Russo",2019.0,3.0,0.0
+56,1825683.0,Black Panther,2010s,Action,Ryan Coogler,2018.0,3.0,0.0
+57,2488496.0,Star Wars: The Force Awakens,2010s,SCI-FI,George Lucas,2015.0,3.0,0.0
+58,118661.0,The Avengers,2010s,Action,Joss Whedon,1998.0,3.0,0.0
+59,848228.0,The Avengers,2010s,Action,Joss Whedon,2012.0,1.0,0.0
+60,2527336.0,Star Wars: Episode VIII - The Last Jedi,2010s,SCI-FI,George Lucas,2017.0,3.0,0.0
+61,499549.0,Avatar,2010s,SCI-FI,James Cameron,2009.0,3.0,0.0
+62,770828.0,Man of Steel,2010s,Action,Zack Snyder,2013.0,3.0,0.0
+63,3748528.0,Rogue One: A Star Wars Story,2010s,SCI-FI,Gareth Edwards,2016.0,3.0,0.0
+64,1201607.0,Harry Potter and the Deathly Hallows: Part 2,2010s,Fantasy,David Yates,2011.0,3.0,1.0
+65,1877832.0,X-Men: Days of Future Past,2010s,Action,Bryan Singer,2014.0,1.0,0.0
