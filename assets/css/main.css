@@ -2071,8 +2071,8 @@ section .image img {
 
 .poster {
   width: 250px;
-  height: 350px;
-  padding: 7%;
+  height: 345px;
+  padding: 5%;
   position: relative;
   box-sizing: border-box;
   background-color: #fff;
@@ -2197,6 +2197,43 @@ section .image img {
 
 .team .team-member:hover .social {
   opacity: 1;
+}
+
+.assigned-tasks {
+  z-index: 1;
+  position: absolute;
+  top: 3em;
+  left: 9em;
+  width: 100%;
+}
+
+.task {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.9em;
+  transform: skew(2deg, -10deg);
+  line-height: 1.2;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.task-team1 {
+  color: var(--color-palette-yellow-light);
+  background: var(--color-primary);
+}
+
+.task-team2 {
+  color: var(--color-secondary);
+  background: var(--color-palette-teal-light);
+}
+
+.task-team3 {
+  color: var(--color-secondary);
+  background: var(--color-palette-green-light);
+}
+
+.task-team4 {
+  color: var(--color-primary);
+  background: var(--color-palette-yellow-light);
 }
 
 /*--------------------------------------------------------------
