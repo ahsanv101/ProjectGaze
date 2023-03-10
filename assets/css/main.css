@@ -2115,7 +2115,7 @@ section .image img {
 .team .team-member .social {
   position: absolute;
   left: 0;
-  bottom: 43px;
+  bottom: 30px;
   right: 171px;
   opacity: 0;
   transition: ease-in-out 0.3s;
@@ -2128,7 +2128,7 @@ section .image img {
   transition: color 0.3s;
   color: var(--color-white);
   background: var(--color-primary);
-  margin: 2px 5px;
+  margin: 4px 5px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
