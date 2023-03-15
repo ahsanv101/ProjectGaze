@@ -636,12 +636,10 @@ $('.dayNight input').change(function () {
 
 
 // Bechdel test
-const ctx = document.getElementById('myChart');
-
-const DATA_COUNT = 2;
-const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
 
 // const labels = 'Bechdel';
+
+
 
 d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_passed.csv")
 .then((d) => {
@@ -667,6 +665,12 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechde
 
         // makeChart
 function makeChart(ddata){
+  const ctx = document.getElementById('myChart');
+
+const DATA_COUNT = 2;
+const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
+
+  
 
   var passed = ddata[0];
   var failed = ddata[1]+ddata[2]+ddata[3];
@@ -715,3 +719,159 @@ function makeChart(ddata){
 
 }        
 
+
+
+function makeChart2(ddata){
+  const ctx2 = document.getElementById('myChart2');
+  var total = ddata[0]+ddata[1]+ddata[2]+ddata[3];
+  // console.log(total);
+  passed = (ddata[0]/total)*100;
+  // console.log(passed);
+  notwo= (ddata[1]/total)*100;
+  notwotalk= (ddata[2]/total)*100;
+  notwotalkmen = (ddata[3]/total)*100;
+
+
+// const DATA_COUNT = 2;
+// const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
+
+
+  // var passed = ddata[0];
+  // var failed = ddata[1]+ddata[2]+ddata[3];
+
+
+  // console.log(a);
+  const data = {
+    labels: [
+      'Passed',
+      'With no two women',
+      'With no two women who talk to each other',
+      'With no two women who talk to each other about something other than a man'
+    ],
+    datasets: [{
+      label: 'Bechdel test',
+      data: [passed,notwo, notwotalk, notwotalkmen],
+      backgroundColor: [
+        'rgb(255, 132, 132)',
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)'
+      ],
+      hoverOffset: 4
+    }]
+  };
+  
+  // import Chart from 'chart.js/auto';
+  new Chart(ctx2, {
+    type: 'doughnut',
+    data: data,
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Bechdel test: distribution of movies'
+        }
+      }
+    },
+  });
+
+}        
+
+
+d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_passed.csv")
+.then((d) => {
+
+  // failed.push(d.length);
+  d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_0.csv")
+        .then((d0) => {
+
+          d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_1.csv")
+          .then((d1) => {
+           
+            d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_2.csv")
+          .then((d2) => {
+             makeChart2([d.length,d0.length,d1.length,d2.length])
+          
+          });
+        });
+        
+        
+      });
+
+});
+
+
+
+
+d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_passed.csv")
+.then((d) => {
+
+  // failed.push(d.length);
+  d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_0.csv")
+        .then((d0) => {
+
+          d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_1.csv")
+          .then((d1) => {
+           
+            d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_2.csv")
+          .then((d2) => {
+            var t = "";
+            for (var i = 0; i < d.length; i++){
+                  var tr = "<tr>";
+                  tr += "<th scope='row'>"+(parseInt(i)+1).toString()+"</th>";
+                  tr += "<td>"+d[i].Title+"</td>";
+                  tr += "<td>"+Math.round(d[i].year).toString()+"</td>";
+                  tr += "</tr>";
+                  t += tr;
+            }
+            document.getElementById("t1").innerHTML += t;
+
+
+            var t2 = "";
+            for (var i = 0; i < d0.length; i++){
+                  var tr = "<tr>";
+                  tr += "<th scope='row'>"+(parseInt(i)+1).toString()+"</th>";
+                  tr += "<td>"+d0[i].Title+"</td>";
+                  tr += "<td>"+Math.round(d0[i].year).toString()+"</td>";
+                  tr += "</tr>";
+                  t2 += tr;
+            }
+            document.getElementById("t2").innerHTML += t2;
+
+
+
+            var t3 = "";
+            for (var i = 0; i < d1.length; i++){
+                  var tr = "<tr>";
+                  tr += "<th scope='row'>"+(parseInt(i)+1).toString()+"</th>";
+                  tr += "<td>"+d1[i].Title+"</td>";
+                  tr += "<td>"+Math.round(d1[i].year).toString()+"</td>";
+                  tr += "</tr>";
+                  t3 += tr;
+            }
+            document.getElementById("t3").innerHTML += t3;
+
+
+
+            var t4 = "";
+            for (var i = 0; i < d2.length; i++){
+                  var tr = "<tr>";
+                  tr += "<th scope='row'>"+(parseInt(i)+1).toString()+"</th>";
+                  tr += "<td>"+d2[i].Title+"</td>";
+                  tr += "<td>"+Math.round(d2[i].year).toString()+"</td>";
+                  tr += "</tr>";
+                  t4 += tr;
+            }
+            document.getElementById("t4").innerHTML += t4;
+          
+          });
+        });
+        
+        
+      });
+
+});
