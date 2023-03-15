@@ -3,7 +3,14 @@
 * Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
+
 */
+
+// import { Utils } from '/assets/utils.js';
+
+// import * as Utils from '/assets/utils.js';
+// import Chart from 'chart.js'
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -625,3 +632,86 @@ $('.dayNight input').change(function () {
     /* body.style.backgroundImage='url(../img/backgroundnoise.png)'; */
   }
 });
+
+
+
+// Bechdel test
+const ctx = document.getElementById('myChart');
+
+const DATA_COUNT = 2;
+const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
+
+// const labels = 'Bechdel';
+
+d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_passed.csv")
+.then((d) => {
+
+  // failed.push(d.length);
+  d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_0.csv")
+        .then((d0) => {
+
+          d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_1.csv")
+          .then((d1) => {
+           
+            d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_2.csv")
+          .then((d2) => {
+             makeChart([d.length,d0.length,d1.length,d2.length])
+          
+          });
+        });
+        
+        
+      });
+
+});
+
+        // makeChart
+function makeChart(ddata){
+
+  var passed = ddata[0];
+  var failed = ddata[1]+ddata[2]+ddata[3];
+
+
+  // console.log(a);
+  const data = {
+    labels: ['Top 10 Grossing movies per decade'],
+    datasets: [
+      {
+        label: 'Passed',
+        data: [passed],
+        borderColor: [
+          'rgb(255, 99, 132)'],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)'],
+      },
+      {
+        label: 'Failed',
+        data:[failed],
+        borderColor: [
+         'rgb(255, 159, 64)'],
+        backgroundColor: [
+          'rgba(255, 159, 64, 0.2)'],
+      }
+    ]
+  };
+  
+  // import Chart from 'chart.js/auto';
+  new Chart(ctx, {
+    type: 'bar',
+    data: data,
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Bechdel test: Pass or Fail'
+        }
+      }
+    },
+  });
+
+}        
+
