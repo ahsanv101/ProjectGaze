@@ -635,10 +635,7 @@ $('.dayNight input').change(function () {
 
 
 
-// Bechdel test
-
-// const labels = 'Bechdel';
-
+// Bechdel test graphs start
 
 
 d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_passed.csv")
@@ -875,3 +872,9 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechde
       });
 
 });
+
+// Bechdel test graphs end
+
+
+// Character dialogue start
+
