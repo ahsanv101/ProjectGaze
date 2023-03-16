@@ -878,3 +878,101 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechde
 
 // Character dialogue start
 
+
+d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Dialogue/dialogue_bechdel.csv")
+.then((d) => {
+
+makeChart3(d);
+
+});
+
+function makeChart3(d)
+{
+
+  // const DATA_COUNT = 7;
+  // const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
+  
+  // const labels = Utils.months({count: 7});
+  labels=[];
+  male=[];
+  nonmale=[];
+  const ctx3 = document.getElementById('myChart3');
+  for (var i = 0; i < d.length; i++){
+    if (d[i].male_percen!="")
+    {
+      labels.push(d[i].Title);
+      male.push(d[i].male_percen);
+      nonmale.push(parseInt(d[i].nonmale_percentage)*-1);
+    }
+    
+  }
+  
+  console.log(male);
+  const data = {
+    labels: labels,
+    datasets: [
+      {
+        label: 'male percentage',
+        data:male,
+        backgroundColor: ['red'],
+        stack: 'Stack 0',
+      },
+      {
+        label: 'non-male percentage',
+        data: nonmale,
+        backgroundColor:['blue'],
+        stack: 'Stack 0',
+      }
+    ]
+  };
+  
+  
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+    indexAxis: 'y',
+      plugins: {
+        title: {
+          display: true,
+          text: 'Division of dialogues in movies'
+        },
+        legend: {
+          // labels: {
+          //     // This more specific font property overrides the global property
+          //     font: {
+          //         size: 6
+          //     }
+          // }
+        }
+      },
+      responsive: true,
+      interaction: {
+        intersect: false,
+      },
+      scales: {
+        
+        x: {
+          stacked: true,
+          suggestedMin: -100,
+          suggestedMax: 100
+        },
+        y: {
+          stacked: true,
+          ticks: {
+            autoSkip: false,
+            font: {
+              size: 6,
+          }
+           
+        }
+        }
+      }
+    }
+  };
+  new Chart(ctx3,config);
+  
+  
+
+}
+

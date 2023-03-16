@@ -2415,3 +2415,10 @@ footer {
   color: var(--color-primary);
   text-decoration: none;
 }
+
+
+/* Dialogue graph */
+
+#myChart3{
+  /* height: 600px !important; */
+}
