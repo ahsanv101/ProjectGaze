@@ -2419,6 +2419,31 @@ footer {
 
 /* Dialogue graph */
 
+#myChart2{
+  width:  500px !important;
+  height: 500px !important;
+  display:block !important;
+  margin:0 auto !important;
+  /* align-items: center !important;
+ justify-content: center !important;
+ display: flex !important; */
+}
+
+
 #myChart3{
-  /* height: 600px !important; */
+  height: 800px !important;
+}
+
+#myChart4{
+  height: 800px !important;
+}
+
+.table_buttons{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.table_buttons button{
+  margin:10px;
 }

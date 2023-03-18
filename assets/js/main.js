@@ -898,29 +898,32 @@ function makeChart3(d)
   nonmale=[];
   const ctx3 = document.getElementById('myChart3');
   for (var i = 0; i < d.length; i++){
+    // if (d[i].male_percen!="" && parseInt(d[i].year)>=1940 && parseInt(d[i].year)<1990)
     if (d[i].male_percen!="")
     {
       labels.push(d[i].Title);
       male.push(d[i].male_percen);
-      nonmale.push(parseInt(d[i].nonmale_percentage)*-1);
+      nonmale.push(parseFloat(d[i].nonmale_percentage)*-1);
     }
+    
     
   }
   
-  console.log(male);
+  // console.log(male);
   const data = {
     labels: labels,
     datasets: [
-      {
-        label: 'male percentage',
-        data:male,
-        backgroundColor: ['red'],
-        stack: 'Stack 0',
-      },
+      
       {
         label: 'non-male percentage',
         data: nonmale,
         backgroundColor:['blue'],
+        stack: 'Stack 0',
+      },
+      {
+        label: 'male percentage',
+        data:male,
+        backgroundColor: ['red'],
         stack: 'Stack 0',
       }
     ]
@@ -931,8 +934,25 @@ function makeChart3(d)
     type: 'bar',
     data: data,
     options: {
+      maintainAspectRatio: false,
     indexAxis: 'y',
       plugins: {
+        tooltip:{
+          enabled: true,
+          displayColors:false,
+          callbacks: {
+          label:(tooltipItem)=>{
+            console.log(tooltipItem);
+              if (parseFloat(tooltipItem.raw)<0){
+                 return tooltipItem.dataset.label+':  '+(parseFloat(tooltipItem.raw)*-1.00).toString()+'%';
+              }
+              else{
+                return tooltipItem.dataset.label+':  '+(parseFloat(tooltipItem.raw)).toString()+'%';
+              }
+             
+          }
+        }
+        },
         title: {
           display: true,
           text: 'Division of dialogues in movies'
@@ -955,14 +975,44 @@ function makeChart3(d)
         x: {
           stacked: true,
           suggestedMin: -100,
-          suggestedMax: 100
+          suggestedMax: 100,
+          ticks: {
+            // autoSkip: false,
+            // display:false,
+            callback: function(label, index, labels) {
+              switch (label) {
+                  case -100:
+                      return '100%';
+                  case 100:
+                      return '100%';
+                  case -80:
+                      return '80%';
+                  case 80:
+                      return '80%';
+                  case -60:
+                      return '60%';
+                  case 60:
+                      return '60%';
+                  case -40:
+                    return '40%';
+                  case 40:
+                      return '40%';
+                  case -20:
+                    return '20%';
+                  case 20:
+                      return '20%';
+                  case 0:
+                    return '0%';
+              }
+          }
+          }
         },
         y: {
           stacked: true,
           ticks: {
             autoSkip: false,
             font: {
-              size: 6,
+              size: 10.5,
           }
            
         }
@@ -976,3 +1026,177 @@ function makeChart3(d)
 
 }
 
+// Character dialogue end
+
+// Gaze score start
+
+d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Dialogue/dialogue_bechdel.csv")
+.then((d) => {
+
+makeChart4(d);
+
+});
+
+function makeChart4(d)
+{
+
+  // const DATA_COUNT = 7;
+  // const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
+  
+  // const labels = Utils.months({count: 7});
+  arrayLabel =[];
+  arrayData=[];
+
+  const ctx4 = document.getElementById('myChart4');
+  for (var i = 0; i < d.length; i++){
+    // if (d[i].male_percen!="" && parseInt(d[i].year)>=1940 && parseInt(d[i].year)<1990)
+    if (d[i].dialogue_score!="" && d[i].bechdel_score!="" )
+    {
+      arrayLabel.push(d[i].Title);
+      arrayData.push(parseFloat(d[i].dialogue_score)+parseFloat(d[i].bechdel_score));
+      // male.push(d[i].male_percen);
+      // nonmale.push(parseFloat(d[i].nonmale_percentage)*-1);
+    }
+    
+    
+  }
+  // console.log(arrayLabel);
+  // console.log(arrayData);
+  arrayOfObj = arrayLabel.map(function(d, i) {
+    return {
+      label: d,
+      data: arrayData[i] || 0
+    };
+  });
+  
+  sortedArrayOfObj = arrayOfObj.sort(function(a, b) {
+    return b.data - a.data;;
+  });
+  
+  newArrayLabel = [];
+  newArrayData = [];
+  sortedArrayOfObj.forEach(function(d){
+    newArrayLabel.push(d.label);
+    newArrayData.push(d.data);
+  });
+
+  // console.log(newArrayLabel);
+  // console.log(newArrayData);
+  
+  // console.log(labels);
+  // console.log(score);
+
+
+
+  const data = {
+    labels: newArrayLabel,
+    datasets: [
+      
+      {
+        label: 'Gaze score',
+        data: newArrayData,
+        backgroundColor:['blue']
+        // stack: 'Stack 0',
+      }
+    ]
+  };
+  
+  
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      maintainAspectRatio: false,
+    indexAxis: 'y'
+    ,
+      plugins: {
+        tooltip:{
+          enabled: true,
+          // displayColors:false,
+        //   callbacks: {
+        //   label:(tooltipItem)=>{
+        //     console.log(tooltipItem);
+        //       if (parseFloat(tooltipItem.raw)<0){
+        //          return tooltipItem.dataset.label+':  '+(parseFloat(tooltipItem.raw)*-1.00).toString()+'%';
+        //       }
+        //       else{
+        //         return tooltipItem.dataset.label+':  '+(parseFloat(tooltipItem.raw)).toString()+'%';
+        //       }
+             
+        //   }
+        // }
+        },
+        // title: {
+        //   display: true,
+        //   text: 'Division of dialogues in movies'
+        // },
+        legend: {
+          // labels: {
+          //     // This more specific font property overrides the global property
+          //     font: {
+          //         size: 6
+          //     }
+          // }
+        }
+      },
+      responsive: true,
+      interaction: {
+        intersect: false,
+      },
+      scales: {
+        
+        // x: {
+        //   stacked: true,
+        //   suggestedMin: -100,
+        //   suggestedMax: 100,
+        //   ticks: {
+        //     // autoSkip: false,
+        //     // display:false,
+        //     callback: function(label, index, labels) {
+        //       switch (label) {
+        //           case -100:
+        //               return '100%';
+        //           case 100:
+        //               return '100%';
+        //           case -80:
+        //               return '80%';
+        //           case 80:
+        //               return '80%';
+        //           case -60:
+        //               return '60%';
+        //           case 60:
+        //               return '60%';
+        //           case -40:
+        //             return '40%';
+        //           case 40:
+        //               return '40%';
+        //           case -20:
+        //             return '20%';
+        //           case 20:
+        //               return '20%';
+        //           case 0:
+        //             return '0%';
+        //       }
+        //   }
+        //   }
+        // },
+        y: {
+          stacked: true,
+          ticks: {
+            autoSkip: false,
+            font: {
+              size: 10.5,
+          }
+           
+        }
+        }
+      }
+    }
+  };
+  new Chart(ctx4,config);
+  
+  
+
+}
+
+// Gaze score end 
