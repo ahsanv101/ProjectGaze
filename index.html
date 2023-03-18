@@ -34,12 +34,18 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
@@ -101,7 +107,7 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-     
+
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -318,7 +324,7 @@
 
           <div class="container" data-aos="fade-up">
 
-            <ul class="nav nav-tabs row gy-4 d-flex justify-content-center">
+            <ul class="nav nav-tabs-1 row gy-4 d-flex justify-content-center">
 
               <li class="nav-item col-6 col-md-4">
                 <a class="nav-link active show paper red-note" data-bs-toggle="tab" data-bs-target="#tab-1">
@@ -328,7 +334,7 @@
                   <div class="tape-section"></div>
                   <!-- </div> -->
                 </a>
-            
+
               </li><!-- End Tab 1 Nav -->
 
               <li class="nav-item col-6 col-md-4">
@@ -395,131 +401,128 @@
 
                     <div class="section-header row">
                       <h2 class="title">Characters</h2>
-                      <h2>BECHDEL TEST</h2>>
-                      <p class="desc"><br>
-                        The first step into this analysis is the infamous bechdel test. The Bechdel Test is a metric used for measuring how women are represented in a given film. There are generally three rules that a film needs to pass:
+
+                      <!-- Bechdel test -->
+                      <h2>BECHDEL TEST</h2>
+                      <p class="desc">
+                        The first step into this analysis is the infamous bechdel test. The Bechdel Test is a metric
+                        used for measuring how women are represented in a given film. There are generally three rules
+                        that a film needs to pass:
                         <br>
                         <br>
                         1. The movie has to have at least two women in it.<br>
                         2. The movie has to have at least two women who talk to each other.<br>
-                        3. The movie has to have at least two women who talk to each other and it is about something other than a man.<br>
+                        3. The movie has to have at least two women who talk to each other and it is about something
+                        other than a man.<br>
                         <br>
                         <br>
-                        If a movie passes all three of the rules then it passes the Bechdel test. 
+                        If a movie passes all three of the rules then it passes the Bechdel test.
                         This goes to show a very bare minimum bar that ideally every movie should have.
-                         We will collect that data from already existing datasets and check the results with the scope of our movies.
-                         <br>
-                         <br>
-                         Here are the results of the movies present in the scope of our project:
-                         <br>
-                         <br>
-                        </p>
-                         <div>
-                          <canvas id="myChart"></canvas>
-                        </div>
-                        <p class="desc">Here are some results of the distribution </p>
+                        We will collect that data from already existing datasets and check the results with the scope of
+                        our movies.
                         <br>
                         <br>
-                         <div>
-                          <canvas id="myChart2"></canvas>
-                        </div>
-                        <p class="desc">Here are the movies</p>
+                        Here are the results of the movies present in the scope of our project:
                         <br>
                         <br>
-                          <div class="table_buttons">
-                          <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-pressed="false" aria-expanded="false" aria-controls="collapseExample">
-                           Passed
-                          </button>
-                          <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-pressed="false" aria-expanded="false" aria-controls="collapseExample2">
-                           Failed rule 1
-                          </button>
-                          <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-pressed="false" aria-expanded="false" aria-controls="collapseExample2">
-                           Failed rule 2
-                          </button>                   
-                          <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-pressed="false" aria-expanded="false" aria-controls="collapseExample2">
-                           Failed rule 3
-                          </button>
+                      </p>
+                      <div>
+                        <canvas id="myChart"></canvas>
+                      </div>
+                      <!-- Distribution Bechdel test rules -->
+                      <p class="desc">Here are some results of the distribution </p>
+                      <br>
+                      <br>
+                      <div>
+                        <canvas id="myChart2"></canvas>
+                      </div>
+                      <!-- Bechdel movie tabs -->
+                      <p class="desc">Here are the movies</p>
+                      <br>
+                      <br>
+
+                      <!-- New buttons -->
+                      <nav>
+                        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                          <button class="nav-link bechdel active" id="passed-tab" data-bs-toggle="tab" data-bs-target="#passed"
+                            type="button" role="tab" aria-controls="passed" aria-selected="true">Passed</button>
+                          <button class="nav-link bechdel" id="failed-1-tab" data-bs-toggle="tab" data-bs-target="#failed-1"
+                            type="button" role="tab" aria-controls="failed-1" aria-selected="false">Failed rule
+                            1</button>
+                          <button class="nav-link bechdel" id="failed-2-tab" data-bs-toggle="tab"
+                            data-bs-target="#failed-2" type="button" role="tab" aria-controls="failed-2"
+                            aria-selected="false">Failed rule 2</button>
+                          <button class="nav-link bechdel" id="failed-3-tab" data-bs-toggle="tab"
+                            data-bs-target="#failed-3" type="button" role="tab" aria-controls="failed-3"
+                            aria-selected="false">Failed rule 3</button>
                         </div>
-                        
-                        <div class="collapse" id="collapseExample">
-                          <div class="card card-body">
-                            <table class="table table-bordered">
-                              
-                                <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">Title</th>
-                                  <th scope="col">Year</th>
-                                 
-                                </tr>
-                             
-                              <tbody id="t1">
-                               
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                        <div class="collapse" id="collapseExample2">
-                          <div class="card card-body">
-                            <table class="table table-bordered">
-                              
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Year</th>
-                               
-                              </tr>
-                           
-                            <tbody id="t2">
-                             
-                            </tbody>
+                      </nav>
+
+                      <div class="tab-content" id="nav-tabContent">
+                        <!-- Passed -->
+                        <div class="tab-pane fade show active" id="passed" role="tabpanel" aria-labelledby="passed-tab"> 
+                          <table class="table table-bordered">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Title</th>
+                              <th scope="col">Year</th>
+                            </tr>
+                            <tbody id="t1"></tbody>
                           </table>
-                          </div>
                         </div>
-                        <div class="collapse" id="collapseExample3">
-                          <div class="card card-body">
-                            <table class="table table-bordered">
-                              
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Year</th>
-                               
-                              </tr>
-                           
-                            <tbody id="t3">
-                             
-                            </tbody>
+
+                        <!-- Failed-1 -->
+                        <div class="tab-pane fade" id="failed-1" role="tabpanel" aria-labelledby="failed-1-tab">
+                          <table class="table table-bordered">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Title</th>
+                              <th scope="col">Year</th>
+                            </tr>
+                            <tbody id="t2"></tbody>
                           </table>
-                          </div>
                         </div>
-                        <div class="collapse" id="collapseExample4">
-                          <div class="card card-body">
-                            <table class="table table-bordered">
-                              
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Year</th>
-                               
-                              </tr>
-                           
-                            <tbody id="t4">
-                             
-                            </tbody>
+
+                        <div class="tab-pane fade" id="failed-2" role="tabpanel" aria-labelledby="failed-2-tab">
+                          <table class="table table-bordered">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Title</th>
+                              <th scope="col">Year</th>
+                            </tr>
+                            <tbody id="t3"></tbody>
                           </table>
-                          </div>
                         </div>
-                      
-                        <br>
-                        <br>
-                        <h2>CHARACTER DIALOGUE</h2>
-                        <br>
-                        <p class="desc">Here we talk about the distribution of dialogue among male and non male characters.</p>
+
+                        <div class="tab-pane fade" id="failed-3" role="tabpanel" aria-labelledby="failed-3-tab">
+                          <table class="table table-bordered">
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Title</th>
+                              <th scope="col">Year</th>
+                            </tr>
+                            <tbody id="t4"></tbody>
+                          </table>
+                        </div>
+
+                      </div>
+
+
+                      <br>
+                      <br>
+
+                      <!-- Character dialogue -->
+                      <h2>CHARACTER DIALOGUE</h2>
+                      <br>
+                      <p class="desc">Here we talk about the distribution of dialogue among male and non male
+                        characters.</p>
                       <br>
 
                       <div>
                         <canvas id="myChart3"></canvas>
                       </div>
+
+                      <!-- Gaze score -->
                       <h2>GAZE SCORE</h2>
                       <p>Here we will assign a score to each of the movies based on certain criterias:</p>
                       <br>
@@ -530,7 +533,8 @@
                       <h2>Female</h2>
                       <p class="line"> What are you going to do with it</p>
                       <h2>Male</h2>
-                      <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine or
+                      <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine
+                        or
                         a tractor.</p>
                       <h2>Female</h2>
                       <p class="line">&nbsp; &nbsp;(quiet)<br>Couldn't we just let it go? It's not hurting anyone</p>
@@ -552,7 +556,8 @@
                       <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt
                         ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
                         aliquip ex
                         ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu
@@ -564,7 +569,8 @@
                       <h2>Female</h2>
                       <p class="line"> What are you going to do with it</p>
                       <h2>Male</h2>
-                      <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine or
+                      <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine
+                        or
                         a tractor.</p>
                       <h2>Female</h2>
                       <p class="line">&nbsp; &nbsp;(quiet)<br>Couldn't we just let it go? It's not hurting anyone</p>
@@ -585,18 +591,22 @@
             <h2 class="title">Further Research</h2>
             <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
               ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit
               anim id est laborum.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
               ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex
               ea commodo consequat. <span class="underlined-yellow underlined-yellow--offset">Duis aute irure
                 dolor</span> in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit
               anim id est laborum.</p>
           </div>
 
@@ -612,16 +622,19 @@
                 <div class="content d-flex flex-column justify-content-center h-100">
                   <h3>Female Gaze definition</h3>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
                     et
                     dolore
                     magna aliqua.
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
                     <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.
                     </li>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis
                       aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat
                       nulla
                       pariatur.</li>
@@ -638,17 +651,21 @@
           <div class="section-header row" data-aos="fade-up" style="padding:0;">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
               ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit
               anim id est laborum.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
               ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit
               anim id est laborum.</p>
           </div>
 
@@ -823,7 +840,8 @@
             <ul>
               <li><i class="bi bi-chevron-bar-right"></i>This website is built on the HTML5 template <a
                   href="https://bootstrapmade.com/herobiz-bootstrap-business-template/">"HeroBiz"</a> by <a
-                  href="https://bootstrapmade.com/">BootstrapMade</a> and released under <a href="https://opensource.org/license/mit/">MIT</a></li>
+                  href="https://bootstrapmade.com/">BootstrapMade</a> and released under <a
+                  href="https://opensource.org/license/mit/">MIT</a></li>
             </ul>
           </div>
 
@@ -847,7 +865,8 @@
             <h4>Softwares</h4>
             <ul>
               <li>
-                <i class="bi bi-chevron-bar-right"></i>Chart.js: <a href="https://opensource.org/license/mit/">MIT license</a>
+                <i class="bi bi-chevron-bar-right"></i>Chart.js: <a href="https://opensource.org/license/mit/">MIT
+                  license</a>
               </li>
               <li><i class="bi bi-chevron-bar-right"></i>Leaflet: Copyright (c) 2010-2011, CloudMade <a href="">(BSD
                   2-Clause "Simplified" License)</a></li>
@@ -930,7 +949,7 @@
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 
-   
+
   <!-- <script type="module" src="/assets/utils.js"></script> -->
 
 

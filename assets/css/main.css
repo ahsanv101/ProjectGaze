@@ -1223,7 +1223,7 @@ section .image img {
   margin-left: 40px;
 }
 
-.about .nav-link {
+/* .about .nav-link {
   background: none;
   font-size: 18px;
   font-weight: 400;
@@ -1238,7 +1238,7 @@ section .image img {
   color: var(--color-primary);
   background: none;
   border-bottom: 3px solid var(--color-primary);
-}
+} */
 
 @media (max-width: 575px) {
   .about .nav-link {
@@ -1590,11 +1590,11 @@ section .image img {
   transform: rotate(1.4deg);
 }
 
-#viz .nav-tabs {
+#viz .nav-tabs-1 {
   border: 0;
 }
 
-#viz .nav-tabs .nav-link {
+#viz .nav-tabs-1 .nav-link {
   margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
   background: var(--color-primary);
   border: var(--bs-nav-tabs-border-width) solid transparent;
@@ -1773,6 +1773,20 @@ section .image img {
   font-size: 1.3em;
   margin: 0;
   color: black;
+}
+
+/* Bechdel tabs */
+.bechdel {
+  font-weight: 600;
+  color: var(--color-default);
+}
+
+.bechdel:hover {
+  color: var(--color-primary);
+}
+
+.bechdel.active {
+  color: var(--color-primary) !important;
 }
 
 /* ------- Further Research subsection - Female Gaze */
@@ -2419,31 +2433,31 @@ footer {
 
 /* Dialogue graph */
 
-#myChart2{
-  width:  500px !important;
+#myChart2 {
+  width: 500px !important;
   height: 500px !important;
-  display:block !important;
-  margin:0 auto !important;
+  display: block !important;
+  margin: 0 auto !important;
   /* align-items: center !important;
  justify-content: center !important;
  display: flex !important; */
 }
 
 
-#myChart3{
+#myChart3 {
   height: 800px !important;
 }
 
-#myChart4{
+#myChart4 {
   height: 800px !important;
 }
 
-.table_buttons{
+.table_buttons {
   justify-content: center;
   display: flex;
   align-items: center;
 }
 
-.table_buttons button{
-  margin:10px;
+.table_buttons button {
+  margin: 10px;
 }
