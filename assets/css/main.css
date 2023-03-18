@@ -1787,6 +1787,11 @@ section .image img {
 
 .bechdel.active {
   color: var(--color-primary) !important;
+  position: relative;
+}
+
+.table>thead {
+  border-bottom: 1.2px solid var(--color-default);
 }
 
 /* ------- Further Research subsection - Female Gaze */
