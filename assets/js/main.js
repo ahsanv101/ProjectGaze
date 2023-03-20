@@ -662,7 +662,16 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechde
 
         // makeChart
 function makeChart(ddata){
-  const ctx = document.getElementById('myChart');
+  
+var style = getComputedStyle(document.body);
+var primCol = style.getPropertyValue('--color-primary-light');
+// var primColrgba = style.getPropertyValue(rgba('--color-primary-rgb'),0.5);
+// console.log(primCol+', 0.80');
+var chartCol = style.getPropertyValue('--color-palette-teal-light');
+
+
+
+const ctx = document.getElementById('myChart');
 
 const DATA_COUNT = 2;
 const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
@@ -680,18 +689,18 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
       {
         label: 'Passed',
         data: [passed],
-        borderColor: [
-          'rgb(255, 99, 132)'],
+        // borderColor: [
+        //   'rgb(255, 99, 132)'],
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)'],
+          chartCol ],
       },
       {
         label: 'Failed',
         data:[failed],
-        borderColor: [
-         'rgb(255, 159, 64)'],
+        // borderColor: [
+        //  'rgb(255, 159, 64)'],
         backgroundColor: [
-          'rgba(255, 159, 64, 0.2)'],
+          primCol ],
       }
     ]
   };
