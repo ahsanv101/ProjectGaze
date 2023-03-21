@@ -668,6 +668,9 @@ var red = style.getPropertyValue('--color-primary-light-graph');
 // var primColrgba = style.getPropertyValue(rgba('--color-primary-rgb'),0.5);
 // console.log(primCol+', 0.80');
 var teal = style.getPropertyValue('--color-palette-teal-light-graph');
+var green = style.getPropertyValue('--color-palette-green-light-graph');
+var fon = style.getPropertyValue('--font-script');
+var foncol = style.getPropertyValue('--color-default');
 
 
 
@@ -692,7 +695,7 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
         // borderColor: [
         //   'rgb(255, 99, 132)'],
         backgroundColor: [
-          teal ],
+          green ],
       },
       {
         label: 'Failed',
@@ -714,6 +717,13 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
       plugins: {
         legend: {
           position: 'top',
+          labels: {
+            // This more specific font property overrides the global property
+            font: {
+                style: 'Courier Prime',
+                color: foncol
+            }
+          }
         },
         title: {
           display: true,
@@ -733,6 +743,10 @@ function makeChart2(ddata){
   // var primColrgba = style.getPropertyValue(rgba('--color-primary-rgb'),0.5);
   // console.log(primCol+', 0.80');
   var teal = style.getPropertyValue('--color-palette-teal-light-graph');
+  var yellow = style.getPropertyValue('--color-palette-yellow-light-graph');
+  var green = style.getPropertyValue('--color-palette-green-light-graph');
+  var fon = style.getPropertyValue('--font-script');
+  var foncol = style.getPropertyValue('--color-default');
   
 
   const ctx2 = document.getElementById('myChart2');
@@ -765,10 +779,10 @@ function makeChart2(ddata){
       label: 'Bechdel test',
       data: [passed,notwo, notwotalk, notwotalkmen],
       backgroundColor: [
-        teal,
-        'rgb(255, 99, 132)',
-        'rgba(240, 120, 122, 0.439)',
-       red
+        green,
+        red,
+        yellow,
+        teal
       ],
       hoverOffset: 4
     }]
@@ -782,6 +796,13 @@ function makeChart2(ddata){
       responsive: true,
       plugins: {
         legend: {
+          labels: {
+            // This more specific font property overrides the global property
+            font: {
+                color: foncol,
+                style:fon
+            }
+        },
           position: 'top',
         },
         title: {
@@ -904,6 +925,15 @@ makeChart3(d);
 
 function makeChart3(d)
 {
+  var style = getComputedStyle(document.body);
+  var red = style.getPropertyValue('--color-primary-light-graph');
+  // var primColrgba = style.getPropertyValue(rgba('--color-primary-rgb'),0.5);
+  // console.log(primCol+', 0.80');
+  var teal = style.getPropertyValue('--color-palette-teal-light-graph');
+  var green = style.getPropertyValue('--color-palette-green-light-graph');
+  var fon = style.getPropertyValue('--font-script');
+  var foncol = style.getPropertyValue('--color-default');
+
 
   // const DATA_COUNT = 7;
   // const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
@@ -933,13 +963,13 @@ function makeChart3(d)
       {
         label: 'non-male percentage',
         data: nonmale,
-        backgroundColor:['blue'],
+        backgroundColor:[green],
         stack: 'Stack 0',
       },
       {
         label: 'male percentage',
         data:male,
-        backgroundColor: ['red'],
+        backgroundColor: [red],
         stack: 'Stack 0',
       }
     ]
@@ -974,12 +1004,13 @@ function makeChart3(d)
           text: 'Division of dialogues in movies'
         },
         legend: {
-          // labels: {
-          //     // This more specific font property overrides the global property
-          //     font: {
-          //         size: 6
-          //     }
-          // }
+          labels: {
+              // This more specific font property overrides the global property
+              font: {
+                 style:fon,
+                 color:foncol
+              }
+          }
         }
       },
       responsive: true,
@@ -989,10 +1020,23 @@ function makeChart3(d)
       scales: {
         
         x: {
+          grid:{
+            display:false
+          }
+          ,
           stacked: true,
           suggestedMin: -100,
           suggestedMax: 100,
           ticks: {
+            
+              // autoSkip: false,
+              font: {
+                
+                // size: 10.5,
+                color: foncol,
+                style: fon
+              },
+            
             // autoSkip: false,
             // display:false,
             callback: function(label, index, labels) {
@@ -1024,11 +1068,16 @@ function makeChart3(d)
           }
         },
         y: {
+          grid:{
+            display:false
+          },
           stacked: true,
           ticks: {
             autoSkip: false,
             font: {
               size: 10.5,
+              color: foncol,
+              style: fon
           }
            
         }
@@ -1055,7 +1104,14 @@ makeChart4(d);
 
 function makeChart4(d)
 {
-
+  var style = getComputedStyle(document.body);
+  var red = style.getPropertyValue('--color-primary-light-graph');
+  // var primColrgba = style.getPropertyValue(rgba('--color-primary-rgb'),0.5);
+  // console.log(primCol+', 0.80');
+  var purple = style.getPropertyValue('--color-palette-yellow-light-graph');
+  var yellow = style.getPropertyValue('--color-purple-graph');
+  var fon = style.getPropertyValue('--font-script');
+  var foncol = style.getPropertyValue('--color-default');
   // const DATA_COUNT = 7;
   // const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
   
@@ -1111,7 +1167,7 @@ function makeChart4(d)
       {
         label: 'Gaze score',
         data: newArrayData,
-        backgroundColor:['blue']
+        backgroundColor:[purple]
         // stack: 'Stack 0',
       }
     ]
@@ -1147,12 +1203,14 @@ function makeChart4(d)
         //   text: 'Division of dialogues in movies'
         // },
         legend: {
-          // labels: {
-          //     // This more specific font property overrides the global property
-          //     font: {
-          //         size: 6
-          //     }
-          // }
+          
+          labels: {
+              // This more specific font property overrides the global property
+              font: {
+                color: foncol,
+                style: fon
+              }
+          }
         }
       },
       responsive: true,
@@ -1161,47 +1219,27 @@ function makeChart4(d)
       },
       scales: {
         
-        // x: {
-        //   stacked: true,
-        //   suggestedMin: -100,
-        //   suggestedMax: 100,
-        //   ticks: {
-        //     // autoSkip: false,
-        //     // display:false,
-        //     callback: function(label, index, labels) {
-        //       switch (label) {
-        //           case -100:
-        //               return '100%';
-        //           case 100:
-        //               return '100%';
-        //           case -80:
-        //               return '80%';
-        //           case 80:
-        //               return '80%';
-        //           case -60:
-        //               return '60%';
-        //           case 60:
-        //               return '60%';
-        //           case -40:
-        //             return '40%';
-        //           case 40:
-        //               return '40%';
-        //           case -20:
-        //             return '20%';
-        //           case 20:
-        //               return '20%';
-        //           case 0:
-        //             return '0%';
-        //       }
-        //   }
-        //   }
-        // },
+        x: {
+         
+          ticks: {
+            // autoSkip: false,
+            font: {
+              
+              // size: 10.5,
+              color: foncol,
+              style: fon
+            }
+          }
+        },
         y: {
           stacked: true,
           ticks: {
             autoSkip: false,
             font: {
+              
               size: 10.5,
+              color: foncol,
+              style: fon
           }
            
         }
