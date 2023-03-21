@@ -664,10 +664,10 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechde
 function makeChart(ddata){
   
 var style = getComputedStyle(document.body);
-var primCol = style.getPropertyValue('--color-primary-light');
+var red = style.getPropertyValue('--color-primary-light-graph');
 // var primColrgba = style.getPropertyValue(rgba('--color-primary-rgb'),0.5);
 // console.log(primCol+', 0.80');
-var chartCol = style.getPropertyValue('--color-palette-teal-light');
+var teal = style.getPropertyValue('--color-palette-teal-light-graph');
 
 
 
@@ -692,7 +692,7 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
         // borderColor: [
         //   'rgb(255, 99, 132)'],
         backgroundColor: [
-          chartCol ],
+          teal ],
       },
       {
         label: 'Failed',
@@ -700,7 +700,7 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
         // borderColor: [
         //  'rgb(255, 159, 64)'],
         backgroundColor: [
-          primCol ],
+          red ],
       }
     ]
   };
@@ -728,6 +728,13 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
 
 
 function makeChart2(ddata){
+  var style = getComputedStyle(document.body);
+  var red = style.getPropertyValue('--color-primary-light-graph');
+  // var primColrgba = style.getPropertyValue(rgba('--color-primary-rgb'),0.5);
+  // console.log(primCol+', 0.80');
+  var teal = style.getPropertyValue('--color-palette-teal-light-graph');
+  
+
   const ctx2 = document.getElementById('myChart2');
   var total = ddata[0]+ddata[1]+ddata[2]+ddata[3];
   // console.log(total);
@@ -758,10 +765,10 @@ function makeChart2(ddata){
       label: 'Bechdel test',
       data: [passed,notwo, notwotalk, notwotalkmen],
       backgroundColor: [
-        'rgb(255, 132, 132)',
+        teal,
         'rgb(255, 99, 132)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)'
+        'rgba(240, 120, 122, 0.439)',
+       red
       ],
       hoverOffset: 4
     }]

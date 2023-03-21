@@ -31,7 +31,7 @@
   /* The *-rgb color names are simply the RGB converted value of the corresponding color for use in the rgba() function */
 
   /* Default text color */
-  --color-default: #594c46/* #1a1f24 */;
+  --color-default: #594c46/* brown text color */;
   --color-default-dark: #3b332e;
   --color-default-light: #998376;
 
@@ -51,7 +51,9 @@
   /* Primay colors */
   --color-primary: #b15859 /* #0ea2bd */; /* I LIKE THIS ONE AS MAIN DARK COLOR */
   --color-primary-light: #d2686a /* #1ec3e0 */;
-  --color-primary-light-graph: #d2686a70 /* #1ec3e0 */;
+  --color-primary-light-graph: #d2686a70;
+  --color-primary-light-graph: rgba(240, 120, 122, 0.439) /* #1ec3e0 */;
+
 
   --color-primary-rgb: 177, 88, 89; /* #0ea2bd */; /* I LIKE THIS ONE AS MAIN DARK COLOR */
   --color-primary-light-rgb: 210, 104, 106; /* #1ec3e0 */;
@@ -69,7 +71,7 @@
 
   --color-palette-teal: #449296;
   --color-palette-teal-light: #57b5ba;
-  --color-palette-teal-light-graph: #57b5ba70;
+  --color-palette-teal-light-graph:#57b5ba70 ;
   --color-palette-teal-rgb: 68, 146, 150;
   --color-palette-teal-light-rgb: 87, 181, 186;
 
