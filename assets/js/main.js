@@ -661,7 +661,8 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechde
 });
 
         // makeChart
-function makeChart(ddata){
+function makeChart(ddata)
+{
   
 var style = getComputedStyle(document.body);
 var red = style.getPropertyValue('--color-primary-light-graph');
@@ -708,6 +709,8 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
     ]
   };
   
+  Chart.defaults.color = foncol;
+  Chart.defaults.font.family = fon;
   // import Chart from 'chart.js/auto';
   new Chart(ctx, {
     type: 'bar',
@@ -718,11 +721,15 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
         legend: {
           position: 'top',
           labels: {
+            // fontColor: '#ffff00'  
             // This more specific font property overrides the global property
-            font: {
-                style: 'Courier Prime',
-                color: foncol
-            }
+            // font: {
+          
+            //   // style: 'Courier Prime'
+            //     // style: 'Courier Prime',
+            //     // fontColor : '#FF0000'  
+            //     // color: foncol
+            // }
           }
         },
         title: {
@@ -745,8 +752,8 @@ function makeChart2(ddata){
   var teal = style.getPropertyValue('--color-palette-teal-light-graph');
   var yellow = style.getPropertyValue('--color-palette-yellow-light-graph');
   var green = style.getPropertyValue('--color-palette-green-light-graph');
-  var fon = style.getPropertyValue('--font-script');
-  var foncol = style.getPropertyValue('--color-default');
+  // var fon = style.getPropertyValue('--font-script');
+  // var foncol = style.getPropertyValue('--color-default');
   
 
   const ctx2 = document.getElementById('myChart2');
@@ -798,10 +805,10 @@ function makeChart2(ddata){
         legend: {
           labels: {
             // This more specific font property overrides the global property
-            font: {
-                color: foncol,
-                style:fon
-            }
+            // font: {
+            //     color: foncol,
+            //     style:fon
+            // }
         },
           position: 'top',
         },
@@ -931,8 +938,8 @@ function makeChart3(d)
   // console.log(primCol+', 0.80');
   var teal = style.getPropertyValue('--color-palette-teal-light-graph');
   var green = style.getPropertyValue('--color-palette-green-light-graph');
-  var fon = style.getPropertyValue('--font-script');
-  var foncol = style.getPropertyValue('--color-default');
+  // var fon = style.getPropertyValue('--font-script');
+  // var foncol = style.getPropertyValue('--color-default');
 
 
   // const DATA_COUNT = 7;
@@ -1006,10 +1013,10 @@ function makeChart3(d)
         legend: {
           labels: {
               // This more specific font property overrides the global property
-              font: {
-                 style:fon,
-                 color:foncol
-              }
+              // font: {
+              //    style:fon,
+              //    color:foncol
+              // }
           }
         }
       },
@@ -1030,12 +1037,12 @@ function makeChart3(d)
           ticks: {
             
               // autoSkip: false,
-              font: {
+              // font: {
                 
-                // size: 10.5,
-                color: foncol,
-                style: fon
-              },
+              //   // size: 10.5,
+              //   color: foncol,
+              //   style: fon
+              // },
             
             // autoSkip: false,
             // display:false,
@@ -1075,9 +1082,9 @@ function makeChart3(d)
           ticks: {
             autoSkip: false,
             font: {
-              size: 10.5,
-              color: foncol,
-              style: fon
+              size: 11,
+              // color: foncol,
+              // style: fon
           }
            
         }
@@ -1108,10 +1115,10 @@ function makeChart4(d)
   var red = style.getPropertyValue('--color-primary-light-graph');
   // var primColrgba = style.getPropertyValue(rgba('--color-primary-rgb'),0.5);
   // console.log(primCol+', 0.80');
-  var purple = style.getPropertyValue('--color-palette-yellow-light-graph');
-  var yellow = style.getPropertyValue('--color-purple-graph');
-  var fon = style.getPropertyValue('--font-script');
-  var foncol = style.getPropertyValue('--color-default');
+  var yellow = style.getPropertyValue('--color-palette-yellow-light-graph');
+  var purple = style.getPropertyValue('--color-purple-graph');
+  // var fon = style.getPropertyValue('--font-script');
+  // var foncol = style.getPropertyValue('--color-default');
   // const DATA_COUNT = 7;
   // const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
   
@@ -1206,10 +1213,10 @@ function makeChart4(d)
           
           labels: {
               // This more specific font property overrides the global property
-              font: {
-                color: foncol,
-                style: fon
-              }
+              // font: {
+              //   color: foncol,
+              //   style: fon
+              // }
           }
         }
       },
@@ -1226,8 +1233,8 @@ function makeChart4(d)
             font: {
               
               // size: 10.5,
-              color: foncol,
-              style: fon
+              // color: foncol,
+              // style: fon
             }
           }
         },
@@ -1237,9 +1244,9 @@ function makeChart4(d)
             autoSkip: false,
             font: {
               
-              size: 10.5,
-              color: foncol,
-              style: fon
+              size: 11.5,
+              // color: foncol,
+              // style: fon
           }
            
         }
