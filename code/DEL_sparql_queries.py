@@ -13,11 +13,15 @@ import sparql_dataframe
 wikidata_endpoint = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql?query={SPARQL}'
 
 # ---- Audience query
+# What audience is the most sexist? (gender from SPARQL and sexism score from webscraping)
+    # This query could be implemented as an audience visualization directly, as the Genre value is already present in the finalmovies.csv file
+    # So idk if we should keep it here or just in the audience section
+
+
 
 
 # ---- Characters queries
-
-# Bechdel test 1: how many 'failed' movies have male directors
+# Bechdel test: how many of the [selected] films have *male* directors?
 
 failed_bechdel_0 = [0]
 failed_bechdel_1 = [1]
@@ -48,14 +52,6 @@ createList('data/bechdel/bechdel_failed_0.csv')
 createList('data/bechdel/bechdel_failed_1.csv')
 createList('data/bechdel/bechdel_failed_2.csv')
 createList('data/bechdel/bechdel_passed.csv')
-
-"""
-print(failed_bechdel_0)
-print(failed_bechdel_1)
-print(failed_bechdel_2)
-print(passed_bechdel)
-"""
-
 
 def createIMDBid(code):
     if len(str(code)) == 5:
@@ -144,8 +140,6 @@ print("This is the failed bechdel 2",z) """
     print(len(failedBech_df.index))
     # result_failBach0.to_csv('data/failedBach0.csv') """
 
-# Bechdel test 2: how many 'passed' movies have male directors
-
 
 ''' QUERY 1 taken directly from Wikidata
 
@@ -162,9 +156,13 @@ WHERE {
 '''
 
 
-# Characters descriptions
+# Characters dialogues: what is the proportion between male and female writers in the [selected] films?
+
 
 # ---- Male gaze queries
+# MG1: To what genre belong the top 10 films in the gaze score ranking?
+# MG2: Is there any correlation between rank in the gaze score ranking, box-office, and production costs?
+# MG3: Is there any decade in which the films rank higher in the gaze score ranking?
 
 
 """ 
