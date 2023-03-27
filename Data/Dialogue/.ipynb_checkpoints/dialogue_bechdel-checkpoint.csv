@@ -1,0 +1,82 @@
+number,Unnamed: 0_x,imdbid,Title,Decade,Genre,Director,year,bechdel_rating,dubious,Unnamed: 0.1,Unnamed: 0_y,script_name,movie_name,male_percen,nonmale_percentage,dialogue_score,bechdel_score
+0,0,38969,Song of the South,40s,Animation,"Wilfred Jackson, Harve Foster",1946,2,0,46,46,song-of-the-south.php,Song of the South,84.1,15.9,25,13.33
+1,1,41838,Samson and Delilah,40s,Historical,Cecil B.DeMille,1949,,,,,,,,,,
+2,2,31381,Gone with the Wind,40s,Drama,Victor Fleming,1939,3,,28,28,gone with the wind.php,Gone with the Wind,40.9,59.1,0,0
+3,3,37536,The Bells of St. Mary,40s,Musical,Leo McCarey,1945,,,,,,,,,,
+4,4,34167,Sergeant York,40s,War,Leo McCarey,1941,,,,,,,,,,
+5,5,36872,Going My Way,40s,Musical,Howard Hawks,1944,,,3,3,Going My Way.pdf,Going My Way,83.29,16.71,25,
+6,6,39391,Forever Amber,40s,Drama,"John M. Stahl, Otto Preminger",1947,,,23,23,foreveramber.pdf,Forever Amber,57.39,42.61,9.2375,
+7,7,35575,Yankee Doodle Dandy,40s,Musical,Michael Curtiz,1942,,,,,,,,,,
+8,8,34583,Casablanca,40s,Drama,Michael Curtiz,1942,1,0,20,20,casablanca.pdf,Casablanca,67.4,32.6,21.75,26.66
+9,9,40806,The Snake Pit,40s,Drama,Anatole Litvak,1948,3,0,,,,,,,,0
+10,10,49833,The Ten Commandments,50s,Historical,Cecile B.DeMille,1956,2,0,,,,,,,,13.33
+11,11,45793,From Here To Eternity,50s,War,Fred Zinneman,1953,3,0,25,25,from_here_to_eternity_(1953).pdf,From Here To Eternity,72.92,27.08,25,0
+12,12,44672,The Greatest Show on Earth,50s,Musical,Cecile B.DeMille,1952,2,0,,,,,,,,13.33
+13,13,50212,The Bridge on the River Kwai,50s,War,David Lean,1957,1,0,,,,,,,,26.66
+14,14,47673,White Christmas,50s,Musical,Michael Kurtiz,1954,3,0,63,63,white-christmas.pdf,White Christmas,73.04,26.96,25,0
+15,15,43949,Quo Vadis?,50s,Historical,"Mervyn LeRoy, Anthony Mann",1951,3,1,42,42,quo vadis.pdf,Quo Vadis?,83.08,16.92,25,0
+16,16,51459,Cat on a Hot Tin Roof,50s,Drama,Richard Brooks,1958,3,0,,,,,,,,0
+17,17,53291,Some like it hot,50s,Comedy,Billy Wilder,1959,3,0,6,6,SomeLikeItHot.pdf,Some like it hot,53.54,46.46,4.425,0
+18,18,48593,The Sea Chase,50s,War,John Farrow,1955,,,,,,,,,,
+19,19,42192,All About Eve,50s,Drama,Joseph L. Mankiewicz,1950,3,,,,,,,,,0
+20,20,59742,The Sound of Music,60s,Musical,Robert Wise,1965,3,0,10,10,The_Sound_Of_Music_2.pdf,The Sound of Music,25.29,74.71,0,0
+21,21,61722,The Graduate,60s,Romance,Michael Nichols,1967,2,0,60,60,the-graduate.php,The Graduate,69.42,30.58,24.275,13.33
+22,22,64115,Butch Cassidy and the Sundance Kid,60s,Action,George Roy Hill,1969,1,0,19,19,butch-cassidy-and-the-sundance-kid-1969.pdf,Butch Cassidy and the Sundance Kid,86.05,13.95,25,26.66
+23,23,58331,Mary Poppins,60s,Fantasy,Robert Stevenson,1964,3,0,36,36,mary-poppins.php,Mary Poppins,53.54,46.46,4.425,0
+24,24,56937,Cleopatra,60s,Historical,Joseph L. Mankiewicz,1963,3,0,,,,,,,,0
+25,25,62622,2001: A Space Odyssey,60s,SCI-FI,Stanley Kubrick,1968,0,0,0,0,2001-space-odyssey.pdf,2001: A Space Odyssey,96.72,3.28,25,40
+26,26,55614,West Side Story,60s,Musical,"Jerome Robbins, Robert Wise",1961,3,0,11,11,West-Side-Story-Read-The-Screenplay.pdf,West Side Story,67.31,32.69,21.6375,0
+27,27,54215,Psycho,60s,Thriller,Alfred Hitchcock,1960,3,0,41,41,psycho.pdf,Psycho,66.59,33.41,20.7375,0
+28,28,56172,Lawrence of Arabia,60s,Action,David Lean,1962,0,0,35,35,lawrence-of-arabia-1962.pdf,Lawrence of Arabia,99.36,0.64,25,40
+29,29,60164,The Bible,60s,Historical,John Huston,1966,,,8,8,The Bible.pdf,The Bible,62.03,37.97,15.0375,
+30,30,73195,JAWS,70s,Horror,Steven Spielberg,1975,3,0,33,33,jaws-1975.pdf,JAWS,90.84,9.16,25,0
+31,31,76759,Star Wars: Episode IV - A New Hope,70s,SCI-FI,George Lucas,1977,1,0,7,7,Star Wars_ episode IV.php,Star Wars: Episode IV - A New Hope,88.03,11.97,25,26.66
+32,32,70047,The Exorcist,70s,Horror,William Friedkin,1973,3,0,9,9,The-Exorcist.php,The Exorcist,83.91,16.09,25,0
+33,33,77631,Grease,70s,Musical,Randal Kleiser,1978,3,0,4,4,Grease-Cast-Script-Final.pdf,Grease,78.02,21.98,25,0
+34,34,68646,The Godfather,70s,Crime,Francis Ford Coppola,1972,2,0,59,59,the-godfather.php,The Godfather,86.44,13.56,25,13.33
+35,35,71230,Blazing Saddles,70s,Western,Mel Brooks,1974,1,0,2,2,Blazing-Saddles (1).pdf,Blazing Saddles,87.21,12.79,25,26.66
+36,36,75148,Rocky,70s,Action,John G. Avildsen,1976,1,0,43,43,rocky.php,Rocky,98.54,1.46,25,26.66
+37,37,66011,Love Story,70s,Romance,Arthur Hiller,1970,1,0,,,,,,,,26.66
+38,38,78346,Superman,70s,Action,Mario Puzo,1978,1,0,55,55,superman.php,Superman,69.52,30.48,24.4,26.66
+39,39,67093,Fiddler on the Roof,70s,Musical,Norman Jewison,1971,,,22,22,fiddler on the roof.pdf,Fiddler on the Roof,46.9,53.1,0,
+40,40,80684,Star Wars: Episode V - The Empire Strikes Back,80s,SCI-FI,George Lucas,1980,0,0,49,49,star wars_the-empire-strikes-back.php,Star Wars: Episode V - The Empire Strikes Back,86.21,13.79,25,40
+41,41,83866,E.T. the Extra-Terrestrial,80s,SCI-FI,Steven Spielberg,1982,3,1,,,,,,,,0
+42,42,96895,Batman,80s,Action,Tim Burton,1989,1,0,16,16,batman1989.php,Batman,74.99,25.01,25,26.66
+43,43,86190,Star Wars: Episode VI - Return of the Jedi,80s,SCI-FI,George Lucas,1983,1,0,51,51,star-wars-return-of-jedi.php,Star Wars: Episode VI - Return of the Jedi,86.94,13.06,25,26.66
+44,44,87332,Ghostbusters,80s,Fantasy,Ivan Reitman,1984,2,,27,27,ghostbuster.php,Ghostbusters,86.68,13.32,25,13.33
+45,45,1289401,Ghostbusters,80s,Fantasy,Ivan Reitman,2016,3,0,27,27,ghostbuster.php,Ghostbusters,86.68,13.32,25,0
+46,46,88763,Back to the Future,80s,SCI-FI,Robert Zemeckis,1985,2,,14,14,backtothefuture.pdf,Back to the Future,83.52,16.48,25,13.33
+47,47,92099,Top Gun,80s,Action,Tony Scott,1986,2,0,62,62,top-gun-1986.pdf,Top Gun,94.1,5.9,25,13.33
+48,48,92644,Beverly Hills Cop II,80s,Action,Tony Scott,1987,1,0,18,18,beverly-hills-copII.pdf,Beverly Hills Cop II,90.93,9.07,25,26.66
+49,49,96438,Who Framed Roger Rabbit,80s,Animation,Robert Zemeckis,1988,1,,44,44,rogerrabbit.php,Who Framed Roger Rabbit,91.12,8.88,25,26.66
+50,50,81573,Superman II,80s,Action,Richard Lester,1980,3,1,56,56,supermanII.pdf,Superman II,75.89,24.11,25,0
+51,51,120338,Titanic,90s,Drama,James Cameron,1997,3,,61,61,titanic-numbered.pdf,Titanic,63.33,36.67,16.6625,0
+52,52,120915,Star Wars: Episode I - The Phantom Menace,90s,SCI-FI,George Lucas,1999,3,0,54,54,starwars_thephantomenace.php,Star Wars: Episode I - The Phantom Menace,79.7,20.3,25,0
+53,53,107290,Jurassic Park,90s,SCI-FI,Steven Spielberg,1993,3,,34,34,jurassicpark.php,Jurassic Park,85.14,14.86,25,0
+54,54,116629,Independence Day,90s,SCI-FI,Roland Emmerich,1996,3,0,32,32,independenceday.php,Independence Day,85.05,14.95,25,0
+55,55,109830,Forrest Gump,90s,Drama,Robert Zemeckis,1994,1,0,24,24,forrestgump.php,Forrest Gump,86.68,13.32,25,26.66
+56,56,119654,Men in Black,90s,SCI-FI,Barry Sonnenfeld,1997,1,,37,37,meninblack.php,Men in Black,89.07,10.93,25,26.66
+57,57,99653,Ghost,90s,Romance,Jerry Zucker,1990,3,0,26,26,ghost.pdf,Ghost,54.87,45.13,6.0875,0
+58,58,103064,Terminator 2: Judgment Day,90s,Action,James Cameron,1991,3,1,57,57,terminator-2-judgement-day-1991.pdf,Terminator 2: Judgment Day,74.32,25.68,25,0
+59,59,103776,Batman Returns,90s,Action,Tim Burton,1992,0,0,15,15,batman-returns.pdf,Batman Returns,61.76,38.24,14.7,40
+60,60,112462,Batman Forever,90s,Action,Joel Schumacher,1995,1,0,17,17,batmanforever.php,Batman Forever,96.84,3.16,25,26.66
+61,61,468569,The Dark Knight,2000s,Action,Christopher Nolan,2008,3,1,21,21,dark-knight.php,The Dark Knight,73.72,26.28,25,0
+62,62,383574,Pirates of the Caribbean: Dead Mans Chest,2000s,Action,Gore Verbinski,2006,2,,39,39,pirates-of-the-caribbean-dead-mans-chest-2006.pdf,Pirates of the Caribbean: Dead Mans Chest,83.66,16.34,25,13.33
+63,63,145487,Spiderman,2000s,Action,Sam Raimi,2002,1,0,48,48,spiderman.pdf,Spiderman,86.44,13.56,25,26.66
+64,64,417741,Harry Potter and the Half Blood Prince ,2000s,Fantasy,David Yates,2009,3,,30,30,harry-potter-and-the-halfblood-prince.pdf,Harry Potter and the Half Blood Prince ,79.64,20.36,25,0
+65,65,121766,Star Wars: Episode III - Revenge of the Sith,2000s,SCI-FI,George Lucas,2005,1,1,53,53,starwars_revenge-of-sith.php,Star Wars: Episode III - Revenge of the Sith,89.32,10.68,25,26.66
+66,66,316654,Spider-Man 2,2000s,Action,Sam Raimi,2004,1,0,47,47,spider-man-2-2004.pdf,Spider-Man 2,84.22,15.78,25,26.66
+67,67,418279,Transformers,2000s,Action,Michael Bay,2007,3,0,,,,,,,,0
+68,68,325980,Pirates of the Caribbean: The Curse of the Black Pearl,2000s,Action,Gore Verbinski,2003,3,0,40,40,pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003.pdf,Pirates of the Caribbean: The Curse of the Black Pearl,87.36,12.64,25,0
+69,69,241527,Harry Potter and the Sorcerers Stone,2000s,Fantasy,Chris Columbus,2001,3,0,31,31,harry-potter-and-the-sorcerers-stone-2001.pdf,Harry Potter and the Sorcerers Stone,80.11,19.89,25,0
+70,70,120755,Mission Impossible II,2000s,Action,John Woo,2000,0,0,38,38,mission-impossible2 (1).pdf,Mission Impossible II,97.43,2.57,25,40
+71,71,4154796,Avengers: Endgame,2010s,Action,"Anthony Russo, Joe Russo",2019,3,0,13,13,avengers-endgame-2019.pdf,Avengers: Endgame,78.09,21.91,25,0
+72,72,1825683,Black Panther,2010s,Action,Ryan Coogler,2018,3,0,1,1,BlackPanther.pdf,Black Panther,77.91,22.09,25,0
+73,73,2488496,Star Wars: The Force Awakens,2010s,SCI-FI,George Lucas,2015,3,0,52,52,star-wars-the-force-awakens.pdf,Star Wars: The Force Awakens,78.99,21.01,25,0
+74,74,848228,The Avengers,2010s,Action,Joss Whedon,2012,1,0,58,58,the-avengers-2012.pdf,The Avengers,83.58,16.42,25,26.66
+75,75,2527336,Star Wars: Episode VIII - The Last Jedi,2010s,SCI-FI,George Lucas,2017,3,0,50,50,star-wars-lastjedi.php,Star Wars: Episode VIII - The Last Jedi,62.84,37.16,16.05,0
+76,76,499549,Avatar,2010s,SCI-FI,James Cameron,2009,3,0,12,12,avatar.php,Avatar,68.06,31.94,22.575,0
+77,77,770828,Man of Steel,2010s,Action,Zack Snyder,2013,3,0,5,5,ManofSteelnSecondDraftn.pdf,Man of Steel,76.76,23.24,25,0
+78,78,3748528,Rogue One: A Star Wars Story,2010s,SCI-FI,Gareth Edwards,2016,3,0,45,45,rogue-one.php,Rogue One: A Star Wars Story,80.73,19.27,25,0
+79,79,1201607,Harry Potter and the Deathly Hallows: Part 2,2010s,Fantasy,David Yates,2011,3,1,29,29,harry-potter-and-the-deathly-hollows-part-2-2011.pdf,Harry Potter and the Deathly Hallows: Part 2,78.1,21.9,25,0
+80,80,1877832,X-Men: Days of Future Past,2010s,Action,Bryan Singer,2014,1,0,64,64,x-men-days-of-future-past-2014.pdf,X-Men: Days of Future Past,76.21,23.79,25,26.66
