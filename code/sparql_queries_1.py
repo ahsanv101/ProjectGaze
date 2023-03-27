@@ -10,7 +10,7 @@ import pandas as pd
 import sparql_dataframe
 
 
-wikidata_endpoint = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
+wikidata_endpoint = "https://query.wikidata.org/bigdata/namespace/wdq/sparql?query={SPARQL}"
 
 # ---- Audience query
 # What audience is the most sexist? (gender from SPARQL and sexism score from webscraping)
@@ -56,7 +56,7 @@ def createIMDBid(code):
 # Resulting df from QUERY (still to be populated)
 Bechdel_df = pd.DataFrame(columns=["Movie", "Director", "Bechdel_result"])
 
-# Scroll through the film_list
+# Scroll through the film_list_bechdel
 for tpl in film_list_bechdel:
     # Add suffix to each id
     imdb_id = createIMDBid(tpl[0])
@@ -75,22 +75,23 @@ for tpl in film_list_bechdel:
     '''
 
     # Create resulting dataframe from query, formatting the query with the appropriate value for the variable {imdbid}
-    result_query = sparql_dataframe.get(wikidata_endpoint,query_gender_director.format(imdbid=imdb_id))
+    result_query = sparql_dataframe.get(wikidata_endpoint,query_gender_director.format(imdbid=imdb_id),True)
     
     # Populate the external df as to not lose the information gathered with the query for each of the ids/films
     Bechdel_df = pd.concat([Bechdel_df,result_query])
 
-    if film_list_bechdel[1] == 0.0:
+    if tpl[1] == 0.0:
         Bechdel_df["Bechdel_result"] = "FAILED criteria 1"
-    elif film_list_bechdel[1] == 1.0:
+    elif tpl[1] == 1.0:
         Bechdel_df["Bechdel_result"] = "FAILED criteria 2"
-    elif film_list_bechdel[1] == 2.0:
+    elif tpl[1] == 2.0:
         Bechdel_df["Bechdel_result"] = "FAILED criteria 3"
     else:
         Bechdel_df["Bechdel_result"] = "PASSED"
 
 # Calculate the number of films with a male director (n. rows of the Bechdel_df)
 total_Mdirectors = (len(Bechdel_df.index))  # 72
+print(Bechdel_df)
 
 # The total number of films tested for the Bechdel test and the total number of films tested for the Bechdel test AND with a male director is the same (a higher n. of male directors is due to the case in which a film has more than one director) -> this means that, no matter the result of the Bechdel test, ALL SELECTED MOVIES HAVE MALE DIRECTORS
 
@@ -98,18 +99,6 @@ total_Mdirectors = (len(Bechdel_df.index))  # 72
 
 
 # -- Characters dialogues: what is the proportion between male and female writers in the [selected] films?
-
-film_list_dialogues = list()
-
-dialogue_df = df.dropna(axis=0,subset=["dialogue_score"])
-
-# Iterate over df and save imdbId, male_percentage, and nonmale_percentage in a tuple to append to the film_list
-for idx, row in bechdel_df.iterrows():
-    tuple = (row["imdbid"], row["male_percentage"], row["nonmale_percentage"])
-    film_list_dialogues.append(tuple)
-
-# Calculate the total movies which have been tested for the dialogues percentage
-n_films = len(film_list_dialogues)    # 72
 
 
 
