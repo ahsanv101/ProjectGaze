@@ -46,7 +46,7 @@ for tpl in film_list_dialogues:
         ?writer rdfs:label ?Writer ;
                 wdt:P21 ?gender .
         ?gender rdfs:label ?Gender .
-        filter ((lang(?Writer) = "en") && (lang(?Movie) = "en") && (lang(?Gender) = "en"))
+        FILTER ((lang(?Writer) = "en") && (lang(?Movie) = "en") && (lang(?Gender) = "en"))
     }}
     '''
 
