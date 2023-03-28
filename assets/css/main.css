@@ -754,7 +754,7 @@ section .image img {
 }
 
 /*--------------------------------------------------------------
-# Desktop Navigation 
+# Desktop Navigation
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
@@ -1441,7 +1441,7 @@ section .image img {
   color: initial;
 }
 
-/* set the first child of .letter-board to look like 
+/* set the first child of .letter-board to look like
    the full width lines of the letter board board */
 .letter-board>h1,
 .letter-board>h2,
@@ -2457,6 +2457,9 @@ footer {
   height: 800px !important;
 }
 
+#descriptionChart{
+    height: 800px !important;
+}
 .table_buttons {
   justify-content: center;
   display: flex;

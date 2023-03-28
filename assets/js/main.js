@@ -1101,49 +1101,75 @@ function makeChart3(d)
 // Character dialogue end
 
 // Character description start
-d3.csv('data.csv').then(function(data) {
-    var labels = data.map(function(row) { return row.Month; });
-    var dataset1 = data.map(function(row) { return parseInt(row.Dataset1); });
-    var dataset2 = data.map(function(row) { return parseInt(row.Dataset2); });
-    var dataset3 = data.map(function(row) { return parseInt(row.Dataset3); });
-
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
+d3.csv('https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Descriptions/fem_descriptions_df.csv').then(function(data) {
+    var labels = data.map(function(row) { return row.movie; });
+    var count = data.map(function(row) { return parseInt(row.count); });
+    var inappropriateCount = data.map(function(row) { return parseInt(row.inappropriate_count); });
+    var style = getComputedStyle(document.body);
+    var blue = style.getPropertyValue('--color-blue');
+    var teal = style.getPropertyValue('--color-palette-teal-light-graph');
+    var ctxdesc = document.getElementById('descriptionChart').getContext('2d');
+    var myChartdesc = new Chart(ctxdesc, {
         type: 'bar',
         data: {
             labels: labels,
             datasets: [{
-                label: 'Dataset 1',
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgba(255, 99, 132, 1)',
+                label: 'occurence of body descriptions',
+                backgroundColor: [teal],
+                borderColor: [teal],
                 borderWidth: 1,
-                data: dataset1
+                data: count
             }, {
-                label: 'Dataset 2',
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgba(54, 162, 235, 1)',
+                label: 'occurence of inappropriate body descriptions',
+                backgroundColor: [blue],
+                borderColor: [blue],
                 borderWidth: 1,
-                data: dataset2
-            }, {
-                label: 'Dataset 3',
-                backgroundColor: 'rgba(255, 206, 86, 0.2)',
-                borderColor: 'rgba(255, 206, 86, 1)',
-                borderWidth: 1,
-                data: dataset3
+                data: inappropriateCount
+
             }]
         },
         options: {
-            scales: {
-                xAxes: [{
-                    stacked: true
-                }],
-                yAxes: [{
-                    stacked: true
-                }]
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+
+                    scales: {
+                        x: {
+                            stacked: true,
+                            ticks: {
+                              autoSkip: false,
+                              suggestedMin: 0,
+suggestedMax: 100,
+                              font: {
+
+                                size: 11.5,
+                        }
+                      }
+                    },
+                        y: {
+                              stacked: true,
+                              ticks: {
+                                autoSkip: false,
+                                font: {
+
+                                  size: 11.5,
+                                  // color: foncol,
+                                  // style: fon
+                              }
+
+                            }
+                        }
+                    },
+                    elements: {
+            bar: {
+                borderWidth: 2,
+                borderRadius: 0,
+                barThickness: 30 // increase bar thickness
             }
+        }
         }
     });
 });
+
 
 
 // Character description end
