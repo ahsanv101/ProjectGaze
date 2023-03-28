@@ -38,6 +38,7 @@ for tpl in film_list_bechdel:
 
 # Resulting df from QUERY (still to be populated)
 Bechdel_df = pd.DataFrame(columns=["Movie", "Director", "Bechdel_result"])
+print("\n \t------ all working up until here (before SPARQL query) ------- \n \t")
 
 # SPARQL query
 query_gender_director = '''
@@ -54,11 +55,14 @@ query_gender_director = '''
     '''
 
 # Create resulting dataframe from query, formatting the query with the appropriate value for the variable {imdbid}
-result_query = sparql_dataframe.get(
-     wikidata_endpoint, query_gender_director.format(list=ids_list_bechdel), True)
+result_query = sparql_dataframe.get(wikidata_endpoint, query_gender_director.format(list=ids_list_bechdel), True)
+
+print("\n\t ------ now the query is done, we need to concatenate the df -------")   # THIS NEVER PRINTS: THE ISSUE IS WHEN CALLING THE SPARQL QUERY
+
 
   # Populate the external df as to not lose the information gathered with the query for each of the ids/films
 Bechdel_df = pd.concat([Bechdel_df, result_query])
+
 
 # Calculate the number of films with a male director (n. rows of the Bechdel_df)
 total_Mdirectors = (len(Bechdel_df.index))  # 72
