@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/** 
+/**
  * Hero eye-zoom on scroll animation
  */
 gsap.registerPlugin(ScrollTrigger);
@@ -312,7 +312,7 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.defaults({
   // Defaults are used by all ScrollTriggers
   toggleActions: "restart pause resume pause", // Scoll effect Forward, Leave, Back, Back Leave
-  markers: false // Easaly remove markers for production 
+  markers: false // Easaly remove markers for production
 });
 
 const timelineHeader = gsap.timeline({
@@ -337,7 +337,7 @@ timelineHeader
 
 
 /**
- * Sidebar eye icons 
+ * Sidebar eye icons
  */
 
 $(window).bind('scroll', function () {
@@ -647,15 +647,15 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechde
 
           d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_1.csv")
           .then((d1) => {
-           
+
             d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_2.csv")
           .then((d2) => {
              makeChart([d.length,d0.length,d1.length,d2.length])
-          
+
           });
         });
-        
-        
+
+
       });
 
 });
@@ -663,7 +663,7 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechde
         // makeChart
 function makeChart(ddata)
 {
-  
+
 var style = getComputedStyle(document.body);
 var red = style.getPropertyValue('--color-primary-light-graph');
 // var primColrgba = style.getPropertyValue(rgba('--color-primary-rgb'),0.5);
@@ -680,7 +680,7 @@ const ctx = document.getElementById('myChart');
 const DATA_COUNT = 2;
 const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
 
-  
+
 
   var passed = ddata[0];
   var failed = ddata[1]+ddata[2]+ddata[3];
@@ -708,7 +708,7 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
       }
     ]
   };
-  
+
   Chart.defaults.color = foncol;
   Chart.defaults.font.family = fon;
   // import Chart from 'chart.js/auto';
@@ -721,13 +721,13 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
         legend: {
           position: 'top',
           labels: {
-            // fontColor: '#ffff00'  
+            // fontColor: '#ffff00'
             // This more specific font property overrides the global property
             // font: {
-          
+
             //   // style: 'Courier Prime'
             //     // style: 'Courier Prime',
-            //     // fontColor : '#FF0000'  
+            //     // fontColor : '#FF0000'
             //     // color: foncol
             // }
           }
@@ -740,7 +740,7 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
     },
   });
 
-}        
+}
 
 
 
@@ -754,7 +754,7 @@ function makeChart2(ddata){
   var green = style.getPropertyValue('--color-palette-green-light-graph');
   // var fon = style.getPropertyValue('--font-script');
   // var foncol = style.getPropertyValue('--color-default');
-  
+
 
   const ctx2 = document.getElementById('myChart2');
   var total = ddata[0]+ddata[1]+ddata[2]+ddata[3];
@@ -794,7 +794,7 @@ function makeChart2(ddata){
       hoverOffset: 4
     }]
   };
-  
+
   // import Chart from 'chart.js/auto';
   new Chart(ctx2, {
     type: 'doughnut',
@@ -820,7 +820,7 @@ function makeChart2(ddata){
     },
   });
 
-}        
+}
 
 
 d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_passed.csv")
@@ -832,15 +832,15 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechde
 
           d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_1.csv")
           .then((d1) => {
-           
+
             d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_2.csv")
           .then((d2) => {
              makeChart2([d.length,d0.length,d1.length,d2.length])
-          
+
           });
         });
-        
-        
+
+
       });
 
 });
@@ -857,7 +857,7 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechde
 
           d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_1.csv")
           .then((d1) => {
-           
+
             d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechdel/bechdel_failed_2.csv")
           .then((d2) => {
             var t = "";
@@ -908,11 +908,11 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/bechde
                   t4 += tr;
             }
             document.getElementById("t4").innerHTML += t4;
-          
+
           });
         });
-        
-        
+
+
       });
 
 });
@@ -944,7 +944,7 @@ function makeChart3(d)
 
   // const DATA_COUNT = 7;
   // const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
-  
+
   // const labels = Utils.months({count: 7});
   labels=[];
   male=[];
@@ -958,15 +958,15 @@ function makeChart3(d)
       male.push(d[i].male_percen);
       nonmale.push(parseFloat(d[i].nonmale_percentage)*-1);
     }
-    
-    
+
+
   }
-  
+
   // console.log(male);
   const data = {
     labels: labels,
     datasets: [
-      
+
       {
         label: 'non-male percentage',
         data: nonmale,
@@ -981,8 +981,8 @@ function makeChart3(d)
       }
     ]
   };
-  
-  
+
+
   const config = {
     type: 'bar',
     data: data,
@@ -1002,7 +1002,7 @@ function makeChart3(d)
               else{
                 return tooltipItem.dataset.label+':  '+(parseFloat(tooltipItem.raw)).toString()+'%';
               }
-             
+
           }
         }
         },
@@ -1025,7 +1025,7 @@ function makeChart3(d)
         intersect: false,
       },
       scales: {
-        
+
         x: {
           grid:{
             display:false
@@ -1035,15 +1035,15 @@ function makeChart3(d)
           suggestedMin: -100,
           suggestedMax: 100,
           ticks: {
-            
+
               // autoSkip: false,
               // font: {
-                
+
               //   // size: 10.5,
               //   color: foncol,
               //   style: fon
               // },
-            
+
             // autoSkip: false,
             // display:false,
             callback: function(label, index, labels) {
@@ -1086,19 +1086,68 @@ function makeChart3(d)
               // color: foncol,
               // style: fon
           }
-           
+
         }
         }
       }
     }
   };
   new Chart(ctx3,config);
-  
-  
+
+
 
 }
 
 // Character dialogue end
+
+// Character description start
+d3.csv('data.csv').then(function(data) {
+    var labels = data.map(function(row) { return row.Month; });
+    var dataset1 = data.map(function(row) { return parseInt(row.Dataset1); });
+    var dataset2 = data.map(function(row) { return parseInt(row.Dataset2); });
+    var dataset3 = data.map(function(row) { return parseInt(row.Dataset3); });
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Dataset 1',
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1,
+                data: dataset1
+            }, {
+                label: 'Dataset 2',
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1,
+                data: dataset2
+            }, {
+                label: 'Dataset 3',
+                backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                borderColor: 'rgba(255, 206, 86, 1)',
+                borderWidth: 1,
+                data: dataset3
+            }]
+        },
+        options: {
+            scales: {
+                xAxes: [{
+                    stacked: true
+                }],
+                yAxes: [{
+                    stacked: true
+                }]
+            }
+        }
+    });
+});
+
+
+// Character description end
+
 
 // Gaze score start
 
@@ -1121,7 +1170,7 @@ function makeChart4(d)
   // var foncol = style.getPropertyValue('--color-default');
   // const DATA_COUNT = 7;
   // const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
-  
+
   // const labels = Utils.months({count: 7});
   arrayLabel =[];
   arrayData=[];
@@ -1136,8 +1185,8 @@ function makeChart4(d)
       // male.push(d[i].male_percen);
       // nonmale.push(parseFloat(d[i].nonmale_percentage)*-1);
     }
-    
-    
+
+
   }
   // console.log(arrayLabel);
   // console.log(arrayData);
@@ -1147,11 +1196,11 @@ function makeChart4(d)
       data: arrayData[i] || 0
     };
   });
-  
+
   sortedArrayOfObj = arrayOfObj.sort(function(a, b) {
     return b.data - a.data;;
   });
-  
+
   newArrayLabel = [];
   newArrayData = [];
   sortedArrayOfObj.forEach(function(d){
@@ -1161,7 +1210,7 @@ function makeChart4(d)
 
   // console.log(newArrayLabel);
   // console.log(newArrayData);
-  
+
   // console.log(labels);
   // console.log(score);
 
@@ -1170,7 +1219,7 @@ function makeChart4(d)
   const data = {
     labels: newArrayLabel,
     datasets: [
-      
+
       {
         label: 'Gaze score',
         data: newArrayData,
@@ -1179,8 +1228,8 @@ function makeChart4(d)
       }
     ]
   };
-  
-  
+
+
   const config = {
     type: 'bar',
     data: data,
@@ -1201,7 +1250,7 @@ function makeChart4(d)
         //       else{
         //         return tooltipItem.dataset.label+':  '+(parseFloat(tooltipItem.raw)).toString()+'%';
         //       }
-             
+
         //   }
         // }
         },
@@ -1210,7 +1259,7 @@ function makeChart4(d)
         //   text: 'Division of dialogues in movies'
         // },
         legend: {
-          
+
           labels: {
               // This more specific font property overrides the global property
               // font: {
@@ -1225,13 +1274,13 @@ function makeChart4(d)
         intersect: false,
       },
       scales: {
-        
+
         x: {
-         
+
           ticks: {
             // autoSkip: false,
             font: {
-              
+
               // size: 10.5,
               // color: foncol,
               // style: fon
@@ -1243,21 +1292,21 @@ function makeChart4(d)
           ticks: {
             autoSkip: false,
             font: {
-              
+
               size: 11.5,
               // color: foncol,
               // style: fon
           }
-           
+
         }
         }
       }
     }
   };
   new Chart(ctx4,config);
-  
-  
+
+
 
 }
 
-// Gaze score end 
+// Gaze score end
