@@ -1128,7 +1128,9 @@ d3.csv('https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Descri
     var inappropriateCount = data.map(function(row) { return parseInt(row.inappropriate_count); });
 
     var style = getComputedStyle(document.body);
-    var blue = style.getPropertyValue('--color-blue');
+    // var blue = style.getPropertyValue('--color-blue');
+
+    var blue ='#209dc9';
     var teal = style.getPropertyValue('--color-palette-teal-light-graph');
     var ctxdesc = document.getElementById('descriptionChart').getContext('2d');
     var myChartdesc = new Chart(ctxdesc, {
@@ -1143,8 +1145,8 @@ d3.csv('https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Descri
                 data: count
             }, {
                 label: 'problematic female descriptions',
-                backgroundColor: [blue],
-                borderColor: [blue],
+                backgroundColor: blue,
+                borderColor: blue,
                 borderWidth: 1,
                 data: inappropriateCount
 
