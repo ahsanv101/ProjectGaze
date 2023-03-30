@@ -117,7 +117,7 @@ for tpl in film_list_dlg:
 
 # SPARQL query
 query_gender_director = '''
-    SELECT ?imdb ?Movie ?Writer ?Gender
+    SELECT ?Movie ?Writer ?Gender
     WHERE {{
         ?movie wdt:P345 ?imdb ;
                 wdt:P58 ?writer ;
