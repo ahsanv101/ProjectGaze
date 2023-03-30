@@ -818,7 +818,7 @@ function makeChart2(ddata){
         legend: {
            itemStyle: {
         width: 90 // or whatever, auto-wrap
-    },
+        },
           labels: {
             // This more specific font property overrides the global property
             // font: {
