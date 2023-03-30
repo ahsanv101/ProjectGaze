@@ -2469,3 +2469,9 @@ footer {
 .table_buttons button {
   margin: 10px;
 }
+
+.word-cloud{
+  display:inline-block;
+  width:400px;
+  align-self:center;
+}

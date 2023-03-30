@@ -1102,9 +1102,15 @@ function makeChart3(d)
 
 // Character description start
 d3.csv('https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Descriptions/fem_descriptions_df.csv').then(function(data) {
+  // Sort data in descending order based on value
+  data.sort(function(a, b) {
+    return parseInt(b.inappropriateCount) - parseInt(a.inappropriateCount);
+  });
+
     var labels = data.map(function(row) { return row.movie; });
     var count = data.map(function(row) { return parseInt(row.count); });
     var inappropriateCount = data.map(function(row) { return parseInt(row.inappropriate_count); });
+
     var style = getComputedStyle(document.body);
     var blue = style.getPropertyValue('--color-blue');
     var teal = style.getPropertyValue('--color-palette-teal-light-graph');
@@ -1114,13 +1120,13 @@ d3.csv('https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Descri
         data: {
             labels: labels,
             datasets: [{
-                label: 'occurence of body descriptions',
+                label: 'female descriptions',
                 backgroundColor: [teal],
                 borderColor: [teal],
                 borderWidth: 1,
                 data: count
             }, {
-                label: 'occurence of inappropriate body descriptions',
+                label: 'problematic female descriptions',
                 backgroundColor: [blue],
                 borderColor: [blue],
                 borderWidth: 1,
