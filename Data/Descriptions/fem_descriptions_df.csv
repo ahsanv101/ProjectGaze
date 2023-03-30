@@ -1,60 +1,60 @@
 ,movie,script_name,count,inappropriate_count,score
 0,Star Wars: Episode IV - A New Hope,Star Wars_ episode IV,17,0,0.0
-1,The Exorcist,The-Exorcist,83,2,13.79983632558739
+1,The Exorcist,The-Exorcist,83,2,13.79683640918734
 2,Fiddler on the Roof,fiddler on the roof,7,0,0.0
 3,Song of the South,song-of-the-south,1,0,0.0
-4,Man of Steel,ManofSteelnSecondDraftn,70,0,7.2802335279399495
-5,Pirates of the Caribbean: Dead Mans Chest,pirates-of-the-caribbean-dead-mans-chest-2006,23,0,0.0
+4,Man of Steel,ManofSteelnSecondDraftn,70,1,10.485148918158487
+5,Pirates of the Caribbean: Dead Mans Chest,pirates-of-the-caribbean-dead-mans-chest-2006,23,1,3.2082130082460703
 6,Star Wars: Episode VIII - The Last Jedi,star-wars-lastjedi,1,0,0.0
 7,Men in Black,meninblack,28,0,0.0
-8,Superman,superman,37,1,5.052666719672259
+8,Superman,superman,37,1,5.048613397513414
 9,Lawrence of Arabia,lawrence-of-arabia-1962,3,0,0.0
 10,Independence Day,independenceday,27,0,0.0
-11,The Godfather,the-godfather,45,0,3.1622185154295246
-12,Spider-Man 2,spider-man-2-2004,41,0,2.5033361134278564
-13,Harry Potter and the Deathly Hallows: Part 2,harry-potter-and-the-deathly-hollows-part-2-2011,54,0,4.644703919933278
-14,The Avengers,the-avengers-2012,25,0,0.0
-15,Top Gun,top-gun-1986,30,0,0.0
-16,Some like it hot,SomeLikeItHot,47,0,3.491659716430359
-17,Jurassic Park,jurassicpark,43,0,2.8327773144286907
-18,Star Wars: Episode III - Revenge of the Sith,starwars_revenge-of-sith,15,0,0.0
+11,The Godfather,the-godfather,45,3,8.78011340313019
+12,Spider-Man 2,spider-man-2-2004,41,0,2.499374391769776
+13,Harry Potter and the Deathly Hallows: Part 2,harry-potter-and-the-deathly-hollows-part-2-2011,54,2,9.019274891044702
+14,The Avengers,the-avengers-2012,25,1,3.2082130082460703
+15,Top Gun,top-gun-1986,30,1,3.2082130082460703
+16,Some like it hot,SomeLikeItHot,47,1,6.696048403769496
+17,Jurassic Park,jurassicpark,43,0,2.8288613930209925
+18,Star Wars: Episode III - Revenge of the Sith,starwars_revenge-of-sith,15,1,3.2082130082460703
 19,Star Wars: Episode V - The Empire Strikes Back,star wars_the-empire-strikes-back,24,0,0.0
-20,Terminator 2: Judgment Day,terminator-2-judgement-day-1991,132,0,17.492910758965802
-21,The Graduate,the-graduate,69,0,7.115512927439532
+20,Terminator 2: Judgment Day,terminator-2-judgement-day-1991,132,0,17.491032948700127
+21,The Graduate,the-graduate,69,1,10.320405417532879
 22,Samson and Delilah,samson-and-delilah,9,0,0.0
-23,Avatar,avatar,91,0,10.739366138448705
-24,Casablanca,casablanca,32,0,1.0208507089241035
+23,Avatar,avatar,91,0,10.736549423050189
+24,Casablanca,casablanca,32,0,1.0166828861393022
 25,Ghostbusters,ghostbuster,10,0,0.0
 26,Beverly Hills Cop II,beverly-hills-copII,11,1,3.2082130082460703
-27,Grease,jaws-1975,18,0,0.0
-28,From Here To Eternity,from_here_to_eternity_(1953),40,0,2.33861551292744
+27,Grease,jaws-1975,19,0,0.0
+28,From Here To Eternity,from_here_to_eternity_(1953),42,0,2.6641178923953843
 29,Grease,rogue-one,12,0,0.0
 30,Batman Forever,batmanforever,1,0,0.0
 31,Rocky,rocky,17,0,0.0
-32,Black Panther,BlackPanther,51,0,4.150542118432027
+32,Black Panther,BlackPanther,51,1,7.355022406271929
 33,Gone with the Wind,gone with the wind,16,0,0.0
-34,Forrest Gump,forrestgump,20,5,7.77299861174691
+34,Forrest Gump,forrestgump,20,6,8.519528019683106
 35,Star Wars: Episode I - The Phantom Menace,starwars_thephantomenace,8,0,0.0
 36,The Dark Knight,dark-knight,30,0,0.0
-37,West Side Story,West-Side-Story-Read-The-Screenplay,73,0,7.774395329441201
+37,West Side Story,West-Side-Story-Read-The-Screenplay,73,0,7.77116641178924
 38,Star Wars: Episode VI - Return of the Jedi,star-wars-return-of-jedi,19,0,0.0
 39,Butch Cassidy and the Sundance Kid,butch-cassidy-and-the-sundance-kid-1969,29,0,0.0
-40,Batman,batman1989,60,0,5.63302752293578
-41,Harry Potter and the Half Blood Prince ,harry-potter-and-the-halfblood-prince,70,0,7.2802335279399495
-42,Avengers: Endgame,avengers-endgame-2019,44,0,2.9974979149291077
+40,Batman,batman1989,60,0,5.629500903656333
+41,Harry Potter and the Half Blood Prince ,harry-potter-and-the-halfblood-prince,70,1,10.485148918158487
+42,Avengers: Endgame,avengers-endgame-2019,44,0,2.9936048936466007
 43,Forever Amber,foreveramber,5,0,0.0
 44,Who Framed Roger Rabbit,rogerrabbit,20,0,0.0
 45,Mary Poppins,mary-poppins,5,0,0.0
-46,Blazing Saddles,Blazing-Saddles (1),9,1,3.2082130082460703
+46,Blazing Saddles,Blazing-Saddles (1),9,3,5.621765008857981
 47,Love Story,Love Story,1,0,0.0
 48,Sergeant York,Sergeant York,1,0,0.0
 49,Yankee Doodle Dandy,yankee doodle dandy(transcript),2,0,0.0
 50,Going My Way,Going My Way,5,0,0.0
-51,Superman II,supermanII,45,1,6.370431523675595
-52,Ghost,ghost,138,2,22.859469353110324
-53,Batman Returns,batman-returns,48,0,3.656380316930776
+51,Superman II,supermanII,45,2,7.536583385414229
+52,Ghost,ghost,138,5,26.252492564200686
+53,Batman Returns,batman-returns,48,1,6.8607919043951044
 54,The Snake Pit,The Snake Pit,7,0,0.0
-55,Star Wars: The Force Awakens,star-wars-the-force-awakens,64,0,6.291909924937447
+55,Star Wars: The Force Awakens,star-wars-the-force-awakens,64,0,6.288474906158767
 56,Quo Vadis?,quo vadis,26,0,0.0
 57,The Ten Commandments,The ten commandments,13,0,0.0
 58,Back to the Future,backtothefuture,10,0,0.0
@@ -64,17 +64,17 @@
 62,Cleopatra,Cleopatra,7,1,3.2082130082460703
 63,White Christmas,white-christmas,22,0,0.0
 64,Samson and Delilah,Samson&Delilah,9,0,0.0
-65,Psycho,psycho,86,3,15.537528144804602
-66,Mission Impossible II,mission-impossible2 (1),40,0,2.33861551292744
+65,Psycho,psycho,86,3,15.534596928780127
+66,Mission Impossible II,mission-impossible2 (1),40,2,6.712865882286187
 67,The Sea Chase,The Sea Chase,5,0,0.0
 68,The Bridge on the River Kwai,the bridge on the river kwai,0,0,0.0
 69,Transformers,transformers,3,0,0.0
 70,The Greatest Show on Earth,The Greatest Show on Earth,5,0,0.0
-71,Spiderman,spiderman,57,1,8.3470787296806
+71,Spiderman,spiderman,57,2,9.513505392921527
 72,The Sound of Music,The_Sound_Of_Music_2,17,0,0.0
-73,X-Men: Days of Future Past,x-men-days-of-future-past-2014,48,0,3.656380316930776
+73,X-Men: Days of Future Past,x-men-days-of-future-past-2014,47,1,6.696048403769496
 74,Harry Potter and the Sorcerers Stone,harry-potter-and-the-sorcerers-stone-2001,17,0,0.0
-75,Pirates of the Caribbean: The Curse of the Black Pearl,pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003,60,0,5.63302752293578
-76,Titanic,titanic-numbered,214,2,35.0
+75,Pirates of the Caribbean: The Curse of the Black Pearl,pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003,60,0,5.629500903656333
+76,Titanic,titanic-numbered,214,8,35.0
 77,The Greatest Show on Earth,Grease-Cast-Script-Final,18,0,0.0
 78,2001: A Space Odyssey,2001-space-odyssey,2,0,0.0
