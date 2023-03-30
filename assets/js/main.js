@@ -778,9 +778,9 @@ function makeChart2(ddata){
   const data = {
     labels: [
       'Passed',
-      'With no two women',
-      'With no two women who talk to each other',
-      'With no two women who talk to each other about something other than a man'
+      'No two women',
+      'No two women who talk to each other',
+      'No two women who talk to each other \nabout something other than a man'
     ],
     datasets: [{
       label: 'Bechdel test',
@@ -802,7 +802,23 @@ function makeChart2(ddata){
     options: {
       responsive: true,
       plugins: {
+        tooltip:{
+          enabled: true,
+          // displayColors:false,
+          callbacks: {
+          label:(tooltipItem)=>{
+            // console.log(tooltipItem);
+             
+            return tooltipItem.dataset.label+':  '+parseFloat(tooltipItem.raw).toFixed(2).toString()+' %';
+             
+
+          }
+        }
+        },
         legend: {
+           itemStyle: {
+        width: 90 // or whatever, auto-wrap
+    },
           labels: {
             // This more specific font property overrides the global property
             // font: {

@@ -2439,8 +2439,8 @@ footer {
 /* Dialogue graph */
 
 #myChart2 {
-  width: 500px !important;
-  height: 500px !important;
+  width: 600px !important;
+  height: 600px !important;
   display: block !important;
   margin: 0 auto !important;
   /* align-items: center !important;
