@@ -1,0 +1,155 @@
+,imdb,Movie,Writer,Gender,male_percentage,nonmale_percentage
+0,tt1289401,Ghostbusters,Katie Dippold,female,86.68,13.32
+1,tt1289401,Ghostbusters,Paul Feig,male,86.68,13.32
+2,tt0081573,Superman II,Leslie Newman,female,75.89,24.11
+3,tt0081573,Superman II,David Newman,male,75.89,24.11
+4,tt0081573,Superman II,Mario Puzo,male,75.89,24.11
+5,tt0081573,Superman II,Tom Mankiewicz,male,75.89,24.11
+6,tt0081573,Superman II,David Newman,male,75.89,24.11
+7,tt0078346,Superman,Leslie Newman,female,69.52,30.48
+8,tt0078346,Superman,David Newman,male,69.52,30.48
+9,tt0078346,Superman,Robert Benton,male,69.52,30.48
+10,tt0078346,Superman,Mario Puzo,male,69.52,30.48
+11,tt0078346,Superman,Tom Mankiewicz,male,69.52,30.48
+12,tt1877832,X-Men: Days of Future Past,Jane Goldman,female,76.21,23.79
+13,tt1877832,X-Men: Days of Future Past,Matthew Vaughn,male,76.21,23.79
+14,tt1877832,X-Men: Days of Future Past,Simon Kinberg,male,76.21,23.79
+15,tt0241527,Harry Potter and the Philosopher's Stone,J. K. Rowling,female,80.11,19.89
+16,tt0241527,Harry Potter and the Philosopher's Stone,Steve Kloves,male,80.11,19.89
+17,tt0031381,Gone with the Wind,Margaret Mitchell,female,40.9,59.1
+18,tt0031381,Gone with the Wind,John Van Druten,male,40.9,59.1
+19,tt0031381,Gone with the Wind,Ben Hecht,male,40.9,59.1
+20,tt0031381,Gone with the Wind,Jo Swerling,male,40.9,59.1
+21,tt0031381,Gone with the Wind,Sidney Howard,male,40.9,59.1
+22,tt0047673,White Christmas,Vera-Ellen,female,73.04,26.96
+23,tt0047673,White Christmas,Rosemary Clooney,female,73.04,26.96
+24,tt0047673,White Christmas,Melvin Frank,male,73.04,26.96
+25,tt0047673,White Christmas,Bing Crosby,male,73.04,26.96
+26,tt0047673,White Christmas,Danny Kaye,male,73.04,26.96
+27,tt0047673,White Christmas,Norman Panama,male,73.04,26.96
+28,tt0047673,White Christmas,Norman Krasna,male,73.04,26.96
+29,tt0103064,Terminator 2: Judgment Day,Gale Anne Hurd,female,74.32,25.68
+30,tt0103064,Terminator 2: Judgment Day,James Cameron,male,74.32,25.68
+31,tt0103064,Terminator 2: Judgment Day,William Wisher,male,74.32,25.68
+32,tt0080684,Star Wars: Episode V – The Empire Strikes Back,Leigh Brackett,female,86.21,13.79
+33,tt0080684,Star Wars: Episode V – The Empire Strikes Back,George Lucas,male,86.21,13.79
+34,tt0080684,Star Wars: Episode V – The Empire Strikes Back,Lawrence Kasdan,male,86.21,13.79
+35,tt0043949,Quo Vadis,Sonya Levien,female,83.08,16.92
+36,tt0043949,Quo Vadis,Henryk Sienkiewicz,male,83.08,16.92
+37,tt0043949,Quo Vadis,John Lee Mahin,male,83.08,16.92
+38,tt0043949,Quo Vadis,S. N. Behrman,male,83.08,16.92
+39,tt0092099,Top Gun,"Jack Epps, Jr.",male,94.1,5.9
+40,tt0092099,Top Gun,Jim Cash,male,94.1,5.9
+41,tt0077631,Grease,Bronté Woodard,male,78.02,21.98
+42,tt0077631,Grease,Allan Carr,male,78.02,21.98
+43,tt4154796,Avengers: Endgame,Christopher Markus,male,78.09,21.91
+44,tt4154796,Avengers: Endgame,Stephen McFeely,male,78.09,21.91
+45,tt4154796,Avengers: Endgame,Stan Lee,male,78.09,21.91
+46,tt4154796,Avengers: Endgame,Jack Kirby,male,78.09,21.91
+47,tt3748528,Rogue One,Gary Whitta,male,80.73,19.27
+48,tt3748528,Rogue One,John Knoll,male,80.73,19.27
+49,tt3748528,Rogue One,Chris Weitz,male,80.73,19.27
+50,tt3748528,Rogue One,Tony Gilroy,male,80.73,19.27
+51,tt1825683,Black Panther,Ryan Coogler,male,77.91,22.09
+52,tt1825683,Black Panther,Joe Robert Cole,male,77.91,22.09
+53,tt0096438,Who Framed Roger Rabbit,Peter S. Seaman,male,91.12,8.88
+54,tt0096438,Who Framed Roger Rabbit,Jeffrey Price,male,91.12,8.88
+55,tt0062622,2001: A Space Odyssey,Stanley Kubrick,male,96.72,3.28
+56,tt0062622,2001: A Space Odyssey,Arthur C. Clarke,male,96.72,3.28
+57,tt0848228,The Avengers,Zak Penn,male,83.58,16.42
+58,tt0848228,The Avengers,Joss Whedon,male,83.58,16.42
+59,tt0770828,Man of Steel,Christopher Nolan,male,76.76,23.24
+60,tt0770828,Man of Steel,David S. Goyer,male,76.76,23.24
+61,tt0468569,The Dark Knight,Christopher Nolan,male,73.72,26.28
+62,tt0468569,The Dark Knight,Bob Kane,male,73.72,26.28
+63,tt0468569,The Dark Knight,David S. Goyer,male,73.72,26.28
+64,tt0468569,The Dark Knight,Jonathan Nolan,male,73.72,26.28
+65,tt0468569,The Dark Knight,Bill Finger,male,73.72,26.28
+66,tt0056172,Lawrence of Arabia,Michael Wilson,male,99.36,0.64
+67,tt0056172,Lawrence of Arabia,Robert Bolt,male,99.36,0.64
+68,tt0056172,Lawrence of Arabia,T. E. Lawrence,male,99.36,0.64
+69,tt0086190,Star Wars: Episode VI – Return of the Jedi,George Lucas,male,86.94,13.06
+70,tt0086190,Star Wars: Episode VI – Return of the Jedi,Lawrence Kasdan,male,86.94,13.06
+71,tt0120915,Star Wars: Episode I – The Phantom Menace,George Lucas,male,79.7,20.3
+72,tt0121766,Star Wars: Episode III – Revenge of the Sith,George Lucas,male,89.32,10.68
+73,tt0076759,Star Wars: Episode IV – A New Hope,George Lucas,male,88.03,11.97
+74,tt0075148,Rocky,Sylvester Stallone,male,98.54,1.46
+75,tt0120338,Titanic,James Cameron,male,63.33,36.67
+76,tt0499549,Avatar,James Cameron,male,68.06,31.94
+77,tt0053291,Some Like It Hot,Billy Wilder,male,53.54,46.46
+78,tt0053291,Some Like It Hot,I. A. L. Diamond,male,53.54,46.46
+79,tt0053291,Some Like It Hot,Robert Thoeren,male,53.54,46.46
+80,tt0068646,The Godfather,Francis Ford Coppola,male,86.44,13.56
+81,tt0068646,The Godfather,Mario Puzo,male,86.44,13.56
+82,tt0116629,Independence Day,Roland Emmerich,male,85.05,14.95
+83,tt0116629,Independence Day,Dean Devlin,male,85.05,14.95
+84,tt0036872,Going My Way,Frank Cavett,male,83.29,16.71
+85,tt0036872,Going My Way,Frank Butler,male,83.29,16.71
+86,tt0039391,Forever Amber,Philip Dunne,male,57.39,42.61
+87,tt0039391,Forever Amber,Ring Lardner Jr.,male,57.39,42.61
+88,tt0034583,Casablanca,Casey Robinson,male,67.4,32.6
+89,tt0034583,Casablanca,Julius J. Epstein,male,67.4,32.6
+90,tt0034583,Casablanca,Philip G. Epstein,male,67.4,32.6
+91,tt0034583,Casablanca,Howard W. Koch,male,67.4,32.6
+92,tt0034583,Casablanca,Howard Koch,male,67.4,32.6
+93,tt0092644,Beverly Hills Cop II,David Giler,male,90.93,9.07
+94,tt0092644,Beverly Hills Cop II,Dennis Klein,male,90.93,9.07
+95,tt0092644,Beverly Hills Cop II,Larry Ferguson,male,90.93,9.07
+96,tt0092644,Beverly Hills Cop II,Warren Skaaren,male,90.93,9.07
+97,tt0096895,Batman,Sam Hamm,male,74.99,25.01
+98,tt0096895,Batman,Warren Skaaren,male,74.99,25.01
+99,tt0096895,Batman,Bill Finger,male,74.99,25.01
+100,tt0038969,Song of the South,Dalton Reymond,male,84.1,15.9
+101,tt0038969,Song of the South,Maurice Rapf,male,84.1,15.9
+102,tt0038969,Song of the South,Morton Grant,male,84.1,15.9
+103,tt0038969,Song of the South,Vernon Stallings,male,84.1,15.9
+104,tt0038969,Song of the South,Bill Peet,male,84.1,15.9
+105,tt0038969,Song of the South,Ralph Wright,male,84.1,15.9
+106,tt0145487,Spider-Man,Scott Rosenberg,male,86.44,13.56
+107,tt0145487,Spider-Man,David Koepp,male,86.44,13.56
+108,tt0145487,Spider-Man,Alvin Sargent,male,86.44,13.56
+109,tt0071230,Blazing Saddles,Mel Brooks,male,87.21,12.79
+110,tt0071230,Blazing Saddles,Richard Pryor,male,87.21,12.79
+111,tt0071230,Blazing Saddles,Andrew Bergman,male,87.21,12.79
+112,tt0087332,Ghostbusters,Dan Aykroyd,male,86.68,13.32
+113,tt0087332,Ghostbusters,Harold Ramis,male,86.68,13.32
+114,tt0107290,Jurassic Park,Michael Crichton,male,85.14,14.86
+115,tt0107290,Jurassic Park,David Koepp,male,85.14,14.86
+116,tt0088763,Back to the Future,Robert Zemeckis,male,83.52,16.48
+117,tt0088763,Back to the Future,Bob Gale,male,83.52,16.48
+118,tt2488496,Star Wars Episode VII: The Force Awakens,J. J. Abrams,male,78.99,21.01
+119,tt2488496,Star Wars Episode VII: The Force Awakens,Lawrence Kasdan,male,78.99,21.01
+120,tt2488496,Star Wars Episode VII: The Force Awakens,Michael Arndt,male,78.99,21.01
+121,tt0054215,Psycho,Joseph Stefano,male,66.59,33.41
+122,tt0054215,Psycho,Robert Bloch,male,66.59,33.41
+123,tt0073195,Jaws,Peter Benchley,male,90.84,9.16
+124,tt0073195,Jaws,Carl Gottlieb,male,90.84,9.16
+125,tt1201607,Harry Potter and the Deathly Hallows – Part 2,Steve Kloves,male,78.1,21.9
+126,tt0417741,Harry Potter and the Half-Blood Prince,Steve Kloves,male,79.64,20.36
+127,tt0058331,Mary Poppins,Bill Walsh,male,53.54,46.46
+128,tt0058331,Mary Poppins,Don DaGradi,male,53.54,46.46
+129,tt0112462,Batman Forever,Akiva Goldsman,male,96.84,3.16
+130,tt0316654,Spider-Man 2,Alvin Sargent,male,84.22,15.78
+131,tt0061722,The Graduate,Calder Willingham,male,69.42,30.58
+132,tt0061722,The Graduate,Buck Henry,male,69.42,30.58
+133,tt0109830,Forrest Gump,Winston Groom,male,86.68,13.32
+134,tt0109830,Forrest Gump,Eric Roth,male,86.68,13.32
+135,tt0064115,Butch Cassidy and the Sundance Kid,William Goldman,male,86.05,13.95
+136,tt0119654,Men in Black,Ed Solomon,male,89.07,10.93
+137,tt0120755,Mission: Impossible 2,Brannon Braga,male,97.43,2.57
+138,tt0120755,Mission: Impossible 2,Ronald D. Moore,male,97.43,2.57
+139,tt0120755,Mission: Impossible 2,Robert Towne,male,97.43,2.57
+140,tt0070047,The Exorcist,William Peter Blatty,male,83.91,16.09
+141,tt0060164,The Bible: In the Beginning...,Christopher Fry,male,62.03,37.97
+142,tt2527336,Star Wars: Episode VIII – The Last Jedi,Rian Johnson,male,62.84,37.16
+143,tt0383574,Pirates of the Caribbean: Dead Man's Chest,Terry Rossio,male,83.66,16.34
+144,tt0383574,Pirates of the Caribbean: Dead Man's Chest,Ted Elliott,male,83.66,16.34
+145,tt0325980,Pirates of the Caribbean: The Curse of the Black Pearl,Terry Rossio,male,87.36,12.64
+146,tt0325980,Pirates of the Caribbean: The Curse of the Black Pearl,Ted Elliott,male,87.36,12.64
+147,tt0099653,Ghost,Bruce Joel Rubin,male,54.87,45.13
+148,tt0045793,From Here to Eternity,Daniel Taradash,male,72.92,27.08
+149,tt0103776,Batman Returns,Daniel Waters,male,61.76,38.24
+150,tt0103776,Batman Returns,Wesley Strick,male,61.76,38.24
+151,tt0055614,West Side Story,Ernest Lehman,male,67.31,32.69
+152,tt0059742,The Sound of Music,Ernest Lehman,male,25.29,74.71
+153,tt0067093,Fiddler on the Roof,Joseph Stein,male,46.9,53.1

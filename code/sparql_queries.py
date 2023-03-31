@@ -117,7 +117,7 @@ for tpl in film_list_dlg:
 
 # SPARQL query
 query_gender_director = '''
-    SELECT ?Movie ?Writer ?Gender
+    SELECT ?imdb ?Movie ?Writer ?Gender
     WHERE {{
         ?movie wdt:P345 ?imdb ;
                 wdt:P58 ?writer ;
@@ -142,7 +142,7 @@ result_dlg_query = sparql_dataframe.get(
 # Create a new df from the list of tuples
 add_dlg_df = pd.DataFrame(film_list_dlg, columns=[
                            "imdb", "male_percentage", "nonmale_percentage"])
-
+print(result_dlg_query)
 # Merge the two dataframes together using the IMDB ids columns
 result_dlg_query = result_dlg_query.merge(
     add_dlg_df, left_on="imdb", right_on="imdb")
@@ -159,6 +159,7 @@ for idx, row in result_dlg_query.iterrows():
 # print("Number of male writers\t:", n_Mwriters)  # 143
 # print("Number of female writers\t:", n_Fwriters)    # 11
 
+result_dlg_query.to_csv('data/sparql/dlg.csv')
 
 
 

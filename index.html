@@ -37,19 +37,17 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- amCharts -->
+  <script src="assets/js/sparql_viz.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-
-
 
 </head>
 
@@ -322,8 +320,9 @@
             <p class="line">We need all the help we can get.</p>
           </div>
 
+          
           <div class="container" data-aos="fade-up">
-
+            <!-- Red notes to navigate -->
             <ul class="nav nav-tabs-1 row gy-4 d-flex justify-content-center">
 
               <li class="nav-item col-6 col-md-4">
@@ -360,7 +359,7 @@
             </ul>
 
             <div class="tab-content">
-
+              <!-- Audience -->
               <div class="tab-pane active show" id="tab-1">
                 <div class="row gy-4">
                   <div class="order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
@@ -393,8 +392,9 @@
 
                   </div>
                 </div>
-              </div><!-- End Tab Content 1 -->
+              </div><!-- End Audience -->
 
+              <!-- Characters -->
               <div class="tab-pane" id="tab-2">
                 <div class="row gy-4">
                   <div class="order-2 order-lg-1">
@@ -444,10 +444,12 @@
                       <!-- New buttons -->
                       <nav>
                         <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                          <button class="nav-link bechdel active" id="passed-tab" data-bs-toggle="tab" data-bs-target="#passed"
-                            type="button" role="tab" aria-controls="passed" aria-selected="true">Passed</button>
-                          <button class="nav-link bechdel" id="failed-1-tab" data-bs-toggle="tab" data-bs-target="#failed-1"
-                            type="button" role="tab" aria-controls="failed-1" aria-selected="false">Failed rule
+                          <button class="nav-link bechdel active" id="passed-tab" data-bs-toggle="tab"
+                            data-bs-target="#passed" type="button" role="tab" aria-controls="passed"
+                            aria-selected="true">Passed</button>
+                          <button class="nav-link bechdel" id="failed-1-tab" data-bs-toggle="tab"
+                            data-bs-target="#failed-1" type="button" role="tab" aria-controls="failed-1"
+                            aria-selected="false">Failed rule
                             1</button>
                           <button class="nav-link bechdel" id="failed-2-tab" data-bs-toggle="tab"
                             data-bs-target="#failed-2" type="button" role="tab" aria-controls="failed-2"
@@ -532,11 +534,11 @@
                       <br>
                       <div>
                         <fig class="word-cloud">
-                          <img class ='word-cloud' src='Data/Descriptions/wordclouds/male.png'>
+                          <img class='word-cloud' src='Data/Descriptions/wordclouds/male.png'>
                           <figcaption> Adjectives describing male characters </figcaption>
                         </fig>
                         <fig class="word-cloud">
-                          <img class='word-cloud' src= 'Data/Descriptions/wordclouds/non-male.png'>
+                          <img class='word-cloud' src='Data/Descriptions/wordclouds/non-male.png'>
                           <figcaption> Adjectives describing non-male characters </figcaption>
                         </fig>
                       </div>
@@ -572,8 +574,9 @@
 
                   </div>
                 </div>
-              </div><!-- End Tab Content 2 -->
+              </div><!-- End Characters -->
 
+              <!-- Camera -->
               <div class="tab-pane" id="tab-3">
                 <div class="row gy-4">
                   <div class="order-2 order-lg-1">
@@ -593,6 +596,11 @@
                         deserunt mollit
                         anim id est laborum.<br>
                         Male looks down at Female, who is standing at his elbow.</p>
+
+                      <!-- CHART FOR DIALOGUES -->
+                      <div id="chartdiv"></div>
+
+
                       <h2>Female</h2>
                       <p class="line"> What are you going to do with it</p>
                       <h2>Male</h2>
@@ -608,7 +616,7 @@
 
                   </div>
                 </div>
-              </div><!-- End Tab Content 3 -->
+              </div><!-- End Camera -->
 
             </div>
 
