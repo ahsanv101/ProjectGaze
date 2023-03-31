@@ -39,35 +39,30 @@ for tpl in film_list_mg2:
 
 # SPARQL query
 query_costs_mg = '''
-
-SELECT ?Movie ?BoxOffice ?ProductionCosts
-    WHERE {{
-        ?movie wdt:P345 ?imdb ;
-                wdt:P2142 ?boxoffice ;
-               wdt:P2130 ?production ;
-                rdfs:label ?Movie .
-        OPTIONAL {
-          ?boxoffice wdt:P3005 wd:Q30 ;
-                   rdfs:label ?BoxOffice .
-          FILTER (lang(?BoxOffice) = "en") 
-          OPTIONAL {
-            ?production rdfs:label ?ProductionCosts .
-            FILTER (lang(?ProductionCosts) = "en")
-          }
-        }
-        FILTER ( (lang(?Movie) = "en"))
-        FILTER ( ?imdb IN ('tt0056172', 'tt0112462', 'tt0468569', 'tt0383574', 'tt0145487', 'tt0417741', 'tt0121766', 'tt0316654', 'tt0325980', 'tt0241527', 'tt0120755', 'tt4154796', 'tt1825683', 'tt2488496', 'tt0848228', 'tt2527336', 'tt0499549', 'tt0770828', 'tt3748528', 'tt1201607', 'tt1877832') )
- }} 
-
-
-
-
-
+SELECT ?Movie ?ProductionCosts ?BoxOffice 
+WHERE {{
+  ?movie wdt:P345 ?imdb ;
+        rdfs:label ?Movie .
+  OPTIONAL {{
+    ?movie wdt:P2130 ?ProductionCosts .
+  }}
+  OPTIONAL {{
+    ?movie wdt:P2142 ?BoxOffice .
+    ?statement ps:P2142 ?BoxOffice .
+    ?statement pq:P3005 ?validity .
+    }}
+  FILTER ( (lang(?Movie) = "en") && ((?validity = wd:Q30) || (?validity = wd:Q49)) )
+  FILTER NOT EXISTS {{ ?statement pq:P1264 ?o }}
+  FILTER ( ?imdb in {list} )
+}}
 '''
 
 result_mg2_query = sparql_dataframe.get(wikidata_endpoint, query_costs_mg.format(list=ids_tpl_mg2),True)
+print(result_mg2_query)
 
 # Add to the resulting df also the male gaze score
 add_mg2_df = pd.DataFrame(film_list_mg2,columns=["imdb", "gaze_score"])
 
 result_mg2_query = result_mg2_query.merge(add_mg2_df,left_on="imdb",right_on="imdb")
+
+print(result_mg2_query)
