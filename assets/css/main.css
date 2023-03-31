@@ -1794,6 +1794,17 @@ section .image img {
   border-bottom: 1.2px solid var(--color-default);
 }
 
+/* SPARQL viz */
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+
+
+
+
+
 /* ------- Further Research subsection - Female Gaze */
 .onfocus {
   padding-bottom: 2em;
