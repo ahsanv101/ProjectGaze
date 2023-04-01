@@ -1,4 +1,4 @@
-,imdbid,Title,Decade,Genre,Director,year,bechdel_rating,male_percen,nonmale_percentage,dialogue_score,bechdel_score,count,inappropriate_count,descriptions_score,_merge,final_score
+,imdbid,Title,Decade,Genre,Director,year,bechdel_rating,male_percen,nonmale_percentage,dialogue_score,bechdel_score,count,inappropriate_count,descriptions_score,_merge,gaze_score
 0,38969,Song of the South,40s,Animation,"Wilfred Jackson, Harve Foster",1946,2.0,84.1,15.9,25.0,13.33,1.0,0.0,0.0,both,38.33
 1,41838,Samson and Delilah,40s,Historical,Cecil B.DeMille,1949,,,,,,9.0,0.0,0.0,both,0.0
 3,31381,Gone with the Wind,40s,Drama,Victor Fleming,1939,3.0,40.9,59.1,0.0,0.0,16.0,0.0,0.0,both,0.0
