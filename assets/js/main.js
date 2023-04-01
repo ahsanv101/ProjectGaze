@@ -1201,7 +1201,7 @@ suggestedMax: 100,
 
 // Gaze score start
 
-d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/final_scores/final_scores_df.csv")
+d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Dialogue/dialogue_bechdel.csv")
 .then((d) => {
 
 makeChart4(d);
