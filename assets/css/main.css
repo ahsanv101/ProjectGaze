@@ -2490,3 +2490,16 @@ footer {
   font-size:0.7em;
   opacity:0.6;
 }
+
+.word-cloud img:hover{
+  transform: scale(1.4);
+  transition: 2s;
+}
+
+/* .word-cloud img:hover{
+  transform: scale(1.4);
+  transition: 2s;
+} */
+/*
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
