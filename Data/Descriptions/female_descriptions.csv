@@ -1,0 +1,81 @@
+,movie,script_name,count,inappropriate_count,score
+0,Avatar,avatar.php,91,0,10.44003343083995
+1,Quo Vadis?,quo vadis.pdf,26,0,0.0
+2,Star Wars: Episode III - Revenge of the Sith,starwars_revenge-of-sith.php,15,1,3.2082130082460703
+3,The Dark Knight,dark-knight.php,31,0,0.0
+4,Back to the Future,backtothefuture.pdf,11,0,0.0
+5,Superman II,supermanII.pdf,45,2,7.129175233515609
+6,Beverly Hills Cop II,beverly-hills-copII.pdf,11,1,3.2082130082460703
+7,The Bridge on the River Kwai,the bridge on the river kwai.pdf,0,0,0.0
+8,Gone with the Wind,gone with the wind.php,17,0,0.0
+9,Avengers: Endgame,avengers-endgame-2019.pdf,44,0,2.583786042624321
+10,The Avengers,the-avengers-2012.pdf,25,1,3.2082130082460703
+11,Top Gun,top-gun-1986.pdf,30,1,3.2082130082460703
+12,Blazing Saddles,Blazing-Saddles (1).pdf,10,3,5.621765008857981
+13,Samson and Delilah,Samson&Delilah.pdf,9,0,0.0
+14,The Snake Pit,The Snake Pit.pdf,7,0,0.0
+15,Rocky,rocky.php,17,0,0.0
+16,The Graduate,the-graduate.php,69,1,9.97085404460211
+17,X-Men: Days of Future Past,x-men-days-of-future-past-2014.pdf,48,1,6.460615849867466
+18,Spiderman,spiderman.pdf,57,2,9.135025630506833
+19,Mission Impossible II,mission-impossible2 (1).pdf,40,2,6.293404234769266
+20,The Godfather,the-godfather.php,49,3,9.041322050228645
+21,Yankee Doodle Dandy,yankee doodle dandy(transcript).pdf,2,0,0.0
+22,The Bells of St. Mary,the bells of st.mary.pdf,4,0,0.0
+23,From Here To Eternity,from_here_to_eternity_(1953).pdf,45,0,2.75094024237359
+24,Independence Day,independenceday.php,27,0,0.0
+25,Transformers,transformers.pdf,3,0,0.0
+26,The Sea Chase,The Sea Chase.pdf,5,0,0.0
+27,Batman Forever,batmanforever.php,1,0,0.0
+28,Star Wars: Episode I - The Phantom Menace,starwars_thephantomenace.php,8,0,0.0
+29,Star Wars: Episode VI - Return of the Jedi,star-wars-return-of-jedi.php,19,0,0.0
+30,Mary Poppins,mary-poppins.php,5,0,0.0
+31,Butch Cassidy and the Sundance Kid,butch-cassidy-and-the-sundance-kid-1969.pdf,31,0,0.0
+32,The Exorcist,The-Exorcist.php,83,2,13.48103482398782
+33,Forever Amber,foreveramber.pdf,6,0,0.0
+34,Forrest Gump,forrestgump.php,20,6,8.519528019683106
+35,The Sound of Music,The_Sound_Of_Music_2.pdf,17,0,0.0
+36,Song of the South,song-of-the-south.php,1,0,0.0
+37,The Greatest Show on Earth,The Greatest Show on Earth.pdf,7,0,0.0
+38,Men in Black,meninblack.php,29,0,0.0
+39,White Christmas,white-christmas.pdf,24,1,3.2082130082460703
+40,2001: A Space Odyssey,2001-space-odyssey.pdf,2,0,0.0
+41,Star Wars: Episode V - The Empire Strikes Back,star wars_the-empire-strikes-back.php,25,0,0.0
+42,Batman Returns,batman-returns.pdf,48,1,6.460615849867466
+43,Going My Way,Going My Way.pdf,5,0,0.0
+44,Star Wars: Episode IV - A New Hope,Star Wars_ episode IV.php,18,0,0.0
+45,The Bible,The Bible.pdf,3,0,0.0
+46,Star Wars: Episode VIII - The Last Jedi,star-wars-lastjedi.php,1,0,0.0
+47,Spider-Man 2,spider-man-2-2004.pdf,49,0,3.419557041370665
+48,Ghost,ghost.pdf,138,5,26.06927943080249
+49,Batman,batman1989.php,60,0,5.25825323861262
+50,Black Panther,BlackPanther.pdf,51,1,6.962078449115272
+51,Lawrence of Arabia,lawrence-of-arabia-1962.pdf,3,0,0.0
+52,Pirates of the Caribbean: The Curse of the Black Pearl,pirates-of-the-caribbean-the-curse-of-the-black-pearl-2003.pdf,60,0,5.25825323861262
+53,Sergeant York,Sergeant York.pdf,2,0,0.0
+54,Harry Potter and the Deathly Hallows: Part 2,harry-potter-and-the-deathly-hollows-part-2-2011.pdf,56,2,8.967871430757565
+55,Harry Potter and the Sorcerers Stone,harry-potter-and-the-sorcerers-stone-2001.pdf,18,0,0.0
+56,Psycho,psycho.pdf,86,3,15.226027440951587
+57,West Side Story,West-Side-Story-Read-The-Screenplay.pdf,77,0,8.09987463435019
+58,Fiddler on the Roof,fiddler on the roof.pdf,8,0,0.0
+59,Pirates of the Caribbean: Dead Mans Chest,pirates-of-the-caribbean-dead-mans-chest-2006.pdf,23,1,3.2082130082460703
+60,Superman,superman.php,38,1,4.789073852374779
+61,Casablanca,casablanca.pdf,32,0,0.0
+62,The Ten Commandments,The ten commandments.pdf,13,0,0.0
+63,Who Framed Roger Rabbit,rogerrabbit.php,20,0,0.0
+64,Jurassic Park,jurassicpark.php,43,0,2.4166318428750526
+65,Ghostbusters,ghostbuster.php,10,0,0.0
+66,Cleopatra,Cleopatra.pdf,7,1,3.2082130082460703
+67,Harry Potter and the Half Blood Prince ,harry-potter-and-the-halfblood-prince.pdf,71,1,10.305162444100647
+68,Man of Steel,ManofSteelnSecondDraftn.pdf,70,1,10.138008244351377
+69,Love Story,Love Story.pdf,1,0,0.0
+70,Titanic,titanic-numbered.pdf,214,8,35.0
+71,Star Wars: The Force Awakens,star-wars-the-force-awakens.pdf,64,0,5.926870037609695
+72,Some like it hot,SomeLikeItHot.pdf,49,1,6.6277700496167355
+73,Terminator 2: Judgment Day,terminator-2-judgement-day-1991.pdf,132,0,17.293355620559968
+74,All About Eve,All-About-Eve.pdf,121,3,21.07642443217599
+75,Cat on a Hot Tin Roof,Cat on a Hot Tin Roof.pdf,77,5,15.8728732460971
+76,Rogue One: A Star Wars Story,rogue-one-a-star-wars-story.php,12,0,0.0
+77,E.T. the Extra-Terrestrial,E.T-Extra-Terrestrial.pdf,28,0,0.0
+78,JAWS,JAWS.pdf,19,0,0.0
+79,Grease,Grease.pdf,19,1,3.2082130082460703

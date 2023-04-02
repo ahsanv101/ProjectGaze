@@ -1117,7 +1117,7 @@ function makeChart3(d)
 // Character dialogue end
 
 // Character description start
-d3.csv('https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Descriptions/fem_descriptions_df.csv').then(function(data) {
+d3.csv('https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Descriptions/female_descriptions.csv').then(function(data) {
   // Sort data in descending order based on value
   data.sort(function(a, b) {
     return parseInt(b.inappropriateCount) - parseInt(a.inappropriateCount);
