@@ -28,7 +28,7 @@ am5.net.load("/data/sparql/dlg.csv").then(function (result) {
 
 var rowSize = 20;
 var colSize = 5;
-
+/* 
 function generateData(count) {
     var row = 1;
     var col = 1;
@@ -57,8 +57,17 @@ function generateCategories(count) {
     return data;
 }
 
-
-
+ */
+AmCharts.makeChart("chartdiv", {
+      "type": "pie",
+      "dataLoader": {
+        "url": "data/pie.csv",
+        "format": "csv",
+        "delimiter": ",",
+        "useColumnNames": true
+     },
+    }
+)
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
 var root = am5.Root.new("chartdiv");
