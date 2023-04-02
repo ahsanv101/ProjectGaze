@@ -4,7 +4,7 @@ import sparql_dataframe
 
 wikidata_endpoint = "https://query.wikidata.org/bigdata/namespace/wdq/sparql?query={SPARQL}"
 
-df = pd.read_csv('data/dialogue/dialogue_bechdel.csv')
+df_mg = pd.read_csv('data/final_scores/final_scores_df.csv')
 
 def createIMDBid(code):
     if len(str(code)) == 5:
@@ -17,14 +17,14 @@ def createIMDBid(code):
 # -- MG1: To what genre belong the top 10 films in the gaze score ranking?
 
 # Clean df from the movies that have NO male gaze score
-MG_df = df.dropna(axis=0, subset=["gaze_score"])
+MG_df = df_mg.dropna(axis=0, subset=["gaze_score"])
 
 # Sort df according to "male gaze" score
 MG_df.sort_values(by="gaze_score", ascending=False, inplace=True, ignore_index=True)
 
-
 # Save only top 10 movies in the "male gaze" ordered df
 topMG_df = MG_df.head(10)
+
 
 film_list_mg1 = list()
 
@@ -44,13 +44,13 @@ for tpl in film_list_mg1:
 
 # SPARQL query
 query_10_mg = '''
-    SELECT ?Movie ?Genre
+    SELECT ?imdb ?Movie ?Genre
     WHERE {{
         ?movie wdt:P345 ?imdb ;
                 wdt:P136 ?genre ;
                 rdfs:label ?Movie .
         ?genre rdfs:label ?Genre .
-        FILTER ( (lang(?Writer) = "en") && (lang(?Movie) = "en"))
+        FILTER ( (lang(?Movie) = "en") && (lang(?Genre) = "en"))
         FILTER ( ?imdb IN {list} )
     }}
 '''
@@ -61,3 +61,4 @@ result_mg1_query = sparql_dataframe.get(wikidata_endpoint, query_10_mg.format(li
 add_mg1_df = pd.DataFrame(film_list_mg1,columns=["imdb", "gaze_score"])
 
 result_mg1_query = result_mg1_query.merge(add_mg1_df,left_on="imdb",right_on="imdb")
+result_mg1_query.to_csv('data/sparql/mg1.csv')

@@ -1,0 +1,51 @@
+,imdb,Movie,Genre,gaze_score
+0,tt0145487,Spider-Man,drama film,60.79502563050683
+1,tt0145487,Spider-Man,science fiction film,60.79502563050683
+2,tt0145487,Spider-Man,superhero film,60.79502563050683
+3,tt0145487,Spider-Man,coming-of-age fiction,60.79502563050683
+4,tt0120755,Mission: Impossible 2,action film,71.29340423476927
+5,tt0120755,Mission: Impossible 2,spy film,71.29340423476927
+6,tt0120755,Mission: Impossible 2,thriller film,71.29340423476927
+7,tt1877832,X-Men: Days of Future Past,action film,58.12061584986746
+8,tt1877832,X-Men: Days of Future Past,superhero film,58.12061584986746
+9,tt1877832,X-Men: Days of Future Past,science fiction film,58.12061584986746
+10,tt1877832,X-Men: Days of Future Past,thriller film,58.12061584986746
+11,tt1877832,X-Men: Days of Future Past,dystopian film,58.12061584986746
+12,tt1877832,X-Men: Days of Future Past,crossover fiction,58.12061584986746
+13,tt1877832,X-Men: Days of Future Past,time-travel film,58.12061584986746
+14,tt0062622,2001: A Space Odyssey,adventure film,65.0
+15,tt0062622,2001: A Space Odyssey,epic film,65.0
+16,tt0062622,2001: A Space Odyssey,mystery film,65.0
+17,tt0062622,2001: A Space Odyssey,thriller film,65.0
+18,tt0062622,2001: A Space Odyssey,speculative/fantastic fiction film,65.0
+19,tt0062622,2001: A Space Odyssey,film based on literature,65.0
+20,tt0062622,2001: A Space Odyssey,space adventure film,65.0
+21,tt0080684,Star Wars: Episode V – The Empire Strikes Back,fantasy film,65.0
+22,tt0080684,Star Wars: Episode V – The Empire Strikes Back,action film,65.0
+23,tt0080684,Star Wars: Episode V – The Empire Strikes Back,adventure film,65.0
+24,tt0080684,Star Wars: Episode V – The Empire Strikes Back,science fiction film,65.0
+25,tt0071230,Blazing Saddles,comedy film,57.28176500885797
+26,tt0071230,Blazing Saddles,Western film,57.28176500885797
+27,tt0109830,Forrest Gump,drama film,60.179528019683104
+28,tt0109830,Forrest Gump,comedy film,60.179528019683104
+29,tt0109830,Forrest Gump,tragicomedy,60.179528019683104
+30,tt0109830,Forrest Gump,romantic comedy,60.179528019683104
+31,tt0109830,Forrest Gump,historical drama,60.179528019683104
+32,tt0109830,Forrest Gump,coming-of-age fiction,60.179528019683104
+33,tt0109830,Forrest Gump,film based on a novel,60.179528019683104
+34,tt0109830,Forrest Gump,American football film,60.179528019683104
+35,tt0109830,Forrest Gump,flashback film,60.179528019683104
+36,tt0103776,Batman Returns,fantasy film,61.16061584986747
+37,tt0103776,Batman Returns,action film,61.16061584986747
+38,tt0103776,Batman Returns,superhero film,61.16061584986747
+39,tt0103776,Batman Returns,neo-noir,61.16061584986747
+40,tt0103776,Batman Returns,Christmas film,61.16061584986747
+41,tt0096895,Batman,action film,56.91825323861261
+42,tt0096895,Batman,superhero film,56.91825323861261
+43,tt0096895,Batman,neo-noir,56.91825323861261
+44,tt0056172,Lawrence of Arabia,drama film,65.0
+45,tt0056172,Lawrence of Arabia,adventure film,65.0
+46,tt0056172,Lawrence of Arabia,war film,65.0
+47,tt0056172,Lawrence of Arabia,biographical film,65.0
+48,tt0056172,Lawrence of Arabia,flashback film,65.0
+49,tt0056172,Lawrence of Arabia,film based on books,65.0

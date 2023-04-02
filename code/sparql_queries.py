@@ -142,7 +142,7 @@ result_dlg_query = sparql_dataframe.get(
 # Create a new df from the list of tuples
 add_dlg_df = pd.DataFrame(film_list_dlg, columns=[
                            "imdb", "male_percentage", "nonmale_percentage"])
-print(result_dlg_query)
+
 # Merge the two dataframes together using the IMDB ids columns
 result_dlg_query = result_dlg_query.merge(
     add_dlg_df, left_on="imdb", right_on="imdb")
