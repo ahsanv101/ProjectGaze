@@ -10,7 +10,7 @@
  * ---------------------------------------
  */
 
-
+/* 
 am5.net.load("/data/sparql/dlg.csv").then(function (result) {
     // This gets executed when data finishes loading
     series.data.setAll(am5.CSVParser.parse(result.response, {
@@ -19,15 +19,16 @@ am5.net.load("/data/sparql/dlg.csv").then(function (result) {
         skipEmpty: true,
         useColumnNames: true
     }));
+    console.log("The loading is done")
 }).catch(function (result) {
     // This gets executed if there was an error loading URL
     // ... handle error
     console.log("Error loading " + result.xhr.responseURL);
 });
-
-
+ */
+/* 
 var rowSize = 20;
-var colSize = 5;
+var colSize = 5; */
 /* 
 function generateData(count) {
     var row = 1;
@@ -61,7 +62,7 @@ function generateCategories(count) {
 AmCharts.makeChart("chartdiv", {
       "type": "pie",
       "dataLoader": {
-        "url": "data/pie.csv",
+        "url": "/data/sparql/dlg.csv",
         "format": "csv",
         "delimiter": ",",
         "useColumnNames": true
