@@ -1,0 +1,82 @@
+,Title,AVG sentiment
+0,2001: A Space Odyssey,0.824364
+1,All About Eve,0.945763
+2,Avatar,0.749356
+3,Avengers: Endgame,0.466012
+4,Back to the Future,0.96423846153846
+5,Batman,0.848408
+6,Batman Forever,0.644444
+7,Batman Returns,0.702332
+8,Beverly Hills Cop II,0.854596
+9,Black Panther,0.38386
+10,Blazing Saddles,0.8021625
+11,Butch Cassidy and the Sundance Kid,0.733344
+12,Casablanca,0.98914
+13,Cat on a Hot Tin Roof,0.559521
+14,Cleopatra,0.671088
+15,E.T. the Extra-Terrestrial,0.79138
+16,Fiddler on the Roof,0.97328
+17,Forever Amber,0.736903
+18,Forrest Gump,0.930992
+19,From Here To Eternity,0.848916
+20,Ghost, 0.877444
+21,Ghostbusters,0.945372
+22,Going My Way,0.9588
+23,Gone with the Wind,0.870536
+24,Grease,0.954555
+25,Harry Potter and the Deathly Hallows: Part 2,0.654337
+26,Harry Potter and the Half Blood Prince ,0.445196
+27,Harry Potter and the Sorcerers Stone,0.966264
+28,Independence Day,0.347692
+29,JAWS,0.67524
+30,Jurassic Park,0.9064
+31,Lawrence of Arabia,0.830623
+32,Love Story,0.823352
+33,Man of Steel,0.666947
+34,Mary Poppins,0.841872
+35,Men in Black,0.889036
+36,Mission Impossible II,0.373846
+37,Pirates of the Caribbean: Dead Mans Chest,0.538244
+38,Pirates of the Caribbean: The Curse of the Black Pearl,0.868730
+39,Psycho,0.333404
+40,Quo Vadis?,0.835096
+41,Rocky,0.929748
+42,Rogue One: A Star Wars Story,0.229788
+43,Samson and Delilah,0.677692
+44,Sergeant York,0.870572
+45,Some like it hot,0.977403
+46,Song of the South,0.588433
+47,Spider-Man 2,0.893468
+48,Spiderman,0.867508
+49,Star Wars: Episode I - The Phantom Menace,0.745561
+50,Star Wars: Episode III - Revenge of the Sith,0.176484
+51,Star Wars: Episode IV - A New Hope,0.532369
+52,Star Wars: Episode V - The Empire Strikes Back,0.735564
+53,Star Wars: Episode VI - Return of the Jedi,0.447164
+54,Star Wars: Episode VIII - The Last Jedi,0.238004
+55,Star Wars: The Force Awakens, 0.494348
+56,Superman,0.817288
+57,Superman II,0.493787
+58,Terminator 2: Judgment Day,0.821007
+59,The Avengers,0.949168
+60,The Bells of St. Mary,0.960307
+61,The Bible,0.9984
+62,The Bridge on the River Kwai,0.920164
+63,The Dark Knight,0.828008
+64,The Exorcist,0.024424
+65,The Godfather,0.737704
+66,The Graduate,0.864592
+67,The Greatest Show on Earth,0.920164
+68,The Sea Chase,0.555912
+69,The Snake Pit,0.571724
+70,The Sound of Music,0.870596
+71,The Ten Commandments,0.966792
+72,Titanic,0.616566
+73,Top Gun,0.734696
+74,Transformers,0.713748
+75,West Side Story,0.987488
+76,White Christmas,0.932012
+77,Who Framed Roger Rabbit,0.785553
+78,X-Men: Days of Future Past,0.785
+79,Yankee Doodle Dandy,0.952376
+,,
