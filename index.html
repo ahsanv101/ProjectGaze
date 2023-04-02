@@ -37,15 +37,25 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
   <!-- amCharts -->
-  <script src="assets/js/sparql_viz.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/locales/de_DE.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/geodata/germanyLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/fonts/notosans-sc.js"></script>
+  <script src="assets/js/sparql_viz.js"></script>
+
 
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
@@ -366,14 +376,19 @@
 
                     <div class="section-header row">
                       <h2 class="title">Audience</h2>
-                      <p class="desc">The audience's perspective has been defined through sentiment analysis and the detection
-                                      of sexist language in a series of reviews obtained from web scraping the IMDB pages of 
-                                      our chosen movies.
-                        <br> Since both of these analyses have not been executed on the entirety of the reviews, but, on the contrary,
-                             on each one of the sentences composing then, the obtained values are the result of an overall average between the computed
-                             scores (as in the case of an audience's tone and attitude) or as a sum of singular instances (as shown by
-                             our detected sexist occurrences).
-                        <br> The following graph represents the overall tone of each analysed audience: </p>
+                      <p class="desc">The audience's perspective has been defined through sentiment analysis and the
+                        detection
+                        of sexist language in a series of reviews obtained from web scraping the IMDB pages of
+                        our chosen movies.
+                        <br> Since both of these analyses have not been executed on the entirety of the reviews, but, on
+                        the contrary,
+                        on each one of the sentences composing then, the obtained values are the result of an overall
+                        average between the computed
+                        scores (as in the case of an audience's tone and attitude) or as a sum of singular instances (as
+                        shown by
+                        our detected sexist occurrences).
+                        <br> The following graph represents the overall tone of each analysed audience:
+                      </p>
                     </div>
 
                   </div>
@@ -520,11 +535,11 @@
                       <br>
                       <div>
                         <fig class="word-cloud">
-                          <img class ='word-cloud' src='Data/Descriptions/wordclouds/male-eye-wc.png'>
+                          <img class='word-cloud' src='Data/Descriptions/wordclouds/male-eye-wc.png'>
                           <figcaption> Adjectives describing male characters </figcaption>
                         </fig>
                         <fig class="word-cloud">
-                          <img class='word-cloud' src= 'Data/Descriptions/wordclouds/female-eye-wc-blue.png'>
+                          <img class='word-cloud' src='Data/Descriptions/wordclouds/female-eye-wc-blue.png'>
                           <figcaption> Adjectives describing non-male characters </figcaption>
                         </fig>
                       </div>

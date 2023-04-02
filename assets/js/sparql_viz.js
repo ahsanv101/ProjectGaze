@@ -10,65 +10,39 @@
  * ---------------------------------------
  */
 
-/* 
-am5.net.load("/data/sparql/dlg.csv").then(function (result) {
-    // This gets executed when data finishes loading
-    series.data.setAll(am5.CSVParser.parse(result.response, {
-        delimiter: ",",
-        reverse: true,
-        skipEmpty: true,
-        useColumnNames: true
-    }));
-    console.log("The loading is done")
-}).catch(function (result) {
-    // This gets executed if there was an error loading URL
-    // ... handle error
-    console.log("Error loading " + result.xhr.responseURL);
-});
- */
-/* 
 var rowSize = 20;
-var colSize = 5; */
-/* 
+var colSize = 5;
+
 function generateData(count) {
-    var row = 1;
-    var col = 1;
-    var data = [];
-    for (var i = 0; i < count; i++) {
-        data.push({
-            x: col + "",
-            y: row + ""
-        });
-        col++;
-        if (col > rowSize) {
-            row++;
-            col = 1;
-        }
+  var row = 1;
+  var col = 1;
+  var data = [];
+  for(var i = 0; i < count; i++) {
+    data.push({
+      x: col + "",
+      y: row + ""
+    });
+    col++;
+    if (col > rowSize) {
+      row++;
+      col = 1;
     }
-    return data;
+  }
+  return data;
 }
 
 function generateCategories(count) {
-    var data = [];
-    for (var i = 0; i < count; i++) {
-        data.push({
-            cat: (i + 1) + ""
-        });
-    }
-    return data;
+  var data = [];
+  for(var i = 0; i < count; i++) {
+    data.push({
+      cat: (i + 1) + ""
+    });
+  }
+  return data;
 }
 
- */
-AmCharts.makeChart("chartdiv", {
-      "type": "pie",
-      "dataLoader": {
-        "url": "/data/sparql/dlg.csv",
-        "format": "csv",
-        "delimiter": ",",
-        "useColumnNames": true
-     },
-    }
-)
+
+
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
 var root = am5.Root.new("chartdiv");
@@ -77,26 +51,26 @@ var root = am5.Root.new("chartdiv");
 // Set themes
 // https://www.amcharts.com/docs/v5/concepts/themes/
 root.setThemes([
-    am5themes_Animated.new(root)
+  am5themes_Animated.new(root)
 ]);
 
 
 // Create chart
 // https://www.amcharts.com/docs/v5/charts/xy-chart/
 var chart = root.container.children.push(am5xy.XYChart.new(root, {
-    panX: false,
-    panY: false,
-    wheelX: "panX",
-    wheelY: "zoomX",
-    layout: root.verticalLayout
+  panX: false,
+  panY: false,
+  wheelX: "panX",
+  wheelY: "zoomX",
+  layout: root.verticalLayout
 }));
 
 
 // Create axes
 // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
 var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
-    categoryField: "cat",
-    renderer: am5xy.AxisRendererX.new(root, {})
+  categoryField: "cat",
+  renderer: am5xy.AxisRendererX.new(root, {})
 }));
 var xRenderer = xAxis.get("renderer");
 xRenderer.labels.template.set("forceHidden", true);
@@ -104,8 +78,8 @@ xRenderer.grid.template.set("forceHidden", true);
 xAxis.data.setAll(generateCategories(rowSize));
 
 var yAxis1 = chart.yAxes.push(am5xy.CategoryAxis.new(root, {
-    categoryField: "cat",
-    renderer: am5xy.AxisRendererY.new(root, {})
+  categoryField: "cat",
+  renderer: am5xy.AxisRendererY.new(root, {})
 }));
 var yRenderer1 = yAxis1.get("renderer");
 yRenderer1.labels.template.set("forceHidden", true);
@@ -113,18 +87,18 @@ yRenderer1.grid.template.set("forceHidden", true);
 yAxis1.data.setAll(generateCategories(colSize));
 
 yAxis1.children.unshift(
-    am5.Label.new(root, {
-        text: "[#247ba0]Male[/]\n[#247ba0]58[/][#999999]/100[/]",
-        fontSize: 32,
-        y: am5.p50,
-        centerY: am5.p50
-    })
+  am5.Label.new(root, {
+    text: "[#247ba0]Male[/]\n[#247ba0]58[/][#999999]/100[/]",
+    fontSize: 32,
+    y: am5.p50,
+    centerY: am5.p50
+  })
 );
 
 var yAxis2 = chart.yAxes.push(am5xy.CategoryAxis.new(root, {
-    categoryField: "cat",
-    renderer: am5xy.AxisRendererY.new(root, {}),
-    marginTop: 20
+  categoryField: "cat",
+  renderer: am5xy.AxisRendererY.new(root, {}),
+  marginTop: 20
 }));
 var yRenderer2 = yAxis2.get("renderer");
 yRenderer2.labels.template.set("forceHidden", true);
@@ -132,12 +106,12 @@ yRenderer2.grid.template.set("forceHidden", true);
 yAxis2.data.setAll(generateCategories(colSize));
 
 yAxis2.children.unshift(
-    am5.Label.new(root, {
-        text: "[#f25f5c]Female[/]\n[#f25f5c]67[/][#999999]/100[/]",
-        fontSize: 32,
-        y: am5.p50,
-        centerY: am5.p50
-    })
+  am5.Label.new(root, {
+    text: "[#f25f5c]Female[/]\n[#f25f5c]67[/][#999999]/100[/]",
+    fontSize: 32,
+    y: am5.p50,
+    centerY: am5.p50
+  })
 );
 
 chart.leftAxesContainer.set("layout", root.verticalLayout);
@@ -146,43 +120,43 @@ chart.leftAxesContainer.set("layout", root.verticalLayout);
 // Add series
 // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
 function makeSeries(name, yAxis, data, color, path) {
-    var series = chart.series.push(am5xy.ColumnSeries.new(root, {
-        name: name,
-        xAxis: xAxis,
-        yAxis: yAxis,
-        categoryYField: "y",
-        openCategoryYField: "y",
-        categoryXField: "x",
-        openCategoryXField: "x",
-        clustered: false
-    }));
+  var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+    name: name,
+    xAxis: xAxis,
+    yAxis: yAxis,
+    categoryYField: "y",
+    openCategoryYField: "y",
+    categoryXField: "x",
+    openCategoryXField: "x",
+    clustered: false
+  }));
 
-    series.columns.template.setAll({
-        width: am5.percent(100),
-        height: am5.percent(100),
-        fillOpacity: 0,
-        strokeOpacity: 0
+  series.columns.template.setAll({
+    width: am5.percent(100),
+    height: am5.percent(100),
+    fillOpacity: 0,
+    strokeOpacity: 0
+  });
+
+  
+  series.bullets.push(function(root) {
+    return am5.Bullet.new(root, {
+      locationX: 0.5,
+      locationY: 0.5,
+      sprite: am5.Graphics.new(root, {
+        fill: color,
+        svgPath: path,
+        centerX: am5.p50,
+        centerY: am5.p50,
+        scale: 0.8
+      })
     });
-
-
-    series.bullets.push(function (root) {
-        return am5.Bullet.new(root, {
-            locationX: 0.5,
-            locationY: 0.5,
-            sprite: am5.Graphics.new(root, {
-                fill: color,
-                svgPath: path,
-                centerX: am5.p50,
-                centerY: am5.p50,
-                scale: 0.8
-            })
-        });
-    });
-
-    series.data.setAll(data);
-
-    series.appear();
-    return series;
+  });
+  
+  series.data.setAll(data);
+  
+  series.appear();
+  return series;
 }
 
 var femaleColor = am5.color(0xf25f5c);
