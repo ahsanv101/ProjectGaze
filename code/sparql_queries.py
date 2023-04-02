@@ -26,11 +26,10 @@ def createIMDBid(code):
     elif len(str(code)) == 7:
         return "tt"+str(code)
 
-
-film_list_bechdel = list()
-
 # Clean df from the movies that have NOT been tested for bechdel
 bechdel_df = df.dropna(axis=0, subset=["bechdel_rating"])
+
+film_list_bechdel = list()
 
 # Iterate over df and save IMDB id and Bechdel result in a tuple to append to the film_list_bechdel
 for idx, row in bechdel_df.iterrows():
@@ -39,7 +38,7 @@ for idx, row in bechdel_df.iterrows():
     film_list_bechdel.append(tuple)
 
 # Calculate the total movies which have been tested for bechdel
-n_films = len(film_list_bechdel)    # 72
+n_films_B = len(film_list_bechdel)    # 72
 
 # Now the list of IMDB ids is fully populated
 # If the bechdel_rating is:
@@ -85,7 +84,7 @@ result_bechdel_query = result_bechdel_query.merge(
 
 
 # Calculate the number of films with a male director (n. rows of the result_query df)
-total_Mdirectors = (len(result_bechdel_query.index))  # 72
+total_Mdirectors = (len(result_bechdel_query.index))  # 79
 
 # The total number of films tested for the Bechdel test and the total number of films tested for the Bechdel test AND with a male director is the same (a higher n. of male directors is due to the case in which a film has more than one director) -> this means that, no matter the result of the Bechdel test, ALL SELECTED MOVIES HAVE MALE DIRECTORS
 
@@ -105,7 +104,7 @@ for idx, row in dlg_df.iterrows():
     film_list_dlg.append(tuple)
 
 # Calculate the total movies which have dialogue % analysis
-n_films = len(film_list_dlg)    # 66
+n_films_DLG = len(film_list_dlg)    # 66
 
 # STEPS FOR SPARQL QUERY
 # Tuple of IDs only (no info on dialogue %)
