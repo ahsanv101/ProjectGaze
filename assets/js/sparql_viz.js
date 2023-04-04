@@ -10,7 +10,7 @@
  * ---------------------------------------
  */
 
-var rowSize = 20;
+var rowSize = 32;
 var colSize = 5;
 
 function generateData(count) {
@@ -45,7 +45,7 @@ function generateCategories(count) {
 
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root = am5.Root.new("chartdiv");
+var root = am5.Root.new("SPARQLchartDLG");
 
 
 // Set themes
@@ -88,7 +88,7 @@ yAxis1.data.setAll(generateCategories(colSize));
 
 yAxis1.children.unshift(
   am5.Label.new(root, {
-    text: "[#247ba0]Male[/]\n[#247ba0]58[/][#999999]/100[/]",
+    text: "[#3e8488]Male[/]\n[#3e8488]143[/][#999999]/154[/]",
     fontSize: 32,
     y: am5.p50,
     centerY: am5.p50
@@ -107,7 +107,7 @@ yAxis2.data.setAll(generateCategories(colSize));
 
 yAxis2.children.unshift(
   am5.Label.new(root, {
-    text: "[#f25f5c]Female[/]\n[#f25f5c]67[/][#999999]/100[/]",
+    text: "[#b15859]Female[/]\n[#b15859]11[/][#999999]/154[/]",
     fontSize: 32,
     y: am5.p50,
     centerY: am5.p50
@@ -159,18 +159,18 @@ function makeSeries(name, yAxis, data, color, path) {
   return series;
 }
 
-var femaleColor = am5.color(0xf25f5c);
-var maleColor = am5.color(0x247ba0);
+var femaleColor = am5.color(0xb15859); /* b15859 */ /* f25f5c */
+var maleColor = am5.color(0x3e8488); /* 57b5ba */ /* 247ba0 */ 
 var placeholderColor = am5.color(0x999999);
 
 var maleIcon = "M 25.1 10.7 c 2.1 0 3.7 -1.7 3.7 -3.7 c 0 -2.1 -1.7 -3.7 -3.7 -3.7 c -2.1 0 -3.7 1.7 -3.7 3.7 C 21.4 9 23 10.7 25.1 10.7 z M 28.8 11.5 H 25.1 h -3.7 c -2.8 0 -4.7 2.5 -4.7 4.8 V 27.7 c 0 2.2 3.1 2.2 3.1 0 V 17.2 h 0.6 v 28.6 c 0 3 4.2 2.9 4.3 0 V 29.3 h 0.7 h 0.1 v 16.5 c 0.2 3.1 4.3 2.8 4.3 0 V 17.2 h 0.5 v 10.5 c 0 2.2 3.2 2.2 3.2 0 V 16.3 C 33.5 14 31.6 11.5 28.8 11.5 z";
 var femaleIcon = "M 18.4 15.1 L 15.5 25.5 c -0.6 2.3 2.1 3.2 2.7 1 l 2.6 -9.6 h 0.7 l -4.5 16.9 H 21.3 v 12.7 c 0 2.3 3.2 2.3 3.2 0 V 33.9 h 1 v 12.7 c 0 2.3 3.1 2.3 3.1 0 V 33.9 h 4.3 l -4.6 -16.9 h 0.8 l 2.6 9.6 c 0.7 2.2 3.3 1.3 2.7 -1 l -2.9 -10.4 c -0.4 -1.2 -1.8 -3.3 -4.2 -3.4 h -4.7 C 20.1 11.9 18.7 13.9 18.4 15.1 z M 28.6 7.2 c 0 -2.1 -1.6 -3.7 -3.7 -3.7 c -2 0 -3.7 1.7 -3.7 3.7 c 0 2.1 1.6 3.7 3.7 3.7 C 27 10.9 28.6 9.2 28.6 7.2 z";
 
-var maleSeriesMax = makeSeries("Male", yAxis1, generateData(100), placeholderColor, maleIcon, false);
-var maleSeries = makeSeries("Male", yAxis1, generateData(58), maleColor, maleIcon, true);
+var maleSeriesMax = makeSeries("Male", yAxis1, generateData(154), placeholderColor, maleIcon, false);
+var maleSeries = makeSeries("Male", yAxis1, generateData(143), maleColor, maleIcon, true);
 
-var femaleSeriesMax = makeSeries("Female", yAxis2, generateData(100), placeholderColor, femaleIcon, false);
-var femaleSeries = makeSeries("Female", yAxis2, generateData(67), femaleColor, femaleIcon, true);
+var femaleSeriesMax = makeSeries("Female", yAxis2, generateData(154), placeholderColor, femaleIcon, false);
+var femaleSeries = makeSeries("Female", yAxis2, generateData(11), femaleColor, femaleIcon, true);
 
 // Make stuff animate on load
 // https://www.amcharts.com/docs/v5/concepts/animations/
