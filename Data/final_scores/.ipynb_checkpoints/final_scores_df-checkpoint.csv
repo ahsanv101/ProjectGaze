@@ -1,0 +1,81 @@
+,imdbid,Title,Decade,Genre,Director,year,bechdel_rating,male_percen,nonmale_percentage,dialogue_score,bechdel_score,count,inappropriate_count,descriptions_score,_merge,gaze_score
+0,38969,Song of the South,40s,Animation,"Wilfred Jackson, Harve Foster",1946,2.0,84.1,15.9,25.0,13.33,1,0,0.0,both,38.33
+1,41838,Samson and Delilah,40s,Historical,Cecil B.DeMille,1949,,,,,,9,0,0.0,both,0.0
+2,31381,Gone with the Wind,40s,Drama,Victor Fleming,1939,3.0,40.9,59.1,0.0,0.0,17,0,0.0,both,0.0
+3,37536,The Bells of St. Mary,40s,Musical,Leo McCarey,1945,,,,,,4,0,0.0,both,0.0
+4,34167,Sergeant York,40s,War,Leo McCarey,1941,,,,,,2,0,0.0,both,0.0
+5,36872,Going My Way,40s,Musical,Howard Hawks,1944,,83.29,16.71,25.0,,5,0,0.0,both,25.0
+6,39391,Forever Amber,40s,Drama,"John M. Stahl, Otto Preminger",1947,,57.39,42.61,9.2375,,6,0,0.0,both,9.2375
+7,35575,Yankee Doodle Dandy,40s,Musical,Michael Curtiz,1942,,,,,,2,0,0.0,both,0.0
+8,34583,Casablanca,40s,Drama,Michael Curtiz,1942,1.0,67.4,32.6,21.75,26.66,32,0,0.0,both,48.41
+9,40806,The Snake Pit,40s,Drama,Anatole Litvak,1948,3.0,,,,0.0,7,0,0.0,both,0.0
+10,49833,The Ten Commandments,50s,Historical,Cecile B.DeMille,1956,2.0,,,,13.33,13,0,0.0,both,13.33
+11,45793,From Here To Eternity,50s,War,Fred Zinneman,1953,3.0,72.92,27.08,25.0,0.0,45,0,2.75094024237359,both,27.75094024237359
+12,44672,The Greatest Show on Earth,50s,Musical,Cecile B.DeMille,1952,2.0,,,,13.33,7,0,0.0,both,13.33
+13,50212,The Bridge on the River Kwai,50s,War,David Lean,1957,1.0,,,,26.66,0,0,0.0,both,26.66
+14,47673,White Christmas,50s,Musical,Michael Kurtiz,1954,3.0,73.04,26.96,25.0,0.0,24,1,3.2082130082460703,both,28.20821300824607
+15,43949,Quo Vadis?,50s,Historical,"Mervyn LeRoy, Anthony Mann",1951,3.0,83.08,16.92,25.0,0.0,26,0,0.0,both,25.0
+16,51459,Cat on a Hot Tin Roof,50s,Drama,Richard Brooks,1958,3.0,,,,0.0,77,5,15.8728732460971,both,15.8728732460971
+17,53291,Some like it hot,50s,Comedy,Billy Wilder,1959,3.0,53.54,46.46,4.425,0.0,49,1,6.627770049616736,both,11.052770049616736
+18,48593,The Sea Chase,50s,War,John Farrow,1955,,,,,,5,0,0.0,both,0.0
+19,42192,All About Eve,50s,Drama,Joseph L. Mankiewicz,1950,3.0,,,,0.0,121,3,21.07642443217599,both,21.07642443217599
+20,59742,The Sound of Music,60s,Musical,Robert Wise,1965,3.0,25.29,74.71,0.0,0.0,17,0,0.0,both,0.0
+21,61722,The Graduate,60s,Romance,Michael Nichols,1967,2.0,69.42,30.58,24.275,13.33,69,1,9.97085404460211,both,47.57585404460211
+22,64115,Butch Cassidy and the Sundance Kid,60s,Action,George Roy Hill,1969,1.0,86.05,13.95,25.0,26.66,31,0,0.0,both,51.66
+23,58331,Mary Poppins,60s,Fantasy,Robert Stevenson,1964,3.0,53.54,46.46,4.425,0.0,5,0,0.0,both,4.425
+24,56937,Cleopatra,60s,Historical,Joseph L. Mankiewicz,1963,3.0,,,,0.0,7,1,3.2082130082460703,both,3.2082130082460703
+25,62622,2001: A Space Odyssey,60s,SCI-FI,Stanley Kubrick,1968,0.0,96.72,3.28,25.0,40.0,2,0,0.0,both,65.0
+26,55614,West Side Story,60s,Musical,"Jerome Robbins, Robert Wise",1961,3.0,67.31,32.69,21.6375,0.0,77,0,8.09987463435019,both,29.73737463435019
+27,54215,Psycho,60s,Thriller,Alfred Hitchcock,1960,3.0,66.59,33.41,20.7375,0.0,86,3,15.226027440951588,both,35.96352744095159
+28,56172,Lawrence of Arabia,60s,Action,David Lean,1962,0.0,99.36,0.64,25.0,40.0,3,0,0.0,both,65.0
+29,60164,The Bible,60s,Historical,John Huston,1966,,62.03,37.97,15.0375,,3,0,0.0,both,15.0375
+30,73195,JAWS,70s,Horror,Steven Spielberg,1975,3.0,90.84,9.16,25.0,0.0,19,0,0.0,both,25.0
+31,76759,Star Wars: Episode IV - A New Hope,70s,SCI-FI,George Lucas,1977,1.0,88.03,11.97,25.0,26.66,18,0,0.0,both,51.66
+32,70047,The Exorcist,70s,Horror,William Friedkin,1973,3.0,83.91,16.09,25.0,0.0,83,2,13.48103482398782,both,38.48103482398782
+33,77631,Grease,70s,Musical,Randal Kleiser,1978,3.0,78.02,21.98,25.0,0.0,19,1,3.2082130082460703,both,28.20821300824607
+34,68646,The Godfather,70s,Crime,Francis Ford Coppola,1972,2.0,86.44,13.56,25.0,13.33,49,3,9.041322050228644,both,47.37132205022864
+35,71230,Blazing Saddles,70s,Western,Mel Brooks,1974,1.0,87.21,12.79,25.0,26.66,10,3,5.621765008857981,both,57.281765008857974
+36,75148,Rocky,70s,Action,John G. Avildsen,1976,1.0,98.54,1.46,25.0,26.66,17,0,0.0,both,51.66
+37,66011,Love Story,70s,Romance,Arthur Hiller,1970,1.0,,,,26.66,1,0,0.0,both,26.66
+38,78346,Superman,70s,Action,Mario Puzo,1978,1.0,69.52,30.48,24.4,26.66,38,1,4.789073852374779,both,55.84907385237478
+39,67093,Fiddler on the Roof,70s,Musical,Norman Jewison,1971,,46.9,53.1,0.0,,8,0,0.0,both,0.0
+40,80684,Star Wars: Episode V - The Empire Strikes Back,80s,SCI-FI,George Lucas,1980,0.0,86.21,13.79,25.0,40.0,25,0,0.0,both,65.0
+41,83866,E.T. the Extra-Terrestrial,80s,SCI-FI,Steven Spielberg,1982,3.0,,,,0.0,28,0,0.0,both,0.0
+42,96895,Batman,80s,Action,Tim Burton,1989,1.0,74.99,25.01,25.0,26.66,60,0,5.25825323861262,both,56.918253238612614
+43,86190,Star Wars: Episode VI - Return of the Jedi,80s,SCI-FI,George Lucas,1983,1.0,86.94,13.06,25.0,26.66,19,0,0.0,both,51.66
+44,87332,Ghostbusters,80s,Fantasy,Ivan Reitman,1984,2.0,86.68,13.32,25.0,13.33,10,0,0.0,both,38.33
+46,88763,Back to the Future,80s,SCI-FI,Robert Zemeckis,1985,2.0,83.52,16.48,25.0,13.33,11,0,0.0,both,38.33
+47,92099,Top Gun,80s,Action,Tony Scott,1986,2.0,94.1,5.9,25.0,13.33,30,1,3.2082130082460703,both,41.53821300824607
+48,92644,Beverly Hills Cop II,80s,Action,Tony Scott,1987,1.0,90.93,9.07,25.0,26.66,11,1,3.2082130082460703,both,54.868213008246066
+49,96438,Who Framed Roger Rabbit,80s,Animation,Robert Zemeckis,1988,1.0,91.12,8.88,25.0,26.66,20,0,0.0,both,51.66
+50,81573,Superman II,80s,Action,Richard Lester,1980,3.0,75.89,24.11,25.0,0.0,45,2,7.129175233515609,both,32.12917523351561
+51,120338,Titanic,90s,Drama,James Cameron,1997,3.0,63.33,36.67,16.6625,0.0,214,8,35.0,both,51.6625
+52,120915,Star Wars: Episode I - The Phantom Menace,90s,SCI-FI,George Lucas,1999,3.0,79.7,20.3,25.0,0.0,8,0,0.0,both,25.0
+53,107290,Jurassic Park,90s,SCI-FI,Steven Spielberg,1993,3.0,85.14,14.86,25.0,0.0,43,0,2.4166318428750526,both,27.416631842875052
+54,116629,Independence Day,90s,SCI-FI,Roland Emmerich,1996,3.0,85.05,14.95,25.0,0.0,27,0,0.0,both,25.0
+55,109830,Forrest Gump,90s,Drama,Robert Zemeckis,1994,1.0,86.68,13.32,25.0,26.66,20,6,8.519528019683106,both,60.179528019683104
+56,119654,Men in Black,90s,SCI-FI,Barry Sonnenfeld,1997,1.0,89.07,10.93,25.0,26.66,29,0,0.0,both,51.66
+57,99653,Ghost,90s,Romance,Jerry Zucker,1990,3.0,54.87,45.13,6.0875,0.0,138,5,26.06927943080249,both,32.15677943080249
+58,103064,Terminator 2: Judgment Day,90s,Action,James Cameron,1991,3.0,74.32,25.68,25.0,0.0,132,0,17.293355620559968,both,42.293355620559964
+59,103776,Batman Returns,90s,Action,Tim Burton,1992,0.0,61.76,38.24,14.7,40.0,48,1,6.460615849867466,both,61.16061584986747
+60,112462,Batman Forever,90s,Action,Joel Schumacher,1995,1.0,96.84,3.16,25.0,26.66,1,0,0.0,both,51.66
+61,468569,The Dark Knight,2000s,Action,Christopher Nolan,2008,3.0,73.72,26.28,25.0,0.0,31,0,0.0,both,25.0
+62,383574,Pirates of the Caribbean: Dead Mans Chest,2000s,Action,Gore Verbinski,2006,2.0,83.66,16.34,25.0,13.33,23,1,3.2082130082460703,both,41.53821300824607
+63,145487,Spiderman,2000s,Action,Sam Raimi,2002,1.0,86.44,13.56,25.0,26.66,57,2,9.135025630506831,both,60.79502563050683
+64,417741,Harry Potter and the Half Blood Prince ,2000s,Fantasy,David Yates,2009,3.0,79.64,20.36,25.0,0.0,71,1,10.305162444100649,both,35.305162444100645
+65,121766,Star Wars: Episode III - Revenge of the Sith,2000s,SCI-FI,George Lucas,2005,1.0,89.32,10.68,25.0,26.66,15,1,3.2082130082460703,both,54.868213008246066
+66,316654,Spider-Man 2,2000s,Action,Sam Raimi,2004,1.0,84.22,15.78,25.0,26.66,49,0,3.419557041370665,both,55.07955704137066
+67,418279,Transformers,2000s,Action,Michael Bay,2007,3.0,,,,0.0,3,0,0.0,both,0.0
+68,325980,Pirates of the Caribbean: The Curse of the Black Pearl,2000s,Action,Gore Verbinski,2003,3.0,87.36,12.64,25.0,0.0,60,0,5.25825323861262,both,30.25825323861262
+69,241527,Harry Potter and the Sorcerers Stone,2000s,Fantasy,Chris Columbus,2001,3.0,80.11,19.89,25.0,0.0,18,0,0.0,both,25.0
+70,120755,Mission Impossible II,2000s,Action,John Woo,2000,0.0,97.43,2.57,25.0,40.0,40,2,6.293404234769266,both,71.29340423476927
+71,4154796,Avengers: Endgame,2010s,Action,"Anthony Russo, Joe Russo",2019,3.0,78.09,21.91,25.0,0.0,44,0,2.583786042624321,both,27.58378604262432
+72,1825683,Black Panther,2010s,Action,Ryan Coogler,2018,3.0,77.91,22.09,25.0,0.0,51,1,6.962078449115272,both,31.96207844911527
+73,2488496,Star Wars: The Force Awakens,2010s,SCI-FI,George Lucas,2015,3.0,78.99,21.01,25.0,0.0,64,0,5.926870037609695,both,30.926870037609696
+74,848228,The Avengers,2010s,Action,Joss Whedon,2012,1.0,83.58,16.42,25.0,26.66,25,1,3.2082130082460703,both,54.868213008246066
+75,2527336,Star Wars: Episode VIII - The Last Jedi,2010s,SCI-FI,George Lucas,2017,3.0,62.84,37.16,16.05,0.0,1,0,0.0,both,16.05
+76,499549,Avatar,2010s,SCI-FI,James Cameron,2009,3.0,68.06,31.94,22.575,0.0,91,0,10.44003343083995,both,33.01503343083995
+77,770828,Man of Steel,2010s,Action,Zack Snyder,2013,3.0,76.76,23.24,25.0,0.0,70,1,10.138008244351376,both,35.138008244351376
+78,3748528,Rogue One: A Star Wars Story,2010s,SCI-FI,Gareth Edwards,2016,3.0,80.73,19.27,25.0,0.0,12,0,0.0,both,25.0
+79,1201607,Harry Potter and the Deathly Hallows: Part 2,2010s,Fantasy,David Yates,2011,3.0,78.1,21.9,25.0,0.0,56,2,8.967871430757565,both,33.96787143075757
+80,1877832,X-Men: Days of Future Past,2010s,Action,Bryan Singer,2014,1.0,76.21,23.79,25.0,26.66,48,1,6.460615849867466,both,58.12061584986746
