@@ -1,14 +1,7 @@
-/**
- * ---------------------------------------
- * This demo was created using amCharts 5.
- * 
- * For more information visit:
- * https://www.amcharts.com/
- * 
- * Documentation is available at:
- * https://www.amcharts.com/docs/v5/
- * ---------------------------------------
- */
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////// Pictogram DLG
+////////////////////////////////////////////////////////////////////////////////
 
 var rowSize = 32;
 var colSize = 5;
@@ -175,3 +168,65 @@ var femaleSeries = makeSeries("Female", yAxis2, generateData(11), femaleColor, f
 // Make stuff animate on load
 // https://www.amcharts.com/docs/v5/concepts/animations/
 chart.appear(1000, 100);
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////// Pie chart MG1
+////////////////////////////////////////////////////////////////////////////////
+
+// Create root element
+// https://www.amcharts.com/docs/v5/getting-started/#Root_element
+var root = am5.Root.new("SPARQLchartMG1");
+
+// Set themes
+// https://www.amcharts.com/docs/v5/concepts/themes/
+root.setThemes([
+  am5themes_Animated.new(root)
+]);
+
+// Create chart
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+var chart = root.container.children.push(
+  am5percent.PieChart.new(root, {
+    endAngle: 270
+  })
+);
+
+// Create series
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+var series = chart.series.push(
+  am5percent.PieSeries.new(root, {
+    valueField: "value",
+    categoryField: "category",
+    endAngle: 270
+  })
+);
+
+series.states.create("hidden", {
+  endAngle: -90
+});
+
+// Set data
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+series.data.setAll([{
+  category: "Superhero movies",
+  value: 4
+}, {
+  category: "Action movies",
+  value: 1
+}, {
+  category: "Space adventure movies",
+  value: 1
+}, {
+  category: "Science fiction movies",
+  value: 1
+}, {
+  category: "Western movies",
+  value: 1
+}, {
+  category: "Drama movies",
+  value: 2
+}]);
+
+series.appear(1000, 100);
