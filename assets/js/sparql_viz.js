@@ -177,17 +177,17 @@ chart.appear(1000, 100);
 
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
-var root_mg1 = am5.Root.new("SPARQLchartMG1");
+var root = am5.Root.new("SPARQLchartMG1");
 
 // Set themes
 // https://www.amcharts.com/docs/v5/concepts/themes/
-root_mg1.setThemes([
+root.setThemes([
   am5themes_Animated.new(root)
 ]);
 
 // Create chart
 // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
-var chart = root_mg1.container.children.push(
+var chart = root.container.children.push(
   am5percent.PieChart.new(root, {
     endAngle: 270
   })
@@ -195,7 +195,7 @@ var chart = root_mg1.container.children.push(
 
 // Create series
 // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
-var series_mg1 = chart.series.push(
+var series = chart.series.push(
   am5percent.PieSeries.new(root, {
     valueField: "value",
     categoryField: "category",
@@ -203,13 +203,13 @@ var series_mg1 = chart.series.push(
   })
 );
 
-series_mg1.states.create("hidden", {
+series.states.create("hidden", {
   endAngle: -90
 });
 
 // Set data
 // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
-series_mg1.data.setAll([{
+series.data.setAll([{
   category: "Superhero movies",
   value: 4
 }, {
@@ -229,4 +229,4 @@ series_mg1.data.setAll([{
   value: 2
 }]);
 
-series_mg1.appear(1000, 100);
+series.appear(1000, 100);
