@@ -240,7 +240,7 @@ series.appear(1000, 100);
 ////////////////////////////////////////////////////////////////////////////////
 
 // read local JSON file in javascript
-fetch("data/sparql/mg2.json")
+data = fetch("data/sparql/mg2.json")
   .then(function (response) {
     return response.json();
   })
