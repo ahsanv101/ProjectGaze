@@ -969,7 +969,8 @@ am5.ready(function() {
     
     series1.data.setAll(data);    
     
-    series.labels.template.set("forceHidden", true)
+    series0.labels.template.set("forceHidden", true)
+    series1.label.template.set("forceHidden", true)
     var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
 
 
