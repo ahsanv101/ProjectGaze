@@ -283,7 +283,7 @@ var series0 = chart.series.push(am5xy.LineSeries.new(root, {
   valueXField: "ProductionCosts",
   valueField: "gaze_score",
   tooltip: am5.Tooltip.new(root, {
-    labelText: "Box Office: {valueX}, Production Costs: {valueY}, Gaze score: {value}"
+    labelText: "Box Office: {valueX}, Production Costs: {valueY}, Gaze score: {gaze_score}"
   })
 }));
 
