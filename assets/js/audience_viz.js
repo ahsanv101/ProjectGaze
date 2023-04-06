@@ -912,8 +912,8 @@ am5.ready(function() {
     })
     
     xAxis.get("renderer").labels.template.setAll({
-        oversizedBehavior: "wrap", 
-        maxWidth: 150
+        oversizedBehavior: "hide", 
+        maxWidth: 1, 
 });
     
     xAxis.data.setAll(data);
