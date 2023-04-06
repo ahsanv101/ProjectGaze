@@ -1805,28 +1805,27 @@ section .image img {
   height: 500px;
 }
 
-<<<<<<< Updated upstream
-
-/* AUDIENCE viz */
- #AUDIENCE-Barchart {
-      width: 100%;
-      height: 500px;
-    }
- #AUDIENCE-Pie {
-      width: 100%;
-      height: 500px;
-    }
- #AUDIENCE-Overlay {
-      width: 100%;
-      height: 500px;
-    }
-
-=======
 #SPARQLchartMG2 {
   width: 100%;
   height: 500px;
 }
->>>>>>> Stashed changes
+
+/* AUDIENCE viz */
+#AUDIENCE-Barchart {
+  width: 100%;
+  height: 500px;
+}
+
+#AUDIENCE-Pie {
+  width: 100%;
+  height: 500px;
+}
+
+#AUDIENCE-Overlay {
+  width: 100%;
+  height: 500px;
+}
+
 
 
 /* ------- Further Research subsection - Female Gaze */
@@ -2492,9 +2491,10 @@ footer {
   height: 800px !important;
 }
 
-#descriptionChart{
-    height: 800px !important;
+#descriptionChart {
+  height: 800px !important;
 }
+
 .table_buttons {
   justify-content: center;
   display: flex;
@@ -2505,17 +2505,18 @@ footer {
   margin: 10px;
 }
 
-.word-cloud{
-  display:inline-block;
-  width:420px;
-  align-self:center;
-}
-.word-cloud figcaption{
-  font-size:0.7em;
-  opacity:0.6;
+.word-cloud {
+  display: inline-block;
+  width: 420px;
+  align-self: center;
 }
 
-.word-cloud img:hover{
+.word-cloud figcaption {
+  font-size: 0.7em;
+  opacity: 0.6;
+}
+
+.word-cloud img:hover {
   transform: scale(1.4);
   transition: 2s;
 }
