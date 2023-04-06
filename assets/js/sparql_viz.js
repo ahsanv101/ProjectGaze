@@ -570,7 +570,7 @@ var data = [{
   "value": 35,
 }] */
 
-series0.data.setAll(arr);
+series0.data.setAll(data);
 
 
 // Make stuff animate on load
