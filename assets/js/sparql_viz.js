@@ -239,7 +239,7 @@ series.appear(1000, 100);
 /////////////////////////////// Bubble chart MG2
 ////////////////////////////////////////////////////////////////////////////////
 
-// read local JSON file in javascript
+/* // read local JSON file in javascript
 data = fetch("data/sparql/mg2.json")
   .then(function (response) {
     return response.json();
@@ -247,7 +247,20 @@ data = fetch("data/sparql/mg2.json")
   .then(function (data) {
     console.log(data);
   })
+ */
 
+var arr = null;
+$.ajax({
+    'async': false,
+    'global': false,
+    'url': "/data.json",
+    'dataType': "json",
+    'success': function (data) {
+        arr = data;
+    }
+});
+
+console.log(arr)
 
 // Create root element
 // https://www.amcharts.com/docs/v5/getting-started/#Root_element
@@ -371,7 +384,7 @@ var data = [{
   "value": 35,
 }] */
 
-series0.data.setAll(data);
+series0.data.setAll(arr);
 
 
 // Make stuff animate on load
