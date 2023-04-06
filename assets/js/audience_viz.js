@@ -9,8 +9,8 @@
     
     //set themes
     
-       root.setThemes([
-      am5themes_Animated.new(root)
+    root.setThemes([
+    am5themes_Animated.new(root)
     ]);
     
     //create chart 
