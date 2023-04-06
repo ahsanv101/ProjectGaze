@@ -909,11 +909,12 @@
         animationDuration: 200
       })
     }));
+      
 
     xAxis.get("renderer").labels.template.setAll({
-        oversizedBehavior: "wrap",
+        oversizedBehavior: "truncate",
         maxWidth: 150,
-        textAlign: "center"
+        ellipsis: "..."
       });
 
     
@@ -929,6 +930,8 @@
         strokeOpacity: 0.1
       })
     }));
+        
+    
 
 
 
