@@ -1806,7 +1806,19 @@ section .image img {
 }
 
 
-
+/* AUDIENCE viz */
+ #AUDIENCE-Barchart {
+      width: 100%;
+      height: 500px;
+    }
+ #AUDIENCE-Pie {
+      width: 100%;
+      height: 500px;
+    }
+ #AUDIENCE-Overlay {
+      width: 100%;
+      height: 500px;
+    }
 
 
 
