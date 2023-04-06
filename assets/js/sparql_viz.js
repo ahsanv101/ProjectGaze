@@ -279,11 +279,11 @@ var series0 = chart.series.push(am5xy.LineSeries.new(root, {
   calculateAggregates: true,
   xAxis: xAxis,
   yAxis: yAxis,
-  valueYField: "y",
-  valueXField: "x",
-  valueField: "value",
+  valueYField: "BoxOffice",
+  valueXField: "ProductionCosts",
+  valueField: "gaze_score",
   tooltip: am5.Tooltip.new(root, {
-    labelText: "x: {valueX}, y: {valueY}, value: {value}"
+    labelText: "Box Office: {valueX}, Production Costs: {valueY}, Gaze score: {value}"
   })
 }));
 
@@ -306,7 +306,7 @@ series0.set("heatRules", [{
   target: circleTemplate,
   min: 0,
   max: 100000,
-  dataField: "value",
+  dataField: "gaze_score",
   key: "radius"
 }]);
 
