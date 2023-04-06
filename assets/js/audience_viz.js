@@ -894,7 +894,7 @@ am5.ready(function() {
     // Create axes
     // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
     var xRenderer = am5xy.AxisRendererX.new(root, {
-      minGridDistance: 70
+      minGridDistance: 30
     });
     
     var xAxis = 
@@ -969,8 +969,6 @@ am5.ready(function() {
     
     series1.data.setAll(data);    
     
-    series0.labels.template.set("forceHidden", true)
-    series1.label.template.set("forceHidden", true)
     var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
 
 
