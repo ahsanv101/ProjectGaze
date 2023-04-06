@@ -491,17 +491,18 @@ am5.ready(function() {
         alignLabels: true
       })
     );
-    
+
     subSeries.data.setAll([
       { category: "sexist", value: 0 },
-      { category: "not sexist", value: 0 },
-      { category: "C", value: 0 },
-      { category: "D", value: 0 },
-      { category: "E", value: 0 },
-      { category: "F", value: 0 },
-      { category: "G", value: 0 }
-    ]);
+      { category: "not sexist", value: 0 }]);
+        
     subSeries.slices.template.set("toggleKey", "none");
+    subSeries.labels.template.setAll({
+        textType: "circular",
+        inside: true,
+        radius: 10,
+        text: "{category}"
+    });
     
     var selectedSlice;
     
