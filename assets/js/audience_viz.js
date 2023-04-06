@@ -906,10 +906,7 @@ am5.ready(function() {
         animationDuration: 200
       })
     }));
-    xAxis.get("renderer").labels.template.setAll({
-        oversizedBehavior: "hide",
-        maxWidth: 90,
-      });
+        
     xRenderer.grid.template.setAll({
       location: 1
     })
@@ -972,6 +969,7 @@ am5.ready(function() {
     
     series1.data.setAll(data);    
     
+    series.labels.template.set("forceHidden", true)
     var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
 
 
