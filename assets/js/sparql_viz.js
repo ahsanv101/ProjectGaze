@@ -304,8 +304,8 @@ series0.bullets.push(function () {
 // https://www.amcharts.com/docs/v5/concepts/settings/heat-rules/
 series0.set("heatRules", [{
   target: circleTemplate,
-  min: 0,
-  max: 100000,
+  min: 1,
+  max: 80,
   dataField: "gaze_score",
   key: "radius"
 }]);
