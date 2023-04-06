@@ -911,6 +911,11 @@ am5.ready(function() {
       location: 1
     })
     
+    xAxis.get("renderer").labels.template.setAll({
+        oversizedBehavior: "wrap", 
+        maxWidth: 150
+});
+    
     xAxis.data.setAll(data);
     
     var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
