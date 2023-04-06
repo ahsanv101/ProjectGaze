@@ -1,5 +1,6 @@
 import pandas as pd
 import sparql_dataframe
+import json
 
 
 wikidata_endpoint = "https://query.wikidata.org/bigdata/namespace/wdq/sparql?query={SPARQL}"
@@ -66,4 +67,40 @@ add_mg2_df = pd.DataFrame(film_list_mg2,columns=["imdb", "gaze_score"])
 
 result_mg2_query = result_mg2_query.merge(add_mg2_df,left_on="imdb",right_on="imdb")
 
-result_mg2_query.to_csv('data/sparql/mg2.csv')
+
+
+# result_mg2_query.to_csv('data/sparql/mg2.csv')
+
+
+
+# ------------------- 
+# Transform the resulting df in a JSON object (for the visualization)
+# ------------------- 
+
+"""
+# Drop unnecessary columns (imdb, Movie)
+csv_2modify = pd.read_csv('data/sparql/mg2.csv')
+csv_2modify = csv_2modify.drop(['Unnamed: 0','imdb'], axis=1)
+
+# Update the values for Psycho's box office as it is a duplicate
+index = 0
+new_boxoffice = 0
+
+for idx,row in csv_2modify.iterrows():
+  if row["Movie"] == "Psycho":
+    index = idx
+    new_boxoffice += row["BoxOffice"]
+
+csv_2modify = csv_2modify.drop(26).reset_index(drop=True)
+csv_2modify.at[26,'BoxOffice'] = new_boxoffice
+
+csv_2modify = csv_2modify.drop(['Movie'], axis=1)
+
+result = csv_2modify.to_json(orient="records")
+data = json.loads(result)
+json_object = json.dumps(data, indent=4)  
+
+# Writing to sample.json
+# with open("data/sparql/mg2.json", "w") as outfile:
+    # outfile.write(json_object)
+"""

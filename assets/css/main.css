@@ -1805,6 +1805,7 @@ section .image img {
   height: 500px;
 }
 
+<<<<<<< Updated upstream
 
 /* AUDIENCE viz */
  #AUDIENCE-Barchart {
@@ -1820,6 +1821,12 @@ section .image img {
       height: 500px;
     }
 
+=======
+#SPARQLchartMG2 {
+  width: 100%;
+  height: 500px;
+}
+>>>>>>> Stashed changes
 
 
 /* ------- Further Research subsection - Female Gaze */
