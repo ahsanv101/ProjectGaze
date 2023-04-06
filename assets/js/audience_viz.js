@@ -1,19 +1,22 @@
 ////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// Audience bar chart 
 ////////////////////////////////////////////////////////////////////////////////
-
-    am5.ready(function() {
+am5.ready(function() {
     
-    // create root element 
+    // Create root element
+    // https://www.amcharts.com/docs/v5/getting-started/#Root_element
     var root = am5.Root.new("AUDIENCE-Barchart");
     
-    //set themes
     
+    // Set themes
+    // https://www.amcharts.com/docs/v5/concepts/themes/
     root.setThemes([
-    am5themes_Animated.new(root)
+      am5themes_Animated.new(root)
     ]);
     
-    //create chart 
+    
+    // Create chart
+    // https://www.amcharts.com/docs/v5/charts/xy-chart/
     var chart = root.container.children.push(am5xy.XYChart.new(root, {
       panX: true,
       panY: true,
@@ -22,18 +25,13 @@
       pinchZoomX: true
     }));
     
-    //createcursor 
+    // Add cursor
+    // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
     var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
     cursor.lineY.set("visible", false);
-    var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
-    xRenderer.labels.template.setAll({
-      rotation: -90,
-      centerY: am5.p50,
-      centerX: am5.p100,
-      paddingRight: 15
-    });
     
-     // Create axes
+    
+    // Create axes
     // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
     var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
     xRenderer.labels.template.setAll({
@@ -413,7 +411,6 @@
     chart.appear(1000, 100);
     
     }); // end am5.ready()
-    
     
 ////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// Audience pie 
@@ -911,7 +908,7 @@
     }));
     xAxis.get("renderer").labels.template.setAll({
         oversizedBehavior: "hide",
-        maxWidth: 150,
+        maxWidth: 90,
       });
     xRenderer.grid.template.setAll({
       location: 1
