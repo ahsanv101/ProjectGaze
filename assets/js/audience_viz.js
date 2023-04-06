@@ -909,15 +909,10 @@
         animationDuration: 200
       })
     }));
-      
-
     xAxis.get("renderer").labels.template.setAll({
-        oversizedBehavior: "truncate",
+        oversizedBehavior: "hide",
         maxWidth: 150,
-        ellipsis: "..."
       });
-
-    
     xRenderer.grid.template.setAll({
       location: 1
     })
