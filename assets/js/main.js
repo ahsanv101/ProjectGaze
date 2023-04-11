@@ -1201,7 +1201,7 @@ suggestedMax: 100,
 
 // Gaze score start
 
-d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Dialogue/dialogue_bechdel.csv")
+d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/final_scores/final_scores_df.csv")
 .then((d) => {
 
 makeChart4(d);
@@ -1228,10 +1228,10 @@ function makeChart4(d)
   const ctx4 = document.getElementById('myChart4');
   for (var i = 0; i < d.length; i++){
     // if (d[i].male_percen!="" && parseInt(d[i].year)>=1940 && parseInt(d[i].year)<1990)
-    if (d[i].dialogue_score!="" && d[i].bechdel_score!="" )
+    if (d[i].dialogue_score!="" && d[i].bechdel_score!="" && d[i].descriptions_score!="" )
     {
       arrayLabel.push(d[i].Title);
-      arrayData.push(parseFloat(d[i].dialogue_score)+parseFloat(d[i].bechdel_score));
+      arrayData.push(parseFloat(d[i].gaze_score));
       // male.push(d[i].male_percen);
       // nonmale.push(parseFloat(d[i].nonmale_percentage)*-1);
     }
