@@ -1231,7 +1231,11 @@ function makeChart4(d)
     if (d[i].dialogue_score!="" && d[i].bechdel_score!="" && d[i].descriptions_score!="" )
     {
       arrayLabel.push(d[i].Title);
+<<<<<<< Updated upstream
       arrayData.push(parseFloat(d[i].gaze_score));
+=======
+      arrayData.push(parseFloat(d[i].dialogue_score)+parseFloat(d[i].bechdel_score) + parseFloat(d[i].descriptions_score));
+>>>>>>> Stashed changes
       // male.push(d[i].male_percen);
       // nonmale.push(parseFloat(d[i].nonmale_percentage)*-1);
     }
