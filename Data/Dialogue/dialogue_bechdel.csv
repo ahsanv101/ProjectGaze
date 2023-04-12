@@ -18,7 +18,7 @@ number,Unnamed: 0_x,imdbid,Title,Decade,Genre,Director,year,bechdel_rating,dubio
 16,16,51459,Cat on a Hot Tin Roof,50s,Drama,Richard Brooks,1958,3,0,,,,,,,,0
 17,17,53291,Some like it hot,50s,Comedy,Billy Wilder,1959,3,0,6,6,SomeLikeItHot.pdf,Some like it hot,53.54,46.46,4.425,0
 18,18,48593,The Sea Chase,50s,War,John Farrow,1955,,,,,,,,,,
-19,19,42192,All About Eve,50s,Drama,Joseph L. Mankiewicz,1950,3,,,,,,,,,0
+19,19,42192,All About Eve,50s,Drama,Joseph L. Mankiewicz,1950,3,,,,,,47.53,52.47,0,0
 20,20,59742,The Sound of Music,60s,Musical,Robert Wise,1965,3,0,10,10,The_Sound_Of_Music_2.pdf,The Sound of Music,25.29,74.71,0,0
 21,21,61722,The Graduate,60s,Romance,Michael Nichols,1967,2,0,60,60,the-graduate.php,The Graduate,69.42,30.58,24.275,13.33
 22,22,64115,Butch Cassidy and the Sundance Kid,60s,Action,George Roy Hill,1969,1,0,19,19,butch-cassidy-and-the-sundance-kid-1969.pdf,Butch Cassidy and the Sundance Kid,86.05,13.95,25,26.66
