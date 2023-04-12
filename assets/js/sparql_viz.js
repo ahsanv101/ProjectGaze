@@ -305,7 +305,7 @@ series0.set("heatRules", [{
   target: circleTemplate,
   min: 3,
   max: 45,
-  dataField: "gaze_score",
+  dataField: "value",
   key: "radius"
 }]);
 
