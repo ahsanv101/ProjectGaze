@@ -252,11 +252,10 @@ root.setThemes([
 // Create chart
 // https://www.amcharts.com/docs/v5/charts/xy-chart/
 var chart = root.container.children.push(am5xy.XYChart.new(root, {
-  panX: true,
-  panY: true,
-  wheelY: "zoomXY",
-  pinchZoomX: true,
-  pinchZoomY: true
+  panX: false,
+  panY: false,
+  pinchZoomX: false,
+  pinchZoomY: false
 }));
 
 chart.get("colors").set("step", 2);
@@ -304,8 +303,8 @@ series0.bullets.push(function () {
 // https://www.amcharts.com/docs/v5/concepts/settings/heat-rules/
 series0.set("heatRules", [{
   target: circleTemplate,
-  min: 1,
-  max: 80,
+  min: 3,
+  max: 45,
   dataField: "gaze_score",
   key: "radius"
 }]);
@@ -320,22 +319,11 @@ chart.set("cursor", am5xy.XYCursor.new(root, {
   snapToSeries: [series0]
 }));
 
-// Add scrollbars
-// https://www.amcharts.com/docs/v5/charts/xy-chart/scrollbars/
-chart.set("scrollbarX", am5.Scrollbar.new(root, {
-  orientation: "horizontal"
-}));
-
-chart.set("scrollbarY", am5.Scrollbar.new(root, {
-  orientation: "vertical"
-}));
-
-
 var data = [
   {
     "ProductionCosts": 140000000.0,
     "BoxOffice": 305413918.0,
-    "gaze_score": 30.2582532386
+    "gaze_score": 30.25
   },
   {
     "ProductionCosts": 90000000.0,
@@ -345,17 +333,17 @@ var data = [
   {
     "ProductionCosts": 113000000.0,
     "BoxOffice": 380270577.0,
-    "gaze_score": 54.8682130082
+    "gaze_score": 54.86
   },
   {
     "ProductionCosts": 54000000.0,
     "BoxOffice": 108185706.0,
-    "gaze_score": 32.1291752335
+    "gaze_score": 32.12
   },
   {
     "ProductionCosts": 200000000.0,
     "BoxOffice": 659363944.0,
-    "gaze_score": 51.6625
+    "gaze_score": 51.66
   },
   {
     "ProductionCosts": 11000000.0,
@@ -365,12 +353,12 @@ var data = [
   {
     "ProductionCosts": 125000000.0,
     "BoxOffice": 215409889.0,
-    "gaze_score": 71.2934042348
+    "gaze_score": 71.29
   },
   {
     "ProductionCosts": 225000000.0,
     "BoxOffice": 291045518.0,
-    "gaze_score": 35.1380082444
+    "gaze_score": 35.13
   },
   {
     "ProductionCosts": 10500000.0,
@@ -380,7 +368,7 @@ var data = [
   {
     "ProductionCosts": 250000000.0,
     "BoxOffice": 381447587.0,
-    "gaze_score": 33.9678714308
+    "gaze_score": 33.96
   },
   {
     "ProductionCosts": 15000000.0,
@@ -390,12 +378,12 @@ var data = [
   {
     "ProductionCosts": 139000000.0,
     "BoxOffice": 407022860.0,
-    "gaze_score": 60.7950256305
+    "gaze_score": 60.79
   },
   {
     "ProductionCosts": 55000000.0,
     "BoxOffice": 134478449.0,
-    "gaze_score": 55.8490738524
+    "gaze_score": 55.84
   },
   {
     "ProductionCosts": 100000000.0,
@@ -405,17 +393,17 @@ var data = [
   {
     "ProductionCosts": 80000000.0,
     "BoxOffice": 162924631.0,
-    "gaze_score": 61.1606158499
+    "gaze_score": 61.16
   },
   {
     "ProductionCosts": 1400000.0,
     "BoxOffice": 8400000.0,
-    "gaze_score": 21.0764244322
+    "gaze_score": 21.07
   },
   {
     "ProductionCosts": 200000000.0,
     "BoxOffice": 373585825.0,
-    "gaze_score": 55.0795570414
+    "gaze_score": 55.07
   },
   {
     "ProductionCosts": 9000000.0,
@@ -425,7 +413,7 @@ var data = [
   {
     "ProductionCosts": 220000000.0,
     "BoxOffice": 623357910.0,
-    "gaze_score": 54.8682130082
+    "gaze_score": 54.86
   },
   {
     "ProductionCosts": null,
@@ -445,12 +433,12 @@ var data = [
   {
     "ProductionCosts": 102000000.0,
     "BoxOffice": 205881154.0,
-    "gaze_score": 42.2933556206
+    "gaze_score": 42.29
   },
   {
     "ProductionCosts": 63000000.0,
     "BoxOffice": 404214720.0,
-    "gaze_score": 27.4166318429
+    "gaze_score": 27.41
   },
   {
     "ProductionCosts": 115000000.0,
@@ -465,27 +453,27 @@ var data = [
   {
     "ProductionCosts": 800000.0,
     "BoxOffice": 82000000.0,
-    "gaze_score": 35.963527441
+    "gaze_score": 35.96
   },
   {
     "ProductionCosts": 55000000.0,
     "BoxOffice": 330455270.0,
-    "gaze_score": 60.1795280197
+    "gaze_score": 60.17
   },
   {
     "ProductionCosts": 250000000.0,
     "BoxOffice": 302334374.0,
-    "gaze_score": 35.3051624441
+    "gaze_score": 35.30
   },
   {
     "ProductionCosts": 225000000.0,
     "BoxOffice": 423315812.0,
-    "gaze_score": 41.5382130082
+    "gaze_score": 41.53
   },
   {
     "ProductionCosts": 35000000.0,
     "BoxOffice": 251409241.0,
-    "gaze_score": 56.9182532386
+    "gaze_score": 56.91
   },
   {
     "ProductionCosts": 30000000.0,
@@ -495,7 +483,7 @@ var data = [
   {
     "ProductionCosts": 15000000.0,
     "BoxOffice": 180258178.0,
-    "gaze_score": 41.5382130082
+    "gaze_score": 41.53
   },
   {
     "ProductionCosts": 10500000.0,
@@ -515,17 +503,17 @@ var data = [
   {
     "ProductionCosts": 237000000.0,
     "BoxOffice": 760507625.0,
-    "gaze_score": 33.0150334308
+    "gaze_score": 33.01
   },
   {
     "ProductionCosts": 245000000.0,
     "BoxOffice": 936662225.0,
-    "gaze_score": 30.9268700376
+    "gaze_score": 30.92
   },
   {
     "ProductionCosts": 200000000.0,
     "BoxOffice": 700426566.0,
-    "gaze_score": 31.9620784491
+    "gaze_score": 31.96
   },
   {
     "ProductionCosts": 200000000.0,
