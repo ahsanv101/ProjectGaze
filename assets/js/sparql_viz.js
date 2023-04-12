@@ -252,10 +252,11 @@ root.setThemes([
 // Create chart
 // https://www.amcharts.com/docs/v5/charts/xy-chart/
 var chart = root.container.children.push(am5xy.XYChart.new(root, {
-  panX: false,
-  panY: false,
-  pinchZoomX: false,
-  pinchZoomY: false
+  panX: true,
+  panY: true,
+  wheelY: "zoomXY",
+  pinchZoomX:true,
+  pinchZoomY:true
 }));
 
 chart.get("colors").set("step", 2);
@@ -292,7 +293,7 @@ var series0 = chart.series.push(am5xy.LineSeries.new(root, {
 var circleTemplate = am5.Template.new({});
 series0.bullets.push(function () {
   var graphics = am5.Circle.new(root, {
-    fill: series0.get("fill"),
+    fill: series0.set("fill", am5.color(0xb15859)),
   }, circleTemplate);
   return am5.Bullet.new(root, {
     sprite: graphics
