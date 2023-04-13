@@ -2516,10 +2516,29 @@ footer {
   opacity: 0.6;
 }
 
-.word-cloud img:hover {
+#wc-modal{
+  align-items: center;
+  align-content: center;
+}
+.wc-button{
+  border:none;
+  background-color:transparent;
+}
+.modal-wc{
+  width:55vw;
+}
+#wc-modal .modal-header{
+  border-bottom:0px;
+}
+#wc-modal .modal-title{
+  font-family: var(--font-script);
+
+}
+
+/* .word-cloud img:hover {
   transform: scale(1.4);
   transition: 2s;
-}
+} */
 
 /* .word-cloud img:hover{
   transform: scale(1.4);

@@ -1131,7 +1131,8 @@ d3.csv('https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Descri
     // var blue = style.getPropertyValue('--color-blue');
 
     var blue ='#209dc9';
-    var teal = style.getPropertyValue('--color-palette-teal-light-graph');
+    var yellow = style.getPropertyValue('--color-palette-yellow');
+    var teal = style.getPropertyValue('--color-palette-teal-light');
     var ctxdesc = document.getElementById('descriptionChart').getContext('2d');
     var myChartdesc = new Chart(ctxdesc, {
         type: 'bar',
@@ -1139,14 +1140,14 @@ d3.csv('https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/Descri
             labels: labels,
             datasets: [{
                 label: 'female descriptions',
-                backgroundColor: [teal],
-                borderColor: [teal],
+                backgroundColor: [yellow],
+                borderColor: [yellow],
                 borderWidth: 1,
                 data: count
             }, {
                 label: 'problematic female descriptions',
-                backgroundColor: blue,
-                borderColor: blue,
+                backgroundColor: [teal],
+                borderColor: [teal],
                 borderWidth: 1,
                 data: inappropriateCount
 
@@ -1215,7 +1216,7 @@ function makeChart4(d)
   // var primColrgba = style.getPropertyValue(rgba('--color-primary-rgb'),0.5);
   // console.log(primCol+', 0.80');
   var yellow = style.getPropertyValue('--color-palette-yellow-light-graph');
-  var purple = style.getPropertyValue('--color-purple-graph');
+  var purpleEdit = '#835b91';
   // var fon = style.getPropertyValue('--font-script');
   // var foncol = style.getPropertyValue('--color-default');
   // const DATA_COUNT = 7;
@@ -1273,7 +1274,8 @@ function makeChart4(d)
       {
         label: 'Gaze score',
         data: newArrayData,
-        backgroundColor:[purple]
+        backgroundColor:[purpleEdit],
+        // backgroundColor:'#621081f7',
         // stack: 'Stack 0',
       }
     ]
