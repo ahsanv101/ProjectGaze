@@ -345,6 +345,7 @@ var circleTemplate = am5.Template.new({});
 series0.bullets.push(function () {
   var graphics = am5.Circle.new(root, {
     fill: series0.set("fill", am5.color(0x835b91)),
+    fillOpacity: 0.7,
   }, circleTemplate);
   return am5.Bullet.new(root, {
     sprite: graphics
