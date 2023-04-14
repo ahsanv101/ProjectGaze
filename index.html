@@ -60,9 +60,8 @@
 
 <body>
 
-
+  <!-- MODALS FOR THE "CHARACTERS" VISUALIZATIONS -->
   <!-- modal content male -->
-
   <div class="modal fade" id="maleModal" tabindex="-1" aria-labelledby="maleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content" id="wc-modal">
@@ -79,7 +78,6 @@
   </div>
   <!-- end modal content male-->
   <!-- modal content female -->
-
   <div class="modal fade" id="femaleModal" tabindex="-1" aria-labelledby="femaleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content" id="wc-modal">
@@ -124,7 +122,7 @@
       <div class="container d-flex flex-column align-items-center position-relative header-text">
         <!-- Removed data-aos="zoom-out" to allow for the gsap animation to work even for the text -->
         <h2 class="hero-fullscreen-text">THROUGH THE GAZE</h2>
-        <p class="hero-fullscreen-text">an analysis of the male gaze in mainstream cinema</p>
+        <p class="hero-fullscreen-text">the male gaze in mainstream cinema</p>
         <div id="target"><img src="assets/img/color-palette.jpg"></div>
       </div>
       <div class="image image-2">
@@ -223,10 +221,14 @@
         <div class="section-header row">
           <!-- <h2>The Project</h2> -->
           <div class="col-md-8" style="float: right;">
-            <p>With this project, our aim is to analyse the widespread presence of the <span class="underlined-teal underlined-teal--offset">male gaze in mainstream Western movies</span>, heavily influenced by United States' cinema. Specifically, we will examine the ten highest-grossing US films for each decade from 1940 to 2020. 
+            <p>With this project, our aim is to analyse the widespread presence of the <span
+                class="underlined-teal underlined-teal--offset">male gaze in mainstream Western movies</span>, heavily
+              influenced by United States' cinema. Specifically, we will examine the ten highest-grossing US films for
+              each decade from 1940 to 2020.
             </p>
             <br>
-            <p>While we acknowledge the existence of a highly developed alternative cinema, the impact of the US culture on mainstream media in Europe is undeniable and its effect on the general audience is indisputable.</p>
+            <p>While we acknowledge the existence of a highly developed alternative cinema, the impact of the US culture
+              on mainstream media in Europe is undeniable and its effect on the general audience is indisputable.</p>
           </div>
           <div class="col-md-4">
             <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
@@ -274,7 +276,8 @@
         <div class="section-header"> <!-- Removed row class from this div, which is not containing 2 p-->
           <!-- <h2>The Data</h2> -->
           <!-- Removed class col-md-9 and float:right; from following div, left only the inner p (which is now on its own)-->
-          <p>For our selected 81 films, we gathered different kinds of data: textual data (the film scripts and the reviews, via web scraping), but also metadata (from Wikidata's SPARQL endpoint). <span
+          <p>For our selected 81 films, we gathered different kinds of data: textual data (the film scripts and the
+            reviews, via web scraping), but also metadata (from Wikidata's SPARQL endpoint). <span
               class="underlined-green underlined-green--offset">ullamco laboris</span> ut aliquip ex
             ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
             fugiat
@@ -410,38 +413,44 @@
                         the contrary,
                         on each one of the sentences composing then, the obtained values are the result of an overall
                         average between the computed
-                        scores (as in the case of an audience's tone and attitude) or as the percentage of sexist instances
+                        scores (as in the case of an audience's tone and attitude) or as the percentage of sexist
+                        instances
                         on the total number of reviews for each movie that presents them.
-                        The following graph represents the overall tone of each analyzed audience:</p>
-                        <br>
-                          <!-- Audience barchart -->
-                          <div id="AUDIENCE-Barchart">
+                        The following graph represents the overall tone of each analyzed audience:
+                      </p>
+                      <br>
+                      <!-- Audience barchart -->
+                      <div id="AUDIENCE-Barchart">
                       </div>
 
                       <br>
-                      <p class="desc"> For sexism, we instead opted for this visualization, which showcases both the overall sexist
-                        percentages calculated and the actual distribution of problematic instances in every movie with a sexist
+                      <p class="desc"> For sexism, we instead opted for this visualization, which showcases both the
+                        overall sexist
+                        percentages calculated and the actual distribution of problematic instances in every movie with
+                        a sexist
                         audience: </p>
 
-                          <!-- Audience pie -->
-                          <div id="AUDIENCE-Pie">
+                      <!-- Audience pie -->
+                      <div id="AUDIENCE-Pie">
                       </div>
 
                       <br>
-                      <p class="desc"> Finally, we asked ourselves if the number of sexist instances had any kind of link with
-                        the tone of an audience: was sexist language amplified by an overall negative perception of a movie?
+                      <p class="desc"> Finally, we asked ourselves if the number of sexist instances had any kind of
+                        link with
+                        the tone of an audience: was sexist language amplified by an overall negative perception of a
+                        movie?
                         Our graph visualizes in an efficient way how this is not always the case: </p>
-                        <br>
+                      <br>
 
-                          <!-- Audience overlay -->
-                          <div id="AUDIENCE-Overlay"></div>
+                      <!-- Audience overlay -->
+                      <div id="AUDIENCE-Overlay"></div>
                     </div>
 
                   </div>
                 </div>
               </div>
 
-                    <!-- End Audience -->
+              <!-- End Audience -->
 
               <!-- Characters -->
               <div class="tab-pane" id="tab-2">
@@ -584,24 +593,24 @@
                       <!-- word clouds -->
                       <div>
 
-                      <!-- insert modal button -->
-                      <!-- Button trigger modal -->
-                      <button class="wc-button" type="button" data-bs-toggle="modal" data-bs-target="#maleModal">
+                        <!-- insert modal button -->
+                        <!-- Button trigger modal -->
+                        <button class="wc-button" type="button" data-bs-toggle="modal" data-bs-target="#maleModal">
 
-                        <fig class="word-cloud">
-                          <img class='word-cloud' src='Data/Descriptions/wordclouds/male-wc-final.png'>
-                          <figcaption> Adjectives describing male characters </figcaption>
-                        </fig>
-                      </button>
-                      <button  class="wc-button" type="button" data-bs-toggle="modal" data-bs-target="#femaleModal">
+                          <fig class="word-cloud">
+                            <img class='word-cloud' src='Data/Descriptions/wordclouds/male-wc-final.png'>
+                            <figcaption> Adjectives describing male characters </figcaption>
+                          </fig>
+                        </button>
+                        <button class="wc-button" type="button" data-bs-toggle="modal" data-bs-target="#femaleModal">
 
-                        <fig class="word-cloud">
-                          <img class='word-cloud' src='Data/Descriptions/wordclouds/female-wc-final.png'>
-                          <figcaption> Adjectives describing non-male characters </figcaption>
-                        </fig>
+                          <fig class="word-cloud">
+                            <img class='word-cloud' src='Data/Descriptions/wordclouds/female-wc-final.png'>
+                            <figcaption> Adjectives describing non-male characters </figcaption>
+                          </fig>
 
-                      </button>
-                      <!-- end button -->
+                        </button>
+                        <!-- end button -->
 
 
                       </div>
@@ -660,25 +669,29 @@
                         anim id est laborum.<br>
                         Male looks down at Female, who is standing at his elbow.</p>
 
-                      <!-- CHART FOR DIALOGUES SPARQL -->
+                      <!-- CHART FOR WRITERS SPARQL -->
                       <div id="SPARQLchartWRT"></div>
-
-
-                      <!-- CHART FOR TOP 10 MG MOVIES GENRES -->
-                      <div id="SPARQLchartMG1"></div>
-
-
-                      <!-- CHART FOR MG MOVIES BOX OFFICE AND COST -->
-                      <div id="SPARQLchartMG2"></div>
-
-
 
                       <h2>Female</h2>
                       <p class="line"> What are you going to do with it</p>
                       <h2>Male</h2>
-                      <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine
-                        or
-                        a tractor.</p>
+                      <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine or a tractor.</p>
+
+                      <!-- CHART FOR TOP 10 MG MOVIES GENRES -->
+                      <div id="SPARQLchartMG1"></div>
+
+                      <h2>Female</h2>
+                      <p class="line"> What are you going to do with it</p>
+                      <h2>Male</h2>
+                      <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine or a tractor.</p>
+                      
+                      <!-- CHART FOR MG MOVIES BOX OFFICE AND COST -->
+                      <div id="SPARQLchartMG2"></div>
+
+                      <h2>Female</h2>
+                      <p class="line"> What are you going to do with it</p>
+                      <h2>Male</h2>
+                      <p class="line">Reprogram it. Give it something socially responsible to do like drive a combine or a tractor.</p>
                       <h2>Female</h2>
                       <p class="line">&nbsp; &nbsp;(quiet)<br>Couldn't we just let it go? It's not hurting anyone</p>
                       <p class="desc">Cooper looks down at his son. Good kid.</p>
@@ -730,7 +743,9 @@
                 <div class="content d-flex flex-column justify-content-center h-100">
                   <h3>The female gaze</h3>
                   <p class="fst-italic">
-                    The "female gaze" is a theory referring to the issue of representing women as subjects having agency, not anymore as simple sexual objects for the pleasure of the masculine, heterosexual perspective.
+                    The "female gaze" is a theory referring to the issue of representing women as subjects having
+                    agency, not anymore as simple sexual objects for the pleasure of the masculine, heterosexual
+                    perspective.
                   </p>
                   <!-- <ul>
                     <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -818,7 +833,7 @@
         <img src="assets/img/sony_dynamicron_spine.jpg">
       </a>
     </div>
-<!--     <div class="justify-content-center vhs-tape">
+    <!--     <div class="justify-content-center vhs-tape">
       <a href="documentation/VIZ.ipynb" download>
         <img src="assets/img/sony_dynamicron_tape.jpg">
       </a>
@@ -881,8 +896,8 @@
               </div>
               <div class="social flex-column team-3">
 
-                <a href="mailto:muhammadahsan.syed@studio.unibo.it" style="background-color: var(--color-palette-green)"><i
-                    class="bi bi-envelope"></i></a>
+                <a href="mailto:muhammadahsan.syed@studio.unibo.it"
+                  style="background-color: var(--color-palette-green)"><i class="bi bi-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/ahsansyedv101/" target="_blank"
                   style="background-color: var(--color-palette-green)"><i class="bi bi-linkedin"></i></a>
 
@@ -901,10 +916,10 @@
               </div>
               <div class="social flex-column team-4">
 
-                <a href="mailto:francesca.budel@studio.unibo.it" style="background-color: var(--color-palette-yellow)"><i
-                    class="bi bi-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/francesca-budel-4a601a199/" target="_blank" style="background-color: var(--color-palette-yellow)"><i
-                    class="bi bi-linkedin"></i></a>
+                <a href="mailto:francesca.budel@studio.unibo.it"
+                  style="background-color: var(--color-palette-yellow)"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/francesca-budel-4a601a199/" target="_blank"
+                  style="background-color: var(--color-palette-yellow)"><i class="bi bi-linkedin"></i></a>
 
                 <div class="assigned-tasks">
                   <p class="task task-team4">Web scraping</p>
@@ -1050,8 +1065,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js" integrity="sha512-vRqhAr2wsn+/cSsyz80psBbCcqzz2GTuhGk3bq3dAyytz4J/8XwFqMjiAGFBj+WM95lHBJ9cDf87T3P8yMrY7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+    integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"
+    integrity="sha512-vRqhAr2wsn+/cSsyz80psBbCcqzz2GTuhGk3bq3dAyytz4J/8XwFqMjiAGFBj+WM95lHBJ9cDf87T3P8yMrY7A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="assets/js/menu-script.js"></script>
   <script src="assets/js/main.js"></script>

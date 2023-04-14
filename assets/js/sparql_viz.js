@@ -201,6 +201,10 @@ series.states.create("hidden", {
   endAngle: -90
 });
 
+series.labels.template.setAll({
+  text: "[fontFamily: Courier Prime]{category}"
+});
+
 series.get("colors").set("colors", [
   am5.color(0x449296),
   am5.color(0x93b487),
@@ -268,13 +272,43 @@ chart.get("colors").set("step", 2);
 // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
 var xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
   renderer: am5xy.AxisRendererX.new(root, { minGridDistance: 50 }),
-  tooltip: am5.Tooltip.new(root, {})
+  //tooltip: am5.Tooltip.new(root, {})
 }));
+
+xAxis.children.push(
+  am5.Label.new(root, {
+    text: "[fontFamily: Courier Prime]Production costs",
+    x: am5.p50,
+    centerX:am5.p50
+  })
+);
+
+xAxis.get("renderer").labels.template.setAll({
+  oversizedBehavior: "truncate",
+  maxWidth: 100
+});
 
 var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
   renderer: am5xy.AxisRendererY.new(root, {}),
-  tooltip: am5.Tooltip.new(root, {})
+  //tooltip: am5.Tooltip.new(root, {})
 }));
+
+yAxis.children.unshift(
+  am5.Label.new(root, {
+    rotation: -90,
+    text: "[fontFamily: Courier Prime]Box Office",
+    y: am5.p50,
+    centerX: am5.p50
+  })
+);
+
+var MyAxisLabels = am5.Theme.new(root);
+MyAxisLabels.rule("AxisLabel").setAll({
+  fontFamily: "Courier New"
+});
+root.setThemes([
+  MyAxisLabels
+]);
 
 // Create series
 // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
@@ -286,7 +320,7 @@ var series0 = chart.series.push(am5xy.LineSeries.new(root, {
   valueXField: "ProductionCosts",
   valueField: "gaze_score",
   tooltip: am5.Tooltip.new(root, {
-    labelText: "Box Office: {valueX}, Production Costs: {valueY}, Gaze score: {gaze_score}"
+    labelText: "[fontFamily: Courier Prime]ProductionCosts: {valueX}, BoxOffice: {valueY}, Gaze Score: {value}"
   })
 }));
 
@@ -307,7 +341,7 @@ series0.bullets.push(function () {
 // https://www.amcharts.com/docs/v5/concepts/settings/heat-rules/
 series0.set("heatRules", [{
   target: circleTemplate,
-  min: 1,
+  min: 3,
   max: 20,
   dataField: "value",
   key: "radius"
@@ -325,208 +359,208 @@ chart.set("cursor", am5xy.XYCursor.new(root, {
 
 var data = [
   {
-    "ProductionCosts": 140000000.0,
-    "BoxOffice": 305413918.0,
+    "ProductionCosts": 140000000,
+    "BoxOffice": 305413918,
     "gaze_score": 30.25
   },
   {
-    "ProductionCosts": 90000000.0,
-    "BoxOffice": 250690539.0,
+    "ProductionCosts": 90000000,
+    "BoxOffice": 250690539,
     "gaze_score": 51.66
   },
   {
-    "ProductionCosts": 113000000.0,
-    "BoxOffice": 380270577.0,
+    "ProductionCosts": 113000000,
+    "BoxOffice": 380270577,
     "gaze_score": 54.86
   },
   {
-    "ProductionCosts": 54000000.0,
-    "BoxOffice": 108185706.0,
+    "ProductionCosts": 54000000,
+    "BoxOffice": 108185706,
     "gaze_score": 32.12
   },
   {
-    "ProductionCosts": 200000000.0,
-    "BoxOffice": 659363944.0,
+    "ProductionCosts": 200000000,
+    "BoxOffice": 659363944,
     "gaze_score": 51.66
   },
   {
-    "ProductionCosts": 11000000.0,
-    "BoxOffice": 460998507.0,
+    "ProductionCosts": 11000000,
+    "BoxOffice": 460998507,
     "gaze_score": 51.66
   },
   {
-    "ProductionCosts": 125000000.0,
-    "BoxOffice": 215409889.0,
+    "ProductionCosts": 125000000,
+    "BoxOffice": 215409889,
     "gaze_score": 71.29
   },
   {
-    "ProductionCosts": 225000000.0,
-    "BoxOffice": 291045518.0,
+    "ProductionCosts": 225000000,
+    "BoxOffice": 291045518,
     "gaze_score": 35.13
   },
   {
-    "ProductionCosts": 10500000.0,
-    "BoxOffice": 435110554.0,
+    "ProductionCosts": 10500000,
+    "BoxOffice": 435110554,
     "gaze_score": 0.0
   },
   {
-    "ProductionCosts": 250000000.0,
-    "BoxOffice": 381447587.0,
+    "ProductionCosts": 250000000,
+    "BoxOffice": 381447587,
     "gaze_score": 33.96
   },
   {
-    "ProductionCosts": 15000000.0,
-    "BoxOffice": 45306425.0,
+    "ProductionCosts": 15000000,
+    "BoxOffice": 45306425,
     "gaze_score": 65.0
   },
   {
-    "ProductionCosts": 139000000.0,
-    "BoxOffice": 407022860.0,
+    "ProductionCosts": 139000000,
+    "BoxOffice": 407022860,
     "gaze_score": 60.79
   },
   {
-    "ProductionCosts": 55000000.0,
-    "BoxOffice": 134478449.0,
+    "ProductionCosts": 55000000,
+    "BoxOffice": 134478449,
     "gaze_score": 55.84
   },
   {
-    "ProductionCosts": 100000000.0,
-    "BoxOffice": 184069126.0,
+    "ProductionCosts": 100000000,
+    "BoxOffice": 184069126,
     "gaze_score": 51.66
   },
   {
-    "ProductionCosts": 80000000.0,
-    "BoxOffice": 162924631.0,
+    "ProductionCosts": 80000000,
+    "BoxOffice": 162924631,
     "gaze_score": 61.16
   },
   {
-    "ProductionCosts": 1400000.0,
-    "BoxOffice": 8400000.0,
+    "ProductionCosts": 1400000,
+    "BoxOffice": 8400000,
     "gaze_score": 21.07
   },
   {
-    "ProductionCosts": 200000000.0,
-    "BoxOffice": 373585825.0,
+    "ProductionCosts": 200000000,
+    "BoxOffice": 373585825,
     "gaze_score": 55.07
   },
   {
-    "ProductionCosts": 9000000.0,
-    "BoxOffice": 260758300.0,
+    "ProductionCosts": 9000000,
+    "BoxOffice": 260758300,
     "gaze_score": 25.0
   },
   {
-    "ProductionCosts": 220000000.0,
-    "BoxOffice": 623357910.0,
+    "ProductionCosts": 220000000,
+    "BoxOffice": 623357910,
     "gaze_score": 54.86
   },
   {
     "ProductionCosts": null,
-    "BoxOffice": 319246193.0,
+    "BoxOffice": 319246193,
     "gaze_score": 0.0
   },
   {
-    "ProductionCosts": 32500000.0,
-    "BoxOffice": 309306177.0,
+    "ProductionCosts": 32500000,
+    "BoxOffice": 309306177,
     "gaze_score": 51.66
   },
   {
-    "ProductionCosts": 18000000.0,
-    "BoxOffice": 292753960.0,
+    "ProductionCosts": 18000000,
+    "BoxOffice": 292753960,
     "gaze_score": 65.0
   },
   {
-    "ProductionCosts": 102000000.0,
-    "BoxOffice": 205881154.0,
+    "ProductionCosts": 102000000,
+    "BoxOffice": 205881154,
     "gaze_score": 42.29
   },
   {
-    "ProductionCosts": 63000000.0,
-    "BoxOffice": 404214720.0,
+    "ProductionCosts": 63000000,
+    "BoxOffice": 404214720,
     "gaze_score": 27.41
   },
   {
-    "ProductionCosts": 115000000.0,
-    "BoxOffice": 474544677.0,
+    "ProductionCosts": 115000000,
+    "BoxOffice": 474544677,
     "gaze_score": 25.0
   },
   {
-    "ProductionCosts": 185000000.0,
-    "BoxOffice": 534987076.0,
+    "ProductionCosts": 185000000,
+    "BoxOffice": 534987076,
     "gaze_score": 25.0
   },
   {
-    "ProductionCosts": 800000.0,
-    "BoxOffice": 82000000.0,
+    "ProductionCosts": 800000,
+    "BoxOffice": 82000000,
     "gaze_score": 35.96
   },
   {
-    "ProductionCosts": 55000000.0,
-    "BoxOffice": 330455270.0,
+    "ProductionCosts": 55000000,
+    "BoxOffice": 330455270,
     "gaze_score": 60.17
   },
   {
-    "ProductionCosts": 250000000.0,
-    "BoxOffice": 302334374.0,
+    "ProductionCosts": 250000000,
+    "BoxOffice": 302334374,
     "gaze_score": 35.30
   },
   {
-    "ProductionCosts": 225000000.0,
-    "BoxOffice": 423315812.0,
+    "ProductionCosts": 225000000,
+    "BoxOffice": 423315812,
     "gaze_score": 41.53
   },
   {
-    "ProductionCosts": 35000000.0,
-    "BoxOffice": 251409241.0,
+    "ProductionCosts": 35000000,
+    "BoxOffice": 251409241,
     "gaze_score": 56.91
   },
   {
-    "ProductionCosts": 30000000.0,
-    "BoxOffice": 243578797.0,
+    "ProductionCosts": 30000000,
+    "BoxOffice": 243578797,
     "gaze_score": 38.33
   },
   {
-    "ProductionCosts": 15000000.0,
-    "BoxOffice": 180258178.0,
+    "ProductionCosts": 15000000,
+    "BoxOffice": 180258178,
     "gaze_score": 41.53
   },
   {
-    "ProductionCosts": 10500000.0,
-    "BoxOffice": 60481243.0,
+    "ProductionCosts": 10500000,
+    "BoxOffice": 60481243,
     "gaze_score": 65.0
   },
   {
-    "ProductionCosts": 125000000.0,
-    "BoxOffice": 317557891.0,
+    "ProductionCosts": 125000000,
+    "BoxOffice": 317557891,
     "gaze_score": 25.0
   },
   {
-    "ProductionCosts": 19000000.0,
-    "BoxOffice": 212836762.0,
+    "ProductionCosts": 19000000,
+    "BoxOffice": 212836762,
     "gaze_score": 38.33
   },
   {
-    "ProductionCosts": 237000000.0,
-    "BoxOffice": 760507625.0,
+    "ProductionCosts": 237000000,
+    "BoxOffice": 760507625,
     "gaze_score": 33.01
   },
   {
-    "ProductionCosts": 245000000.0,
-    "BoxOffice": 936662225.0,
+    "ProductionCosts": 245000000,
+    "BoxOffice": 936662225,
     "gaze_score": 30.92
   },
   {
-    "ProductionCosts": 200000000.0,
-    "BoxOffice": 700426566.0,
+    "ProductionCosts": 200000000,
+    "BoxOffice": 700426566,
     "gaze_score": 31.96
   },
   {
-    "ProductionCosts": 200000000.0,
-    "BoxOffice": 532177324.0,
+    "ProductionCosts": 200000000,
+    "BoxOffice": 532177324,
     "gaze_score": 25.0
   },
   {
-    "ProductionCosts": 200000000.0,
-    "BoxOffice": 620181382.0,
+    "ProductionCosts": 200000000,
+    "BoxOffice": 620181382,
     "gaze_score": 16.05
   }
 ]
