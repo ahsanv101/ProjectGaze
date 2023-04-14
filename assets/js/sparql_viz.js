@@ -146,8 +146,8 @@ function makeSeries(name, yAxis, data, color, path) {
   return series;
 }
 
-var femaleColor = am5.color(0xf25f5c);
-var maleColor = am5.color(0x247ba0);
+var femaleColor = am5.color(0x93b487);
+var maleColor = am5.color(0xb15859);
 var placeholderColor = am5.color(0x999999);
 
 var maleIcon = "M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
@@ -200,6 +200,15 @@ var series = chart.series.push(
 series.states.create("hidden", {
   endAngle: -90
 });
+
+series.get("colors").set("colors", [
+  am5.color(0x449296),
+  am5.color(0x93b487),
+  am5.color(0xeabf8a),
+  am5.color(0xb15859),
+  am5.color(0x835b91),
+  am5.color(0x163c6d)
+]);
 
 // Set data
 // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
@@ -287,7 +296,7 @@ var series0 = chart.series.push(am5xy.LineSeries.new(root, {
 var circleTemplate = am5.Template.new({});
 series0.bullets.push(function () {
   var graphics = am5.Circle.new(root, {
-    fill: series0.set("fill", am5.color(0xb15859)),
+    fill: series0.set("fill", am5.color(0x835b91)),
   }, circleTemplate);
   return am5.Bullet.new(root, {
     sprite: graphics
