@@ -1,4 +1,3 @@
-
 ////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// Pictogram DLG
 ////////////////////////////////////////////////////////////////////////////////
@@ -22,7 +21,7 @@ function generateData(count) {
   var row = 1;
   var col = 1;
   var data = [];
-  for(var i = 0; i < count; i++) {
+  for (var i = 0; i < count; i++) {
     data.push({
       x: col + "",
       y: row + ""
@@ -38,7 +37,7 @@ function generateData(count) {
 
 function generateCategories(count) {
   var data = [];
-  for(var i = 0; i < count; i++) {
+  for (var i = 0; i < count; i++) {
     data.push({
       cat: (i + 1) + ""
     });
@@ -125,8 +124,8 @@ function makeSeries(name, yAxis, data, color, path) {
     strokeOpacity: 0
   });
 
-  
-  series.bullets.push(function(root) {
+
+  series.bullets.push(function (root) {
     return am5.Bullet.new(root, {
       locationX: 0.5,
       locationY: 0.5,
@@ -139,9 +138,9 @@ function makeSeries(name, yAxis, data, color, path) {
       })
     });
   });
-  
+
   series.data.setAll(data);
-  
+
   series.appear();
   return series;
 }
@@ -154,7 +153,7 @@ var maleIcon = "M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 
 
 var maleSeriesMax = makeSeries("Male", yAxis1, generateData(154), placeholderColor, maleIcon, false);
 var maleSeries = makeSeries("Male", yAxis1, generateData(154), maleColor, maleIcon, true);
-var FemaleSeries = makeSeries("Male",yAxis1, generateData(11), femaleColor, maleIcon, true);
+var FemaleSeries = makeSeries("Male", yAxis1, generateData(11), femaleColor, maleIcon, true);
 
 //var femaleSeriesMax = makeSeries("Female", yAxis2, generateData(100), placeholderColor, femaleIcon, false);
 //var femaleSeries = makeSeries("Female", yAxis2, generateData(67), femaleColor, femaleIcon, true);
@@ -276,8 +275,8 @@ var chart = root.container.children.push(am5xy.XYChart.new(root, {
   panX: true,
   panY: true,
   wheelY: "zoomXY",
-  pinchZoomX:true,
-  pinchZoomY:true
+  pinchZoomX: true,
+  pinchZoomY: true
 }));
 
 chart.get("colors").set("step", 2);
@@ -293,7 +292,7 @@ xAxis.children.push(
   am5.Label.new(root, {
     text: "[fontFamily: Courier Prime]Production costs",
     x: am5.p50,
-    centerX:am5.p50
+    centerX: am5.p50
   })
 );
 
@@ -318,7 +317,7 @@ yAxis.children.unshift(
 
 var MyAxisLabels = am5.Theme.new(root);
 MyAxisLabels.rule("AxisLabel").setAll({
-  fontFamily: "Courier New"
+  fontFamily: "Courier Prime"
 });
 root.setThemes([
   MyAxisLabels
@@ -334,7 +333,7 @@ var series0 = chart.series.push(am5xy.LineSeries.new(root, {
   valueXField: "ProductionCosts",
   valueField: "gaze_score",
   tooltip: am5.Tooltip.new(root, {
-    labelText: "[fontFamily: Courier Prime]ProductionCosts: {valueX}, BoxOffice: {valueY}, Gaze Score: {value}"
+    labelText: "[fontFamily: Courier Prime,#FFFFFF]ProductionCosts: {valueX}, BoxOffice: {valueY}, Gaze Score: {value}"
   })
 }));
 
