@@ -192,7 +192,7 @@ var tooltip = am5.Tooltip.new(root, {
   getStrokeFromSprite: true,
   autoTextColor: false,
   getLabelFillFromSprite: true,
-  labelText: "[fontFamily: Courier Prime]{category}[/][fontFamily: Courier Prime]{Sales}:{value}"
+  labelText: "[fontFamily: Courier Prime,bold]{category}[/][fontFamily: Courier Prime] :{value}"
 });
 
 tooltip.get("background").setAll({
