@@ -187,13 +187,27 @@ var chart = root.container.children.push(
   })
 );
 
+var tooltip = am5.Tooltip.new(root, {
+  getFillFromSprite: false,
+  getStrokeFromSprite: true,
+  autoTextColor: false,
+  getLabelFillFromSprite: true,
+  labelText: "[fontFamily: Courier Prime]{category}[/][fontFamily: Courier Prime]{Sales}:{value}"
+});
+
+tooltip.get("background").setAll({
+  fill: am5.color(0xffffff),
+  fillOpacity: 0.8
+});
+
 // Create series
 // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
 var series = chart.series.push(
   am5percent.PieSeries.new(root, {
     valueField: "value",
     categoryField: "category",
-    endAngle: 270
+    endAngle: 270,
+    tooltip: tooltip
   })
 );
 
