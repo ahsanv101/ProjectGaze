@@ -197,7 +197,7 @@ var tooltip = am5.Tooltip.new(root, {
 
 tooltip.get("background").setAll({
   fill: am5.color(0xffffff),
-  fillOpacity: 0.8
+  fillOpacity: 0.6
 });
 
 // Create series
