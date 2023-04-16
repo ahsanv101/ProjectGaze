@@ -91,13 +91,11 @@ chart.set("scrollbarX", scrollbarX);
     categoryXField: "Title",
     fill: am5.color(0x835b91),
     //stroke: am5.color(0x095256),
-    tooltip: am5.Tooltip.new(root, {
-      am5.Tooltip.rule("tooltip").setAll({
-        fontFamily: "Courier New",
-        fontSize: 12
+    tooltip: am5.Tooltip.new(root, {  
+      //labelText: "[fontFamily: Courier Prime,#FFFFFF]{valueY}"
   });
       
-      //labelText: "[fontFamily: Courier Prime,#FFFFFF]{valueY}"
+    
     })
   }));
 
