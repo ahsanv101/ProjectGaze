@@ -87,9 +87,6 @@ am5.ready(function () {
     //stroke: am5.color(0x095256),
     tooltip: am5.Tooltip.new(root, {  
       //labelText: "[fontFamily: Courier Prime,#FFFFFF]{valueY}"
-  });
-      
-    
     })
   }));
 
