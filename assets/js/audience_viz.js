@@ -72,6 +72,13 @@ am5.ready(function () {
   root.setThemes([
     MyAxisLabels
   ]);
+  
+  var scrollbarX = am5xy.XYChartScrollbar.new(root, {
+    orientation: "horizontal",
+    height: 50
+  });
+
+chart.set("scrollbarX", scrollbarX);
 
   // Create series
   // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
