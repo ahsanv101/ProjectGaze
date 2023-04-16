@@ -80,7 +80,12 @@ am5.ready(function () {
     fill: am5.color(0x835b91),
     //stroke: am5.color(0x095256),
     tooltip: am5.Tooltip.new(root, {
-      labelText: "[fontFamily: Courier Prime,#FFFFFF]{valueY}"
+      tooltip.rule("AxisLabel").setAll({
+        fontFamily: "Courier New",
+        fontSize: 12
+  });
+      
+      //labelText: "[fontFamily: Courier Prime,#FFFFFF]{valueY}"
     })
   }));
 
