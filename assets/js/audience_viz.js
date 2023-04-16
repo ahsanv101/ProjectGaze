@@ -51,6 +51,11 @@ am5.ready(function () {
     renderer: xRenderer,
     tooltip: am5.Tooltip.new(root, {})
   }));
+  
+  xAxis.get("renderer").labels.template.setAll({
+  oversizedBehavior: "fit",
+  });
+
 
   var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
     maxDeviation: 0.3,
@@ -80,7 +85,7 @@ am5.ready(function () {
     fill: am5.color(0x835b91),
     //stroke: am5.color(0x095256),
     tooltip: am5.Tooltip.new(root, {
-      tooltip.rule("AxisLabel").setAll({
+      am5.Tooltip.rule("tooltip").setAll({
         fontFamily: "Courier New",
         fontSize: 12
   });
