@@ -78,8 +78,10 @@ am5.ready(function () {
     height: 50
   });
   
-  chart.set("scrollbarX", scrollbarX);
   
+  
+  chart.set("scrollbarX", scrollbarX);
+  chart.bottomAxesContainer.children.push(scrollbarX);
 
   // Create series
   // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
