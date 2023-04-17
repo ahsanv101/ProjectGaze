@@ -51,6 +51,7 @@
   /* Primay colors */
   --color-primary: #b15859 /* #0ea2bd */; /* I LIKE THIS ONE AS MAIN DARK COLOR */
   --color-primary-light: #d2686a /* #1ec3e0 */;
+  --color-primary-light_2: #e08d8f /* #1ec3e0 */;
   --color-primary-light-graph: #d2686a70;
   --color-primary-light-graph: rgba(240, 120, 122, 0.439) /* #1ec3e0 */;
 

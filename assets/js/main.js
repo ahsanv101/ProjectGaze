@@ -746,11 +746,11 @@ const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
 
 function makeChart2(ddata){
   var style = getComputedStyle(document.body);
-  var red = style.getPropertyValue('--color-primary-light-graph');
+  var dark_red = style.getPropertyValue('--color-primary-light-graph');
   // var primColrgba = style.getPropertyValue(rgba('--color-primary-rgb'),0.5);
   // console.log(primCol+', 0.80');
-  var teal = style.getPropertyValue('--color-palette-teal-light-graph');
-  var yellow = style.getPropertyValue('--color-palette-yellow-light-graph');
+  var mid_red = style.getPropertyValue('--color-primary-light_2');
+  var light_red = style.getPropertyValue('--color-primary');
   var green = style.getPropertyValue('--color-palette-green-light-graph');
   // var fon = style.getPropertyValue('--font-script');
   // var foncol = style.getPropertyValue('--color-default');
@@ -787,9 +787,9 @@ function makeChart2(ddata){
       data: [passed,notwo, notwotalk, notwotalkmen],
       backgroundColor: [
         green,
-        red,
-        yellow,
-        teal
+        dark_red,
+        light_red,
+        mid_red
       ],
       hoverOffset: 4
     }]
