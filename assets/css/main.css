@@ -1366,6 +1366,10 @@ section .image img {
   margin-left: 3.2em;
 }
 
+.carousel {
+  top: 11%;
+}
+
 .research-q {
   text-align: center;
   font-family: var(--font-secondary);
@@ -1383,6 +1387,7 @@ section .image img {
 /*--------------------------------------------------------------
 # Data Section
 --------------------------------------------------------------*/
+
 .logos-img {
   position: relative;
   right: 6em;
