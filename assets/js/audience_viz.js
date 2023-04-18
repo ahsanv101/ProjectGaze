@@ -33,7 +33,7 @@ am5.ready(function () {
 
   // Create axes
   // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
-  var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
+  var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 10 });
   xRenderer.labels.template.setAll({
     rotation: -90,
     centerY: am5.p50,
@@ -73,7 +73,7 @@ am5.ready(function () {
     MyAxisLabels
   ]);
   
-  var scrollbarX = am5xy.XYChartScrollbar.new(root, {
+ /*  var scrollbarX = am5xy.XYChartScrollbar.new(root, {
     orientation: "horizontal",
     height: 50
   });
@@ -81,7 +81,7 @@ am5.ready(function () {
   
   
   chart.set("scrollbarX", scrollbarX);
-  chart.bottomAxesContainer.children.push(scrollbarX);
+  chart.bottomAxesContainer.children.push(scrollbarX); */
 
   // Create series
   // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
@@ -93,9 +93,9 @@ am5.ready(function () {
     sequencedInterpolation: true,
     categoryXField: "Title",
     fill: am5.color(0x835b91),
-    //stroke: am5.color(0x095256),
+    stroke: am5.color(0x095256),
     tooltip: am5.Tooltip.new(root, {  
-      //labelText: "[fontFamily: Courier Prime,#FFFFFF]{valueY}"
+      labelText: "[fontFamily: Courier Prime,#FFFFFF]{valueY}"
     })
   }));
 
