@@ -66,22 +66,13 @@ am5.ready(function () {
 
   var MyAxisLabels = am5.Theme.new(root);
   MyAxisLabels.rule("AxisLabel").setAll({
-    fontFamily: "Courier New",
+    fontFamily: "Courier Prime",
     fontSize: 12
   });
   root.setThemes([
     MyAxisLabels
   ]);
-  
- /*  var scrollbarX = am5xy.XYChartScrollbar.new(root, {
-    orientation: "horizontal",
-    height: 50
-  });
-  
-  
-  
-  chart.set("scrollbarX", scrollbarX);
-  chart.bottomAxesContainer.children.push(scrollbarX); */
+
 
   // Create series
   // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
