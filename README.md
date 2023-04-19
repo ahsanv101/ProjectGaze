@@ -7,7 +7,7 @@ The project was developed for the final exam of the course "Information Visualiz
 The website is available at the following [link](https://ahsanv101.github.io/ProjectGaze/).
 
 ## Documentation
-A detailed documentation on the project and on the data manipulation can be found in the "documentation" folder of this repository and is freely downloadable.
+A detailed documentation can be found in the "documentation" folder of this repository and is freely downloadable. The documentation both illustrates the [main workflow of the project with a summary of results](https://github.com/ahsanv101/ProjectGaze/blob/main/documentation/DOCUMENTATION.ipynb) and the [manipulation and processing of the source data](https://github.com/ahsanv101/ProjectGaze/blob/main/documentation/DATA.ipynb).
 
 ## Contributors and statement of responsibility
 All contributors worked in the definition of the topic, in the selection of source data and in final revisions.
