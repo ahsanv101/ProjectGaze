@@ -17,4 +17,6 @@ All contributors worked in the definition of the topic, in the selection of sour
 - [Orsola Maria Borrini](mailto:orsolamaria.borrini@studio.unibo.it) - Webdesign flow, SPARQL data querying
 
 ## License
-tbd
+Unless stated otherwise, any content available in this Github repository and in the website falls under the license [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
