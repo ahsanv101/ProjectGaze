@@ -94,7 +94,7 @@ for idx,row in csv_2modify.iterrows():
 csv_2modify = csv_2modify.drop(26).reset_index(drop=True)
 csv_2modify.at[26,'BoxOffice'] = new_boxoffice
 
-csv_2modify = csv_2modify.drop(['Movie'], axis=1)
+# csv_2modify = csv_2modify.drop(['Movie'], axis=1)
 
 result = csv_2modify.to_json(orient="records")
 data = json.loads(result)
