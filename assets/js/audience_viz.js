@@ -988,7 +988,7 @@ am5.ready(function () {
   // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
 
   var series0 = chart.series.push(am5xy.ColumnSeries.new(root, {
-    name: "[fontFamily: Courier Prime]Audience's overall tone (from 1, lowest, to 10, highest)",
+    name: "[fontFamily: Courier Prime]Audience's overall tone (from 1, most negative, to 10, most positive)",
     xAxis: xAxis,
     yAxis: yAxis,
     valueYField: "AVG sentiment",
