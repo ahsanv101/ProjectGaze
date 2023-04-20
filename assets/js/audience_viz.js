@@ -35,12 +35,10 @@ am5.ready(function () {
   // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
   var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 10 });
   xRenderer.labels.template.setAll({
-    // maxWidth: 120,
-    rotation: -45,
+    rotation: -90,
     centerY: am5.p50,
     centerX: am5.p100,
-    paddingRight: 15,
-    paddingLeft:15
+    paddingRight: 15
   });
 
   xRenderer.grid.template.setAll({
@@ -53,10 +51,9 @@ am5.ready(function () {
     renderer: xRenderer,
     tooltip: am5.Tooltip.new(root, {})
   }));
-  //
+
   xAxis.get("renderer").labels.template.setAll({
-  oversizedBehavior: "truncate",
-  // labelmaxWidth: 70// You can replace it with "truncate".
+  oversizedBehavior: "fit",
   });
 
 
@@ -70,8 +67,7 @@ am5.ready(function () {
   var MyAxisLabels = am5.Theme.new(root);
   MyAxisLabels.rule("AxisLabel").setAll({
     fontFamily: "Courier Prime",
-    fontSize: 12,
-    // maxHeight:40,
+    fontSize: 12
   });
   root.setThemes([
     MyAxisLabels
@@ -98,7 +94,6 @@ am5.ready(function () {
   /*series.columns.template.adapters.add("fill", function (fill, target) {
     return chart.get("colors").getIndex(series.columns.indexOf(target));
   });
-
   series.columns.template.adapters.add("stroke", function (stroke, target) {
     return chart.get("colors").getIndex(series.columns.indexOf(target));
   }); */
