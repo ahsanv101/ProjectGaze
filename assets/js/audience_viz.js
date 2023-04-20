@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////// Audience bar chart 
+/////////////////////////////// Audience bar chart
 ////////////////////////////////////////////////////////////////////////////////
 am5.ready(function () {
 
@@ -35,10 +35,12 @@ am5.ready(function () {
   // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
   var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 10 });
   xRenderer.labels.template.setAll({
-    rotation: -90,
+    // maxWidth: 120,
+    rotation: -45,
     centerY: am5.p50,
     centerX: am5.p100,
-    paddingRight: 15
+    paddingRight: 15,
+    paddingLeft:15
   });
 
   xRenderer.grid.template.setAll({
@@ -51,9 +53,10 @@ am5.ready(function () {
     renderer: xRenderer,
     tooltip: am5.Tooltip.new(root, {})
   }));
-  
+  //
   xAxis.get("renderer").labels.template.setAll({
-  oversizedBehavior: "fit",
+  oversizedBehavior: "truncate",
+  // labelmaxWidth: 70// You can replace it with "truncate".
   });
 
 
@@ -67,7 +70,8 @@ am5.ready(function () {
   var MyAxisLabels = am5.Theme.new(root);
   MyAxisLabels.rule("AxisLabel").setAll({
     fontFamily: "Courier Prime",
-    fontSize: 12
+    fontSize: 12,
+    // maxHeight:40,
   });
   root.setThemes([
     MyAxisLabels
@@ -85,7 +89,7 @@ am5.ready(function () {
     categoryXField: "Title",
     fill: am5.color(0x835b91),
     stroke: am5.color(0x095256),
-    tooltip: am5.Tooltip.new(root, {  
+    tooltip: am5.Tooltip.new(root, {
       labelText: "[fontFamily: Courier Prime,#FFFFFF]{valueY}"
     })
   }));
@@ -434,7 +438,7 @@ am5.ready(function () {
 }); // end am5.ready()
 
 ////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////// Audience pie 
+/////////////////////////////// Audience pie
 ////////////////////////////////////////////////////////////////////////////////
 
 am5.ready(function () {
@@ -809,7 +813,7 @@ am5.ready(function () {
 
 
 ////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////// Audience overlay  
+/////////////////////////////// Audience overlay
 ////////////////////////////////////////////////////////////////////////////////
 
 am5.ready(function () {
