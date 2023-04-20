@@ -780,7 +780,7 @@ function makeChart2(ddata){
       'Passed',
       'No two women',
       'No two women who talk to each other',
-      'No two women who talk to each other \nabout something other than a man'
+      'No two women who talk to each other about something other than a man'
     ],
     datasets: [{
       label: 'Bechdel test',
