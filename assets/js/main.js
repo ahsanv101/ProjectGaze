@@ -1139,7 +1139,7 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/final_
         data: {
             labels: labels,
             datasets: [{
-                label: 'female descriptions',
+                label: 'female body descriptions',
                 backgroundColor: [yellow],
                 borderColor: [yellow],
                 borderWidth: 1,
@@ -1154,12 +1154,21 @@ d3.csv("https://raw.githubusercontent.com/ahsanv101/ProjectGaze/main/Data/final_
             }]
         },
         options: {
+          plugins:{
+            title:{
+              display:true,
+              text:'Descriptions of female characters in the script'
+            },
+          },
+
+
           maintainAspectRatio: false,
           indexAxis: 'y',
 
                     scales: {
                         x: {
                             stacked: true,
+
                             ticks: {
                               autoSkip: false,
                               suggestedMin: 0,
@@ -1172,6 +1181,7 @@ suggestedMax: 100,
                     },
                         y: {
                               stacked: true,
+
                               ticks: {
                                 autoSkip: false,
                                 font: {
